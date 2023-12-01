@@ -1,0 +1,265 @@
+.productPage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: NAMU-1850;
+  border-radius: 15px;
+  padding: 50px 34px;
+  /* gap: 33px; */
+}
+
+.productImg{
+  display: flex;
+  width: 45.82%;
+  min-width: 360px;
+  border-radius: 15px;
+}
+
+.productImg img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.productText{
+  display: flex;
+  align-items: flex-start;
+  width: 45.39%;
+  flex-direction: column;
+}
+
+.descript{
+  display: block;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.title{
+  color: #C9C9C9;
+  font-size: 35px;
+  line-height: 38.5px;
+  margin-top: 26px;
+  margin-bottom: 11px;
+}
+
+.charact{
+  color: #ffffff87;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text{
+  color: #ffffff87;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.price{
+  color: #FFD600;
+  font-size: 20px;
+  line-height: 24px;
+  width: 300px;
+}
+
+.shopBlock{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: auto;
+  width: 300px;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 27px;
+}
+
+.countRange{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #FFFFFF 1px solid;
+  border-radius: 15px;
+  width: 96px;
+  height: 45px;
+}
+
+.divBasketButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 45px;
+}
+
+.divBasketButton button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.countRange{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #FFFFFF 1px solid;
+  border-radius: 15px;
+  width: 96px;
+  height: 45px;
+}
+
+.rangeButtonM{
+  border: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.rangeButtonP{
+  border: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.rangeInput{
+  width: 16px;
+  height: 19px;
+  font-size: 12.39px;
+  line-height: 14.87px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  outline:none
+}
+
+.basketButton{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #FFD600;
+  border-radius: 15px;
+  color: #000000;
+  font-size: 12.39px;
+  line-height: 14.87px;
+  font-family: NAMU-1990;
+}
+
+@media screen and (max-width: 450px) {
+  .productPage{
+    display: block;
+    width: 100%;
+    font-family: NAMU-1850;
+    margin-bottom: 20.07px;
+  }
+
+  .productImg{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .productImg img{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .title{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #C9C9C9;
+    font-size: 15px;
+    line-height: 15.75px;
+  }
+  
+  .charact{
+    color: #ffffff87;
+    font-size: 11px;
+    line-height: 15.4px;
+  }
+  
+  .text{
+    color: #ffffff87;
+    font-size: 11px;
+    line-height: 15.4px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+  }
+  
+  .price{
+    color: #C9C9C9;
+    font-size: 15px;
+    line-height: 15.75px;
+  }
+  
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 162px;
+    height: 76.93px;
+    gap: 7px;
+    margin-top: 18px;
+  }
+  
+  .divMoreButton{
+    display: flex;
+    flex-wrap: wrap;
+    width: 162px;
+    height: 34.97px;
+  }
+  
+  .moreButton{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF0B9;
+    border-radius: 5px;
+    color: #0B0B0B;
+    font-size: 11px;
+    line-height: 13.2px;
+    font-family: NAMU-1990;
+  }
+  
+  .divBasketButton{
+    display: flex;
+    flex-wrap: wrap;
+    width: 162px;
+    height: 34.97px;
+  }
+  
+  .basketButton{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD600;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 11px;
+    line-height: 13.2px;
+    font-family: NAMU-1990;
+  }
+  
+  .basketButton img{
+    display: none;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  
+  .basketButton div{
+    margin-top: 8px;
+  }
+}

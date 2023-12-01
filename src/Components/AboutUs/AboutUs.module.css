@@ -1,0 +1,720 @@
+.aboutUs{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.aboutLoftLuxe{
+    margin-top: 128px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 60px;
+    line-height: 66px;
+    font-family: NAMU-1960;
+    gap: 10px
+}
+
+.spanWhite{
+    color: white;
+}
+
+.spanYellow{
+    color: yellow;
+}
+
+.firstImg{
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstImg .firstImg1{
+    display: block;
+    width: 100%;
+}
+
+.firstImg .firstImg2{
+    display: none;
+    width: 0;
+}
+
+.readBelow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64.05%;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.firstContainer{
+    display: flex;
+    margin-top: 141px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.firstContText{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 43.38%;
+}
+
+.paragText{
+    margin-top: 58.81px;
+    font-size: 25.6px;
+    line-height: 30.34px;
+    color: white;
+}
+
+.firstContImg{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 49.44%;
+    height: 240px; 
+    position: relative;
+}
+
+.firstContImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-image: url("../../assets/images/about_us/206e607d3cc87b80ab710c83f0afb753 1.png");
+    background-size: 100% 100%;
+}
+
+.firstContImg .whiteLogoImg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25.44%;
+    height: 24.23px;
+    position: absolute;
+    z-index: 1;
+    bottom: 24.98px;
+    right: 7.32%;
+}
+
+.firstContImg .whiteLogoImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.alterFirstContImg{
+    display: none;
+}
+
+.alterFirstContImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;  
+    background-image: url("../../assets/images/about_us/206e607d3cc87b80ab710c83f0afb753 1.png");
+    background-size: 100% 100%;
+}
+
+.alterWhiteLogoImg{
+    display: none;
+    flex-wrap: wrap;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 24.98px;
+    right: 1.28%;
+}
+
+.alterWhiteLogoImg img{
+    width: 0;
+    height: 0;
+}
+
+.paragsCont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.parags{
+    margin-top: 48px;
+    font-size: 25.6px;
+    line-height: 30.34px;
+    font-family: NAMU-1990;
+    color: #FFFFFF;
+}
+
+.alterBigImg{
+    display: none;
+}
+
+.alterBigImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;  
+    background-image: url("../../assets/images/about_us/206e607d3cc87b80ab710c83f0afb753 1.png");
+    background-size: 100% 100%;
+}
+
+.alterBigImg .whiteLogoImg{
+    width: 0;
+    height: 0;
+}
+
+.alterBigImg .whiteLogoImg img{
+    width: 0;
+    height: 0;
+}
+
+.bigImg{
+    display: flex;
+    margin-top: 23px;
+    width: 100%;
+    height: 274px;
+    position: relative;
+}
+
+.bigImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 274px; 
+    background-image: url("../../assets/images/about_us/bigImg.png");
+    background-size: 100% 100%;
+}
+
+.bigImg .whiteLogoImg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 9.3%;
+    height: 63.43px;
+    position: absolute;
+    z-index: 1;
+    bottom: 28.27px;
+    left: 3.45%;
+}
+
+.bigImg .whiteLogoImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.learnMoreButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 52px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #FFD600;
+    color: #000000;
+}
+
+.centerTitle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 57.88%;
+    font-size: 32px;
+    line-height: 44.8px;
+    margin-top: 153px;
+    margin-bottom: 50px;
+    font-family: NAMU-1850;
+}
+
+.centerTitle .line15_6{
+    width: 15.6px;
+}
+
+.fonImg{
+    height: 282px;
+    margin-top: 108px;
+    position: relative;
+}
+
+.fonImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 282px;  
+    background-image: url("../../assets/images/about_us/Rectangle 697.png");
+    background-size: 100% 100%;
+}
+
+.fonImgTitle {
+    top: 40px;
+    left: 39.97%;
+    right: 45.4%;
+    height: 38.66px;
+    position: absolute;
+    z-index: 1;
+}
+
+.fonImgText{
+    top: 37.94%;
+    left: 27.82%;
+    right: 27.82%;
+    height: 15.96%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-size: 171.11%;
+    line-height: 199.55%;
+    color: white;
+}
+
+.curvedLineImg {
+    top: 51.42%;
+    left: 27.82%;
+    right: 27.82%;
+    position: absolute;
+    z-index: 1;
+}
+
+.curvedLineImg img{
+    width: 100%;
+}
+
+.learnDetailed{
+    top: 73.4%;
+    left: 33.68%;
+    right: 33.68%;
+    position: absolute;
+    z-index: 1;
+}
+
+.warehouses{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 97px;
+    margin-bottom: 100px;
+    font-family: NAMU-1850;
+}
+
+.warehousesTitle{
+    font-size: 32px;
+    line-height: 44.8px;
+    color: white;
+    width: 68.82%;
+}
+
+.warehousesText{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff99;
+    width: 90.27%;
+}
+
+.warehousesImg{
+    width: 100%;
+    margin-top: 43px;
+}
+
+.warehousesImg img{
+    width: 100%;
+}
+
+.alterWarehousesImg{
+    width: 0;
+    margin-top: 0;
+}
+
+.alterWarehousesImg img{
+    width: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .aboutUs{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 92.22%;
+        margin: 0 auto;
+    }
+
+    .line15_6{
+        width: 15.6px;
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .aboutLoftLuxe{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 81.33%;
+        margin: 0 auto;
+        margin-top: 39px;
+        font-size: 40px;
+        line-height: 44px;
+        font-family: NAMU-1960;
+    }
+
+    .aboutLoftLuxe .probel{
+        display: none;
+        width: 0;
+    }
+    
+    .spanWhite{
+        color: white;
+    }
+    
+    .spanYellow{
+        color: yellow;
+    }
+    
+    .firstImg{
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .firstImg .firstImg1{
+        display: none;
+        width: 0;
+    }
+
+    .firstImg .firstImg2{
+        display: block;
+        width: 100%;
+    }
+    
+    .readBelow{
+        margin-top: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    
+    .firstContainer{
+        display: flex;
+        margin-top: 36px;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .firstContText{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .loftLuxeTitle{
+        width: 58.37%;
+    }
+
+    .loftLuxeTitle img{
+        width: 100%;
+    }
+    
+    .paragText{
+        margin-top: 36px;
+        font-size: 16px;
+        line-height: 18.96px;
+        color: white;
+    }
+    
+    .firstContImg{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .firstContImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;  
+        background-image: url("../../assets/images/about_us/206e607d3cc87b80ab710c83f0afb753 1.png");
+        background-size: 100% 100%;
+    }
+    
+    .firstContImg .whiteLogoImg{
+        display: none;
+        flex-wrap: wrap;
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 30.62px;
+        left: 3.53%;
+    }
+    
+    .firstContImg .whiteLogoImg img{
+        width: 0;
+    }
+    
+    .alterFirstContImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+        width: 100%;
+        height: 133px;
+        position: relative;
+    }
+    
+    .alterFirstContImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;  
+        background-image: url("../../assets/images/about_us/206e607d3cc87b80ab710c83f0afb753 1.png");
+        background-size: 100% 100%;
+    }
+    
+    .alterFirstContImg .alterWhiteLogoImg{
+        display: flex;
+        flex-wrap: wrap;
+        width: 35.24%;
+        height: 68.71px;
+        position: absolute;
+        z-index: 1;
+        bottom: 32.29px;
+        right: 32.23%;
+    }
+    
+    .alterFirstContImg .alterWhiteLogoImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .firstContImg img{
+        height: 240px;
+    } */
+    
+    .paragsCont{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .parags{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 18.96px;
+        font-family: NAMU-1990;
+        color: #FFFFFF;
+    }
+
+    .alterBigImg{
+        display: flex;
+        margin-top: 23px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 172px; 
+        position: relative;
+        margin-bottom: 45.5px;
+    }
+    
+    .alterBigImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 172px;  
+        background-image: url("../../assets/images/about_us/bigImg.png");
+        background-size: 100% 100%;
+    }
+    
+    .alterBigImg .whiteLogoImg{
+        display: flex;
+        flex-wrap: wrap;
+        width: 32.53%;
+        height: 63.42px;
+        position: absolute;
+        z-index: 1;
+        bottom: 54.46px;
+        left: 33.73%;
+    }
+    
+    .alterBigImg .whiteLogoImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .bigImg{
+        display: none;
+    }
+    
+    .learnMoreButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 52px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: #FFD600;
+        color: #000000;
+    }
+    
+    .centerTitle{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 61.15%;
+        font-size: 24px;
+        line-height: 33.6px;
+        margin-top: 58px;
+        margin-bottom: 31px;
+    }
+
+    .centerTitle .line15_6{
+        width: 0;
+    }
+    
+    .fonImg{
+        width: 108%;
+        height: 196px;
+        left: -3.88%;
+        margin-top: 87px;
+        position: relative;
+    }
+    
+    .fonImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 196px;  
+        background-image: url("../../assets/images/about_us/alterFonImg.png");
+        background-size: 100% 100%;
+    }
+    
+    .fonImgTitle {
+        top: 19.93px;
+        left: 41.39%;
+        width: 61px;
+        height: 35.82px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .fonImgText{
+        top: 66px;
+        left: 16.94%;
+        height: 46px;
+        width: 65.83%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        font-size: 24px;
+        line-height: 26.4px;
+        /* font-size: 200%;
+        line-height: 250%; */
+        color: white;
+    }
+    
+    .curvedLineImg {
+        display: none;
+        top: 51.42%;
+        left: 27.82%;
+        right: 27.82%;
+        /* width: 9.3%; */
+        /* height: 22.5%; */
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .learnDetailed{
+        width: 92.22%;
+        height: 44px;
+        top: 135px;
+        left: 3.89%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .warehouses{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 66px;
+        margin-bottom: 74px;
+        font-family: NAMU-1850;
+    }
+    
+    .warehousesTitle{
+        font-size: 24px;
+        line-height: 33.6px;
+        color: white;
+        width: 100%;
+    }
+    
+    .warehousesText{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: #ffffff99;
+        width: 100%;
+    }
+    
+    .warehousesImg{
+        width: 0;
+        margin-top: 0;
+    }
+
+    .warehousesImg img{
+        width: 0;
+    }
+
+    .alterWarehousesImg{
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .alterWarehousesImg img{
+        width: 100%;
+    }
+}

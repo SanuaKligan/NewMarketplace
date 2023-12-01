@@ -1,0 +1,19 @@
+@font-face {
+  font-family:"NAMU";
+  src: url("./assets/fonts/namu/NAMU-typefaces2019/Desktop/TTF/NAMU-Pro.ttf");
+}
+
+@font-face {
+  font-family:"NAMU-1960";
+  src: url("./assets/fonts/namu/NAMU-typefaces2019/Desktop/TTF/NAMU-1960.ttf");
+}
+
+@font-face {
+  font-family:"NAMU-1990";
+  src: url("./assets/fonts/namu/NAMU-typefaces2019/Desktop/TTF/NAMU-1990.ttf");
+}
+
+@font-face {
+  font-family:"NAMU-1850";
+  src: url("./assets/fonts/namu/NAMU-typefaces2019/Desktop/TTF/NAMU-1850.ttf");
+}

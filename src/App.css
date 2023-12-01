@@ -1,0 +1,36 @@
+.grid {
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+  grid-template-areas:
+  "h h"
+  "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+
+.add-wrapper-content {
+  grid-area: c;
+  background-color: dodgerblue;
+}
+
+/*.post-enter {*/
+/*  opacity: 0;*/
+/*}*/
+/*.post-enter-active {*/
+/*  opacity: 1;*/
+/*  transition: opacity 500ms ease-in;*/
+/*}*/
+/*.post-exit {*/
+/*  opacity: 1;*/
+/*}*/
+/*.post-exit-active {*/
+/*  opacity: 0;*/
+/*  transition: opacity 500ms ease-in;*/
+/*}*/
+
+
+
+

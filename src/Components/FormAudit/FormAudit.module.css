@@ -1,0 +1,350 @@
+.formAudit{
+    width: 100%;
+}
+
+.titleAudit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 110px;
+    font-size: 24px;
+    line-height: 33.6px;
+    font-family: NAMU-1850;
+}
+
+.sixthContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 39px;
+    /* margin-left: 10%; */
+    height: 411px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.fonImg{
+    width: 52.37%;
+    height: 411px;
+    position: relative;
+}
+
+.fonImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* width: 52.37%; */
+    height: 411px;  
+    background-image: url("../../assets/images/Rectangle 696.png");
+    background-size: 100% 100%;
+}
+
+.fonImgText{
+    top: 342px;
+    left: 5.5%;
+    font-family: Caveat;
+    width: 55.67%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.whiteLogoImg {
+    top: 358px;
+    right: 5.42%;
+    width: 19.9%;
+    position: absolute;
+    z-index: 1;
+}
+
+.learnDetailed{
+    top: 73.4%;
+    left: 33.68%;
+    right: 33.68%;
+    position: absolute;
+    z-index: 1;
+}
+
+.sixthContImg img{
+    height: 411px;
+}
+
+.sixthContText{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45.78%;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: NAMU-1990;
+    /* margin-right: 10%; */
+    /* position: absolute; */
+}
+
+.formTitle{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 11px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 39.2px;
+    font-family: NAMU-1990;
+}
+
+.divField{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.firstField{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #fff5b81a;
+    border-radius: 10px;
+    border: 0.91px;
+    width: 100%;
+    height: 22px;
+    margin-bottom: 13px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.firstField::placeholder {
+    height: 21px;
+    opacity: 40%;
+    color: #ffffff;
+}
+
+.secondField{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #fff5b81a;
+    border-radius: 10px;
+    border: 0.91px;
+    width: 100%;
+    height: 97px;
+    resize: none;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.secondField::placeholder {
+    height: 21px;
+    opacity: 40%;
+    color: #ffffff;
+    margin-left: 15.66px;
+    margin-top: 15.61px;
+}
+
+.sendFormBut{
+    background-color: #FFD600;
+    width: 182px;
+    /* fixed */
+    height: 52px;
+    /* fixed */
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 44px;
+}
+
+.bottomBlock{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 53px; */
+}
+
+.bottomBlockText{
+    margin-top: 53px;
+    margin-left: 21px;
+    color: #ffffff70;
+    font-family: NAMU-1990;
+}
+
+.bottomBlockText .text2 {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    .formAudit{
+        width: 100%;
+    }
+    
+    .titleAudit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-top: 56px;
+        font-size: 24px;
+        line-height: 33.6px;
+        font-family: NAMU-1850;
+    }
+
+    .sixthContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 39px;
+        /* margin-left: 10%; */
+        height: 630px;
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    .fonImg{
+        width: 100%;
+        height: 188px;
+        position: relative;
+    }
+    
+    .fonImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* width: 52.37%; */
+        height: 188px;  
+        background-image: url("../../assets/images/Rectangle 696.png");
+        background-size: 100% 100%;
+    }
+    
+    .fonImgText{
+        top: 150.75px;
+        left: 6.06%;
+        font-family: Caveat;
+        width: 60.86%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        color: white;
+    }
+    
+    .whiteLogoImg {
+        top: 148.57px;
+        right: 5.29%;
+        width: 11.21%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    /* .learnDetailed{
+        top: 73.4%;
+        left: 33.68%;
+        right: 33.68%;
+        position: absolute;
+        z-index: 1;
+    } */
+    
+    .sixthContImg img{
+        height: 411px;
+    }
+    
+    .sixthContText{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* margin-top: 21.35px; */
+        font-size: 13px;
+        line-height: 19.5px;
+        font-family: NAMU-1850;
+        /* margin-right: 10%; */
+        /* position: absolute; */
+    }
+    
+    .formTitle{
+        display: none;
+    }
+    
+    .divField{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .firstField{
+        display: flex; 
+        flex-wrap: wrap;
+        background-color: #fff5b81a;
+        border-radius: 10px;
+        width: 100%;
+        height: 35.14px;
+        margin-bottom: 13px;
+        padding-top: 6.65px;
+        padding-left: 10.27px;
+        color: #ffffff;
+    }
+    
+    .firstField::placeholder {
+        height: 21px;
+        opacity: 40%;
+        color: #ffffff;
+    }
+    
+    .secondField{
+        display: flex; 
+        flex-wrap: wrap;
+        background-color: #fff5b81a;
+        border-radius: 10px;
+        border: 0.91px;
+        width: 100%;
+        height: 85.81px;
+        resize: none;
+        padding: 15px;
+        color: #ffffff;
+    }
+    
+    .secondField::placeholder {
+        height: 21px;
+        opacity: 40%;
+        color: #ffffff;
+        margin-left: 15.66px;
+        margin-top: 15.61px;
+    }
+
+    .bottomBlock{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bottomBlockButton{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .sendFormBut{
+        background-color: #FFD600;
+        width: 100%;
+        /* fixed */
+        height: 48px;
+        /* fixed */
+        border-radius: 10px;
+        font-size: 13px;
+        line-height: 15.6px;
+        margin-top: 18px;
+    }
+    
+    .bottomBlockText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        left: 0;
+        width: 100%;
+        margin-top: 8.57px;
+        margin-left: 0;
+        color: #ffffff70;
+        font-size: 13px;
+        line-height: 16.9px;
+    }
+    
+    .bottomBlockText .text2 {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 73px;
+  font-size: 24px;
+  line-height: 26.4px;
+  font-family: NAMU-1850;
+}
+
+.navContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.active{
+  text-decoration: none;
+  color: #FFD600;
+}
+
+.active img{
+  width: 13px;
+  height: 8px;
+}
+
+.disabled{
+  text-decoration: none;
+  color: #ffffffcf;
+}

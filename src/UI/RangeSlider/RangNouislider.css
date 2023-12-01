@@ -1,0 +1,42 @@
+.noUi-connect {
+	background-color: #5d71dd;
+}
+
+.noUi-target {
+	background-color: #FFD600;
+	border: none;
+	border-radius: 100px;
+	box-shadow: none;
+	height: 1.5px;
+}
+
+
+.noUi-origin{
+	height: 1px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+	display: none;
+}
+
+.noUi-handle {
+	box-shadow: none;
+	border-radius: 100%;
+	background-color: #000000;
+	border: 1.5px solid #DDDDDD;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 21px;
+	height: 21px;
+	position: relative;
+	top: -11px;
+	right: -100%;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+	position: relative;
+	top: -11px;
+	right: -100%;
+}

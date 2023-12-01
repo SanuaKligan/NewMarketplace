@@ -1,0 +1,550 @@
+.offices{
+    height: 1fr;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.vertical49{
+    height: 49px;
+}
+
+.line15_6{
+    width: 15.6px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.firstContainer{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    width: 56.59%;
+    height: 132px;
+}
+
+.logoText{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 60px;
+    line-height: 66px;
+    font-family: NAMU-1960;
+    gap: 10px;
+}
+
+.titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.alterFirstImg{
+    display: none;
+}
+
+.firstImg{
+    display: flex;
+    margin-top: 39px;
+    width: 100%;
+}
+
+.secondContainer{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 116px;
+    margin-left: -12.5%;
+    height: 306px;
+    width: 125%;
+    background-color: #191812;
+}
+
+.secondContainer .text1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 39.2px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.secondContainer .crookedLine{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondContainer .text2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 44.8px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 34.14px;
+}
+
+.secondContainer .text3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+    font-size: 32px;
+    line-height: 44.8px;
+}
+
+.alterSlides{
+    display: none;
+}
+
+.exampleText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 81px;
+    font-size: 40px;
+    line-height: 56px;
+    font-family: NAMU-1850;
+    gap: 10px;
+}
+
+.exampleText .titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.exampleText .titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.furnExComt{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: NAMU-1990;
+    gap: 14px;
+}
+
+.furnExComt .furnBlock{
+    display: block;
+    margin-top: 48px;
+    width: 378px;
+}
+
+.tit{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.siz{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 23.8px;
+    color: #ffffff66;
+}
+
+.tex{
+    width: 373px;
+    font-size: 17px;
+    line-height: 23.8px;
+    color: #ffffff99;
+}
+
+.furnExCentrImg{
+    margin-left: 14px;
+    margin-right: 28px;
+}
+
+.moreFurnButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 378px;
+    height: 52px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 89px;
+    background-color: #FFD600;
+    color: #000000;
+}
+
+.fonImg{
+    height: 282px;
+    margin-top: 108px;
+    position: relative;
+}
+
+.fonImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 282px;  
+    background-image: url("../../assets/images/about_us/Rectangle 697.png");
+    background-size: 100% 100%;
+}
+
+.fonImgTitle {
+    top: 40px;
+    left: 39.97%;
+    right: 45.4%;
+    /* width: 9.3%; */
+    height: 38.66px;
+    position: absolute;
+    z-index: 1;
+}
+
+.fonImgText{
+    top: 37.94%;
+    left: 27.82%;
+    right: 27.82%;
+    height: 15.96%;
+    /* width: 300%; */
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-size: 171.11%;
+    line-height: 199.55%;
+    /* font-size: 200%;
+    line-height: 250%; */
+    color: white;
+}
+
+.curvedLineImg {
+    top: 51.42%;
+    left: 27.82%;
+    right: 27.82%;
+    /* width: 9.3%; */
+    /* height: 22.5%; */
+    position: absolute;
+    z-index: 1;
+}
+
+.learnDetailed{
+    top: 73.4%;
+    left: 33.68%;
+    right: 33.68%;
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (max-width: 450px) {
+    .offices{
+        height: 1fr;
+        margin: 0 auto;
+        width: 92.22%;
+    }
+    
+    .vertical49{
+        height: 49px;
+    }
+    
+    .line15_6{
+        width: 15.6px;
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .firstContainer{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 65px;
+        width: 100%;
+        height: 132px;
+    }
+    
+    .logoText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-family: NAMU-1960;
+        gap: 3px;
+    }
+    
+    .logoText .titleWhite{
+        font-size: 32px;
+        line-height: 35.2px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .logoText .titleYellow{
+        font-size: 40px;
+        line-height: 44px;
+        color: rgba(255, 214, 0, 1);
+    }
+
+    .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+
+    .alterFirstImg{
+        display: flex;
+    }
+    
+    .firstImg{
+        display: none;
+        margin-top: 39px;
+    }
+    
+    .secondContainer{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 79px;
+        width: 108%;
+        margin-left: -3.88%;
+        background-color: #191812;
+        font-family: NAMU-1850;
+    }
+    
+    .secondContainer .text1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .secondContainer .crookedLine{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 275px;
+        margin: 0 auto;
+    }
+
+    .secondContainer .crookedLine img{
+        width: 275px;
+    }
+    
+    .secondContainer .text2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 33.6px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 21.31px;
+        margin-left: 3.89%;
+        margin-right: 3.89%;
+    }
+    
+    .secondContainer .text3{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;  
+        font-size: 24px;
+        line-height: 33.6px;  
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+
+    .noneSlider{
+        display: none;
+    }
+
+    .alterSlides{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;  
+        width: 100%;
+        margin-top: 79px;
+    }
+
+    .alterSlides .alterSlide{
+        width: 100%;
+    }
+
+    .alterSlides .alterSlide img{
+        width: 100%;
+    }
+
+    .alterSlides .alterSlideMini{
+        width: 48.8%;
+    }
+
+    .alterSlides .alterSlideMini img{
+        width: 100%;
+    }
+    
+    .exampleText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 86.75%;
+        margin-top: 81px;
+        font-size: 24px;
+        line-height: 33.6px;
+        font-family: NAMU-1850;
+        gap: 7px;
+    }
+    
+    .exampleText .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .exampleText .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+    
+    .furnExComt{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 17px;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .furnExComt .furnBlock{
+        display: block;
+        width: 162px;
+        height: 344px;
+    }
+
+    .furnBlock img{
+        width: 100%;
+    }
+    
+    .tit{
+        margin-top: 13px;
+        font-size: 15px;
+        line-height: 15.75px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .siz{
+        margin-top: 8px;
+        margin-bottom: 6px;
+        font-size: 13px;
+        line-height: 18.2px;
+        color: #ffffff66;
+    }
+    
+    .tex{
+        font-size: 11px;
+        line-height: 15.4px;
+        color: #ffffff99;
+        margin-bottom: 51px;
+        width: 162px;
+    }
+    
+    .moreFurnButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 52px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-color: #FFD600;
+        color: #000000;
+    }
+    
+    .fonImg{
+        width: 108%;
+        height: 196px;
+        left: -3.88%;
+        margin-top: 87px;
+        position: relative;
+    }
+    
+    .fonImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 196px;  
+        background-image: url("../../assets/images/offices/alterFonImg.png");
+        background-size: 100% 100%;
+    }
+    
+    .fonImgTitle {
+        top: 19.93px;
+        left: 41.39%;
+        width: 61px;
+        height: 35.82px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .fonImgText{
+        top: 66px;
+        left: 16.94%;
+        height: 46px;
+        width: 65.83%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        font-size: 24px;
+        line-height: 26.4px;
+        /* font-size: 200%;
+        line-height: 250%; */
+        color: white;
+    }
+    
+    .curvedLineImg {
+        display: none;
+    }
+
+    .learnDetailed{
+        width: 92.22%;
+        height: 44px;
+        top: 135px;
+        left: 3.89%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .learnDetailedNav{
+        border-color: #FFD600;
+        border: 1px;
+        border-radius: 10px;
+        color: #FFD600;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-family: NAMU-1990;
+    }
+
+    .learnDetailedNav img {
+        width: 100%;
+    }
+}

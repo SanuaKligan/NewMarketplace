@@ -1,0 +1,91 @@
+.Materials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: NAMU-1850;
+  gap: 14px;
+}
+
+.infoBlock{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff5b81a;
+  width: 378px;
+  height: 229px;
+  border-radius: 15px;
+}
+
+/* .infoBlockMarg img{
+  margin-left: 21px;
+} */
+
+.infoBlock div{
+  margin-left: 21px;
+}
+
+.infBlImg{
+  margin-top: 20px;
+}
+
+.infBlTitle{
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff99;
+  margin-top: 10px;
+}
+
+.infBlText{
+  font-size: 15px;
+  line-height: 21px;
+  color: #ffffff99;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 450px) {
+  .Materials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: NAMU-1850;
+  }
+  
+  .infoBlock{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  .infoBlockMarg img{
+    margin-left: 0;
+  }
+  
+  .infoBlock div{
+    margin-left: 0;
+  }
+  
+  .infBlImg{
+    margin-top: 0;
+  }
+  
+  .infBlTitle{
+    font-size: 17.57px;
+    line-height: 24.59px;
+    color: #ffffff99;
+    margin-top: 8.78px;
+  }
+  
+  .infBlText{
+    font-size: 13.17px;
+    line-height: 18.44px;
+    color: #ffffff99;
+    margin-top: 8.38px;
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  grid-area: h;
+  background-color: blueviolet;
+}
+
+.header img {
+  width: 70px;
+}
+
+.authBlock{
+  float: right;
+  color: white;
+}
+
+.avatar{
+  width: 40px;
+  height: 60px;
+  border-radius: 40px;
+}

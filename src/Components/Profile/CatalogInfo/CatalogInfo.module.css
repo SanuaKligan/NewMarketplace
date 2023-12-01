@@ -1,0 +1,116 @@
+.catalogInfo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.seeBelow{
+  width: 100%;
+}
+
+.firstContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 62px;
+  width: 100%;
+}
+
+.logoText{
+  display: flex;
+  flex-wrap: wrap;
+  width: 52.2%;
+  font-size: 60px;
+  line-height: 66px;
+  font-family: NAMU-1960;
+}
+
+.titleWhite{
+  color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+  color: rgba(255, 214, 0, 1);
+}
+
+.firstImg{
+  display: flex;
+  margin-top: 44px;
+  margin-bottom: 34px;
+  width: 100%;
+}
+
+.firstImg img{
+  width: 100%;
+}
+
+.alterFirstImg{
+  display: none;
+}
+
+.titleBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 65px;
+  font-size: 40px;
+  line-height: 48.6px;
+  color: rgba(255, 255, 255, 1);
+  font-family: NAMU-1850;
+}
+
+@media screen and (max-width: 450px) {
+  .firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 53px;
+    width: 100%;
+  }
+  
+  .logoText{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 32px;
+    line-height: 35.2px;
+    font-family: NAMU-1960;
+  }
+  
+  .titleWhite{
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .titleYellow{
+    color: rgba(255, 214, 0, 1);
+  }
+  
+  .firstImg{
+    display: none;
+  }
+
+  .alterFirstImg{
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 31px;
+    width: 100%;
+  }
+  
+  .titleBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 65px;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: rgba(255, 255, 255, 1);
+    font-family: NAMU-1850;
+  }
+}

@@ -1,0 +1,654 @@
+.painting{
+    justify-content: flex-start;
+    height: 1fr;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sawingTitleYellow{
+    color: rgba(255, 214, 0, 1);
+    margin-right: 14.59%;
+}
+
+.titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.line15_6{
+    width: 15.6px;
+}
+
+.firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 133.97px;
+}
+
+.logoText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 76.14%;
+    font-size: 60px;
+    line-height: 66px;
+    font-family: NAMU-1960;
+    gap: 15.6px;
+}
+
+.alterLogoText{
+    display: none;
+}
+
+.firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 133.97px;
+}
+
+.fonImg{
+    width: 100%;
+    height: 367px;
+    margin: 0 auto;
+    margin-top: 42px;
+    position: relative;
+}
+
+.fonImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 367px;  
+    background-image: url("../../assets/images/painting/logoForFon.png");
+    background-size: 100% 100%;
+}
+
+.loftLogo{
+    width: 233px;
+    height: 38.66px;
+    margin: 0 auto;
+    margin-top: 74px;
+}
+
+.loftLogo img{
+    width: 100%;
+}
+
+.alterlogo3Img{
+    display: none;
+}
+
+.underLogoText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 78.73%;
+    font-size: 32px;
+    line-height: 44.8px;
+    margin: 0 auto;
+    margin-top: 28.34px;
+    gap: 10px;
+}
+
+.partnersLogo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 86.3%;
+    margin: 0 auto;
+    margin-top: 83px;
+}
+
+.homePageKitchenNav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 405px;
+    height: 67.21px;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    top: 140px;
+    left: 5.94%;
+}
+
+.homePageKitchenNav img {
+    width: 100%;
+}
+
+.firstTitle{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    line-height: 44.8px;
+    margin-top: 115px;
+    gap: 10px;
+}
+
+.paragsCont{
+    width: 91.9%;
+    margin-top: 38px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: NAMU-1990;
+    color: #ffffff99;
+}
+
+.secondContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    gap: 0.97%;
+}
+
+.secondContainer img {
+    width: 32.56%;
+}
+
+.secondContainer .bottomImg{
+    display: flex;
+}
+
+.secondContainer .alterBottomImg{
+    display: none;
+}
+
+.sevenStages{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 171.88px;
+    gap: 10px;
+}
+
+.fifthContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: NAMU-1850;
+    margin-top: 50px;
+}
+
+.fifthBlock1,
+.fifthBlock2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff1a;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 61px;
+    /* height: 221px; */
+}
+
+.fifthBlock1 .imgSide,
+.fifthBlock2 .imgSide{
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 41%;
+    height: 100%;
+}
+
+.fifthBlock1 .imgSide img,
+.fifthBlock2 .imgSide img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fifthBlock2 .alerImgSide{
+    display: none;
+}
+
+.fifthBlock1 .textSide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 59%;
+    height: 100%;
+    /* top: -117px; */
+    position: relative;
+}
+
+.fifthBlock2 .textSide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 59%;
+    height: 100%;
+    /* top: -117px; */
+    position: relative;
+}
+
+.fifthBlock1 .numbAndTitl,
+.fifthBlock2 .numbAndTitl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.fifthBlock1 .number,
+.fifthBlock2 .number{
+    font-size: 65px;
+    line-height: 65px;
+    color: #FFD600;
+}
+
+.fifthBlock1 .title,
+.fifthBlock2 .title{
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.fifthBlock1 .paragraph,
+.fifthBlock2 .paragraph{
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff87;
+    margin-top: 28.12px;
+    margin-left: 50px;
+    margin-right: 77px;
+}
+
+.everyWelding{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    line-height: 35px;
+    width: 88.63%;
+    margin-top: 117px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .painting{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 1fr;
+        margin: 0 auto;
+        width: 92.22%;
+    }
+    
+    .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+    
+    .line15_6{
+        width: 15.6px;
+    }
+    
+    .firstContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 39px;
+    }
+    
+    .logoText{
+        display: none;
+    }
+
+    .alterLogoText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 32.35px;
+        line-height: 35.59px;
+        font-family: NAMU-1960;
+    }
+    
+    .fonImg{
+        width: 100%;
+        height: 206px;
+        margin: 0 auto;
+        margin-top: 29px;
+        position: relative;
+    }
+    
+    .fonImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 206px;  
+        background-image: url("../../assets/images/painting/logoForFonMini.png");
+        background-size: 100% 100%;
+    }
+
+    .loftLogo{
+        width: 181px;
+        height: 30.04px;
+        margin: 0 auto;
+        margin-top: 57.31px;
+    }
+    
+    .loftLogo img{
+        width: 100%;
+    }
+
+    .underLogoText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0 auto;
+        margin-top: 25.65px;
+        gap: 7px;
+    }
+    
+    .homePageKitchenNav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 136px;
+        height: 22.57px;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        top: 29.92px;
+        left: 7.53%;
+    }
+    
+    .homePageKitchenNav img {
+        width: 100%;
+    }
+    
+    .vertStick{
+        display: none;
+        width: 0.09%;
+    }
+    
+    .homePageKitchenNav .navSegm{
+        display: none;
+        width: 37.45%;
+        align-items: center;
+        justify-content: center;
+        opacity: 80%;
+        color: #000000;
+    }
+    
+    .homePageKitchenNav .centNavSegm{
+        display: none;
+        width: 24.91%;
+        align-items: center;
+        justify-content: center;
+        opacity: 80%;
+        color: #000000;
+    }
+    
+    .firstTitle{
+        font-size: 24px;
+        line-height: 33.6px;
+        margin-top: 70px;
+        gap: 7px;
+    }
+
+    .paragsCont{
+        width: 95.78%;
+        font-size: 16px;
+        line-height: 22.4px;
+        margin-top: 21px;
+    }
+
+    .partnersLogo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 62px;
+        gap: 16.76px
+    }
+
+    .logo1Img{
+        width: 144px;
+        height: 29px;
+    }
+
+    .alterlogo3Img{
+        display: flex;
+        width: 143.5px;
+        height: 60px;
+    }
+
+    .logo2Img{
+        width: 185.14px;
+        height: 28.25px;
+    }
+
+    .logo3Img{
+        display: none;
+        width: 143.5px;
+        height: 60px;
+    }
+    
+    .secondContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 0;
+    }
+
+    .secondContainer img{
+        width: 49.1%;
+    }
+
+    .secondContainer .bottomImg{
+        display: none;
+    }
+
+    .secondContainer .alterBottomImg{
+        display: flex;
+        width: 100%;
+        margin-top: 7px;
+    }
+    
+    .line2{
+        height: 2px;
+    }
+    
+    .line8{
+        height: 8px;
+    }
+    
+    .line10{
+        height: 10px;
+    }
+    
+    .line12{
+        display: none;
+        height: 12px;
+    }
+    
+    .line23{
+        height: 23px;
+    }
+    
+    .line47{
+        height: 47px;
+    }
+    
+    .verticalLine14{
+        width: 14px;
+    }
+    
+    .sevenStages{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        line-height: 33.6px;
+        margin-top: 77.88px;
+        gap: 10px;
+    }
+    
+    .fifthContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: NAMU-1850;
+        margin-top: 50px;
+    }
+    
+    .fifthBlock1,
+    .fifthBlock2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000000;
+        width: 100%;
+        margin-top: 30px;
+        /* height: 221px; */
+    }
+    
+    .fifthBlock1 .imgSide{
+        display: flex;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 30.12px;
+    }
+
+    .fifthBlock2 .imgSide{
+        display: none;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fifthBlock1 .imgSide img,
+    .fifthBlock2 .imgSide img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fifthBlock2 .alerImgSide{
+        display: flex;
+        position: relative;
+        top: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 30.12px;
+    }
+
+    .fifthBlock2 .alerImgSide img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fifthBlock1 .textSide{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .fifthBlock2 .textSide{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .fifthBlock1 .numbAndTitl,
+    .fifthBlock2 .numbAndTitl{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+        gap: 14.7px;
+    }
+    
+    .fifthBlock1 .number,
+    .fifthBlock2 .number{
+        font-size: 65px;
+        line-height: 65px;
+        color: #FFD600;
+    }
+    
+    .fifthBlock1 .title,
+    .fifthBlock2 .title{
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 9.12px;
+        color: #FFFFFF;
+    }
+    
+    .fifthBlock1 .paragraph,
+    .fifthBlock2 .paragraph{
+        font-size: 16px;
+        line-height: 22.4px;
+        color: #ffffff87;
+        margin-top: 23.88px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .everyWelding{
+        display: none;
+        flex-wrap: wrap;
+        font-size: 25px;
+        line-height: 35px;
+        width: 88.63%;
+        margin-top: 117px;
+        gap: 10px;
+    }
+}

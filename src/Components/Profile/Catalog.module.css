@@ -1,0 +1,19 @@
+.catalog{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .catalog{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 92.22%;
+    margin: 0 auto;
+  }
+}

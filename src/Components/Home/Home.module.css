@@ -1,0 +1,868 @@
+.home{
+    justify-content: flex-start;
+    height: 1fr;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.line15_6{
+    width: 15.6px;
+}
+
+.workWithLove15_6{
+    width: 15.6px;
+}
+
+.firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 133.97px;
+}
+
+.logoText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 52.2%;
+    font-size: 60px;
+    line-height: 66px;
+    font-family: NAMU-1960;
+}
+
+.logoText2Block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15.6px;
+}
+
+.fonImgForPhone{
+    display: none;       
+}
+
+.ordButtons {
+    display: block;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: NAMU-1990;
+}
+
+.ordButtons .firstButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 279px;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #FFD600;
+    text-decoration: none;
+}
+
+.ordButtons .secondButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 280px;
+    border-radius: 15px;
+    border: #FFD600 1px solid;
+    background-color: hsla(47,17%,10.4%,0.82);
+    text-decoration: none;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.fonImg{
+    width: 100%;
+    height: 367px;
+    margin: 0 auto;
+    margin-top: 42px;
+    position: relative;
+}
+
+.fonImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 367px;  
+    background-image: url("../../assets/images/home_page_kitchen.png");
+    background-size: 100% 100%;
+}
+
+.homePageKitchenNav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.44%;
+    height: 55px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 38px;
+    font-family: NAMU-1850;
+    bottom: 14px;
+    left: 25.15%;
+}
+
+.vertStick{
+    width: 0.09%;
+}
+
+.homePageKitchenNav .navSegm{
+    display: flex;
+    width: 37.45%;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    color: #000000;
+}
+
+.homePageKitchenNav .centNavSegm{
+    display: flex;
+    width: 24.91%;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    color: #000000;
+}
+
+.workWithLove{
+    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    line-height: 44.8px;
+    margin: 0 auto;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondContainer{
+    display: block;
+    margin-top: 59px;
+    justify-content: flex-start;
+    columns: auto;
+    /* 14 пикселей между фотками по вертикали */
+}
+
+.secondContainer .firstDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.21%;
+}
+
+.secondContainer .secondDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    gap: 1.21%;
+}
+
+.secondContainer .bigImg{
+    width: 49.34%;
+}
+
+.secondContainer .smallImg{
+    width: 24.12%;
+}
+
+.secondContainer .bigImg img{
+    width: 100%;
+}
+
+.secondContainer .smallImg img{
+    width: 100%;
+}
+
+.alterSecondContainer{
+    display: none;
+}
+
+.thirdContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.miniText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 53.14%;
+    margin-top: 56px;
+    font-size: 20px;
+    line-height: 23.7px;
+    color: #FFFFFF;
+}
+
+.catOrdButtons{
+    display: block;
+    align-items: center;
+    margin-top: 44px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: NAMU-1990;
+}
+
+.catOrdButtons .firstButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 279px;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #FFF0B9;
+    text-decoration: none;
+}
+
+.catOrdButtons .secondButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 279px;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #FFD600;
+    text-decoration: none;
+}
+
+.line2{
+    height: 2px;
+}
+
+.line8{
+    height: 8px;
+}
+
+.line10{
+    height: 10px;
+}
+
+.line12{
+    height: 12px;
+}
+
+.line23{
+    height: 23px;
+}
+
+.line47{
+    height: 47px;
+}
+
+.verticalLine14{
+    width: 14px;
+}
+
+.aboutFurn{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    line-height: 44.8px;
+    width: 57.88%;
+    margin: 0 auto;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: NAMU-1850;
+}
+
+.aboutFurn img{
+    height: 45px;
+    width: 392px;
+}
+
+.alterSecBigHomeImg{
+    width: 0;
+    height: 0;
+}
+
+.alterWhiteLogoImg{
+    width: 0;
+    height: 0;
+}
+
+.alterWhiteLogoImg img{
+    width: 0;
+    height: 0;
+}
+
+.secBigHomeImg{
+    width: 100%;
+    height: 274px; 
+    margin-top: 23px;
+    position: relative;
+    /* margin-left: 139px; */
+}
+
+.secBigHomeImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 274px;  
+    background-image: url("../../assets/images/secBigHomeImg.png");
+    background-size: 100% 100%;
+}
+
+.whiteLogoImg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 8.61%;
+    height: 58.72px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30.62px;
+    left: 3.53%;
+}
+
+.whiteLogoImg img{
+    width: 100%;
+}
+
+.learnMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 52px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 126px;
+    border-radius: 15px;
+    background-color: #FFD600;
+    text-decoration: none;
+}
+
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 32px;
+    line-height: 44.8px;
+    font-family: NAMU-1850;
+    /* margin-right: 117px; */
+}
+
+.titleAudit{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    margin-right: 50px;
+
+}
+.titleAudit img{
+    height: 32px;
+    width: 333.66px;
+}
+
+
+.fifthContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    font-family: NAMU-1990;
+    gap: 2.24%;
+}
+
+.alterFifthContImg{
+    display: none;
+    width: 0;
+}
+
+.alterFifthContImg img{
+    width: 0;
+}
+
+.fifthContText{
+    width: 49.7%;
+
+}
+
+.fifthContImg{
+    display: flex;
+    width: 48.06%;
+}
+
+.fifthContImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.minTitle{
+    font-size: 28px;
+    line-height: 39.2px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.descrText{
+    font-size: 17px;
+    line-height: 23.8px;
+    margin-top: 23px;
+    margin-bottom: 47px;
+    color: #ffffff99;
+}
+
+.ordButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 378px;
+    height: 52px;
+    border-radius: 15px;
+    margin-top: 47px;
+    background-color: #FFD600;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+@media screen and (max-width: 450px) {
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 1fr;
+        margin: 0 auto;
+        width: 92.22%;
+    }
+    
+    .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+    
+    .line15_6{
+        width: 15.6px;
+    }
+    
+    .firstContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 39px;
+    }
+    
+    .logoText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 32.35px;
+        line-height: 35.59px;
+        font-family: NAMU-1960;
+    }
+    
+    .logoText2Block{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15.6px;
+    }
+
+    .fonImgForPhone{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 26.79px;
+    }
+
+    .fonImgForPhone img{
+        width: 100%;
+    }
+    
+    .ordButtons {
+        display: block;
+        align-items: center;
+        margin-top: 21px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-family: NAMU-1990;
+        margin-top: 21px;
+    }
+    
+    .ordButtons .firstButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 332px;
+        color: #000000;
+        border-radius: 10px;
+        background-color: #FFD600;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+    
+    .ordButtons .secondButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        width: 330px;
+        color: #FFD600;
+        border-radius: 10px;
+        border: #FFD600 1px solid;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-left: 1px;
+        margin-top: 12px;
+    }
+
+    .activeMenu{
+        margin-bottom: 208px;
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .fonImg{
+        display: none;
+        width: 100%;
+        height: 367px;
+        margin: 0 auto;
+        margin-top: 42px;
+        position: relative;
+    }
+    
+    .fonImg::after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 367px;  
+        background-image: url("../../assets/images/home_page_kitchen.png");
+        background-size: 100% 100%;
+    }
+    
+    .homePageKitchenNav{
+        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 49.44%;
+        height: 55px;
+        background-color: #FFFFFF;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 38px;
+        font-family: NAMU-1850;
+        bottom: 14px;
+        left: 25.15%;
+    }
+    
+    .vertStick{
+        display: none;
+        width: 0.09%;
+    }
+    
+    .homePageKitchenNav .navSegm{
+        display: none;
+        width: 37.45%;
+        align-items: center;
+        justify-content: center;
+        opacity: 80%;
+        color: #000000;
+    }
+    
+    .homePageKitchenNav .centNavSegm{
+        display: none;
+        width: 24.91%;
+        align-items: center;
+        justify-content: center;
+        opacity: 80%;
+        color: #000000;
+    }
+    
+    .workWithLove{
+        /* display: flex; */
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        line-height: 33.6px;
+        margin: 0 auto;
+        margin-top: 45px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .workWithLove15_6{
+        display: none;
+    }
+    
+    .secondContainer{
+        display: none;
+        margin-top: 59px;
+        justify-content: flex-start;
+        columns: auto;
+        /* 14 пикселей между фотками по вертикали */
+    }
+
+    .alterSecondContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 44px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2.11%;
+    }
+
+    .alterSecondContainer .bigImg{
+        border-radius: 10px;
+        width: 100%;
+        height: 252px;
+        margin-top: 7px;
+    }
+
+    .alterSecondContainer .bigImg img{
+        border-radius: 10px;
+        width: 100%;
+        height: 252px;
+    }
+
+    .alterSecondContainer .smallImg{
+        border-radius: 10px;
+        width: 48.8%;
+        height: 137px;
+        margin-top: 7px;
+    }
+    
+    .alterSecondContainer .smallImg img{
+        border-radius: 10px;
+        width: 100%;
+        height: 137px;
+    }
+    
+    .thirdContainer{
+        display: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 44px;
+    }
+    
+    .line2{
+        height: 2px;
+    }
+    
+    .line8{
+        height: 8px;
+    }
+    
+    .line10{
+        height: 10px;
+    }
+    
+    .line12{
+        display: none;
+        height: 12px;
+    }
+    
+    .line23{
+        height: 23px;
+    }
+    
+    .line47{
+        height: 47px;
+    }
+    
+    .verticalLine14{
+        width: 14px;
+    }
+
+    .alterSecBigHomeImg{
+        width: 100%;
+        height: 172px; 
+        margin-top: 31.12px;
+        position: relative;
+        margin-bottom: 45.38px;
+    }
+    
+    .alterSecBigHomeImg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 172px;  
+        background-image: url("../../assets/images/secBigHomeImg.png");
+        background-size: 100% 100%;
+    }
+    
+    .alterWhiteLogoImg{
+        display: flex;
+        flex-wrap: wrap;
+        width: 32.53%;
+        height: 63.42px;
+        position: absolute;
+        z-index: 1;
+        top: 54.12px;
+        left: 33.73%;
+    }
+    
+    .alterWhiteLogoImg img{
+        width: 100%;
+    }
+    
+    .secBigHomeImg{
+        width: 0;
+        height: 0;
+    }
+
+    .whiteLogoImg{
+        width: 0;
+        height: 0;
+    }
+    
+    .whiteLogoImg img{
+        width: 0;
+        height: 0;
+    }
+    
+    .aboutFurn{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        line-height: 33.6px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        font-family: NAMU-1850;
+    }
+    
+    .aboutFurn div{
+        width: 61.14%;
+    }
+    
+    .learnMore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 52px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 126px;
+        border-radius: 15px;
+        background-color: #FFD600;
+        text-decoration: none;
+    }
+    
+    .title1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        font-size: 24px;
+        line-height: 33.6px;
+        font-family: NAMU-1850;
+    }
+
+    .title1 .line15_6{
+        width: 10px;
+    }
+    
+    .fifthContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 31px;
+        font-family: NAMU-1990;
+        gap: 2.24%;
+    }
+
+    .alterFifthContImg{
+        display: flex;
+        width: 100%;
+    }
+
+    .alterFifthContImg img{
+        width: 100%;
+    }
+    
+    .fifthContText{
+        width: 100%;
+    }
+    
+    .fifthContImg{
+        display: none;
+        width: 0;
+    }
+    
+    .fifthContImg img{
+        width: 0;
+    }
+    
+    .minTitle{
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 29px;
+    }
+    
+    .descrText{
+        font-size: 13px;
+        line-height: 18.2px;
+        margin-top: 19px;
+        margin-bottom: 47px;
+        color: #ffffff99;
+    }
+    
+    .ordButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 52px;
+        border-radius: 10px;
+        margin-top: 45px;
+        background-color: #FFD600;
+        color: #000000;
+        font-size: 13px;
+        line-height: 15.6px;
+    }
+}

@@ -1,0 +1,427 @@
+.shops{
+    height: 1fr;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.line14{
+    height: 14px;
+}
+
+.line15_6{
+    width: 15.6px;
+}
+
+.verticalLine14{
+    width: 14px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 128px;
+}
+
+.logoText{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+    line-height: 66px;
+    font-family: NAMU-1960;
+    gap: 15.6px;
+}
+
+.titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.secondContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 1.21%;
+}
+
+.secondContainer .leftImg{
+    width: 57.88%;
+}
+
+.secondContainer .leftImg img{
+    width: 100%;
+}
+
+.secondContainer .rigthImg{
+    width: 40.91%;
+}
+
+.secondContainer .rigthImg img{
+    width: 100%;
+}
+
+.alterSecondContainer{
+    display: none;
+}
+
+.exampleText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 116px;
+    font-size: 32px;
+    line-height: 44.8px;
+    font-family: NAMU-1850;
+    gap: 10px;
+}
+
+.thirdContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 49px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.thirdContText{
+    margin-top: 7px;
+    width: 45.91%;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: NAMU-1990;
+}
+
+.paragText{
+    margin-top: 22px;
+    color: #ffffff99;
+}
+
+.thirdContImg{
+    width: 49.18%;
+    margin-left: 4.91%;
+}
+
+.fourthContainer{
+    display: block;
+    margin-top: 59px;
+    height: 704px;
+    justify-content: flex-start;
+    columns: auto;
+    /* 14 пикселей между фотками по вертикали */
+}
+
+.fourthContainer .firstDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.21%;
+}
+
+.fourthContainer .secondDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    gap: 1.21%;
+}
+
+.fourthContainer .bigImg{
+    width: 49.34%;
+}
+
+.fourthContainer .smallImg{
+    width: 24.12%;
+}
+
+.fourthContainer .bigImg img{
+    width: 100%;
+}
+
+.fourthContainer .smallImg img{
+    width: 100%;
+}
+
+.alterFourthContainer{
+    display: none;
+}
+
+.furnExComt{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: NAMU-1990;
+    gap: 1.21%;
+}
+
+.furnExComt .tit{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.furnExComt .siz{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 23.8px;
+    color: #ffffff66;
+}
+
+.furnExComt .tex{
+    width: 373px;
+    font-size: 17px;
+    line-height: 23.8px;
+    color: #ffffff99;
+}
+
+.dopMoreFurnButton{
+    display: none;
+}
+
+.moreFurnButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 378px;
+    height: 52px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 69px;
+    background-color: #FFD600;
+    color: #000000;
+}
+
+@media screen and (max-width: 450px) {
+    .shops{
+        height: 1fr;
+        margin: 0 auto;
+        width: 92.22%;
+    }
+    
+    .line14{
+        height: 14px;
+    }
+    
+    .line15_6{
+        width: 15.6px;
+    }
+    
+    .verticalLine14{
+        width: 14px;
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .firstContainer{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 43.21px;
+    }
+
+    .logoText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        line-height: 44px;
+        width: 100%;
+        font-family: NAMU-1960;
+        gap: 10px;
+    }
+    
+    .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+    
+    .secondContainer{
+        display: none;
+    }
+
+    .alterSecondContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15.79px;
+        gap: 2.4%;
+    }
+    
+    .alterSecondContainer .leftImg{
+        width: 48.8%;
+    }
+
+    .alterSecondContainer .leftImg img{
+        width: 100%;
+    }
+    
+    .alterSecondContainer .rigthImg{
+        width: 48.8%;
+    }
+    
+    .alterSecondContainer .rigthImg img{
+        width: 100%;
+    }
+    
+    .exampleText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: center;
+        margin-top: 72px;
+        font-size: 24px;
+        line-height: 33.6px;
+        font-family: NAMU-1850;
+        gap: 7px;
+    }
+    
+    .thirdContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
+    
+    .thirdContText{
+        margin-top: 0;
+        width: 100%;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: NAMU-1990;
+    }
+    
+    .paragText{
+        margin-top: 13px;
+        color: #ffffff99;
+    }
+    
+    .thirdContImg{
+        width: 100%;
+        margin-top: 21px;
+        margin-left: 0;
+    }
+    
+    .fourthContainer{
+        display: none;
+    }
+
+    .alterFourthContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 49px;
+        justify-content: flex-start;
+        columns: auto;
+        gap: 2.11%;
+    }
+    
+    .alterFourthContainer .bigImg{
+        width: 100%;
+    }
+
+    .alterFourthContainer .bigImg img{
+        width: 100%;
+        margin-top: 7px;
+    }
+    
+    .alterFourthContainer .smallImg{
+        width: 48.8%;
+        height: 137px;
+        margin-top: 7px;
+    }
+    
+    .alterFourthContainer .smallImg img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .furnExComt{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-family: NAMU-1990;
+        gap: 1.21%;
+    }
+
+    .furnExComtBlock{
+        width: 100%;
+    }
+
+    .furnExComt .avImg{
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    .furnExComt .avImg img{
+        width: 100%;
+    }
+    
+    .furnExComt .tit{
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1);
+        width: 100%;
+    }
+    
+    .furnExComt .siz{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 17px;
+        line-height: 23.8px;
+        color: #ffffff66;
+        width: 100%;
+    }
+    
+    .furnExComt .tex{
+        width: 373px;
+        font-size: 17px;
+        line-height: 23.8px;
+        color: #ffffff99;
+        width: 100%;
+    }
+
+    .dopMoreFurnButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 52px;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 24px;
+        background-color: #FFD600;
+        color: #000000;
+    }
+    
+    .moreFurnButton{
+        display: none;
+    }
+}

@@ -1,0 +1,69 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.filters{
+    width: 100%;
+}
+
+.priceinputs {
+	margin-top: 7px;
+	display: flex;
+	justify-content: space-between;
+	gap: 21px;
+	z-index: 6;
+}
+
+/* .pricelabel {
+	display: flex;
+	align-items: center;
+	width: 133px;
+	height: 40px;
+	border-radius: 7px;
+	padding: 0 10px;
+	background-color: #ffffff1a;
+} */
+
+/* .pricetext {
+	font-size: 14px;
+	color: #808080;
+} */
+
+/* .pricetext:first-child {
+	margin-right: 10px;
+}
+
+.pricetext:last-child {
+	margin-left: 10px;
+} */
+
+.priceinput {
+	border: none;
+	color: #C9C9C9;
+	font-size: 14px;
+	align-items: center;
+	width: 109px;
+	height: 35px;
+	border-radius: 7px;
+	padding: 0 10px;
+	background-color: #ffffff1a;
+}
+
+.pricetitle {
+	color: #C9C9C9;
+	margin-bottom: 20px;
+}
+
+.priceslider {
+	width: 219.5px;
+	margin-bottom: 20px;
+}
+
