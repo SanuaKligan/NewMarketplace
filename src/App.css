@@ -1,36 +1,44 @@
 .grid {
   margin: 0 auto;
   display: grid;
-  width: 1200px;
+  /* width: 1680px; */
   grid-template-areas:
   "h h"
-  "n c";
-
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px; */
+  "c c"
+  "f f";
+  grid-template-rows: 74.03px 1fr 304px;
+  grid-template-columns: 1fr 1fr;
+  font-family: "NAMU";
+  /* font-family: "NAMU" , sans-serif; */
+  background-color: black;
 }
 
 .add-wrapper-content {
   grid-area: c;
-  background-color: dodgerblue;
 }
 
-/*.post-enter {*/
-/*  opacity: 0;*/
-/*}*/
-/*.post-enter-active {*/
-/*  opacity: 1;*/
-/*  transition: opacity 500ms ease-in;*/
-/*}*/
-/*.post-exit {*/
-/*  opacity: 1;*/
-/*}*/
-/*.post-exit-active {*/
-/*  opacity: 0;*/
-/*  transition: opacity 500ms ease-in;*/
-/*}*/
+/* .voidBlock{
+  grid-area: o;
+  background-color: black;
+} */
 
-
-
-
+@media screen and (max-width: 450px) {
+  .grid {
+    margin: 0 auto;
+    display: grid;
+    /* width: 1680px; */
+    grid-template-areas:
+    "h h"
+    "c c"
+    "f f";
+    grid-template-rows: 82px 1fr 957px;
+    grid-template-columns: 1fr 1fr;
+    font-family: "NAMU";
+    /* font-family: "NAMU" , sans-serif; */
+    background-color: black;
+  }
+  
+  .add-wrapper-content {
+    grid-area: c;
+  }
+}

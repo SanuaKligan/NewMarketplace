@@ -1,19 +1,156 @@
 .header {
   grid-area: h;
-  background-color: blueviolet;
+  width: 80%;
+  height: 94.03px;
+  margin: 0 auto;
+  font-family: NAMU-1990;
 }
 
-.header img {
-  width: 70px;
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.authBlock{
-  float: right;
-  color: white;
+.navContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 57.14%;
+  margin-top: 23px;
+  /* gap: 5.57%; */
+}
+
+
+.active{
+  text-decoration: none;
+  color: #FFD600;
+}
+
+.active img{
+  width: 13px;
+  height: 8px;
+}
+
+.disabled img{
+  width: 13px;
+  height: 8px;
+}
+
+.logoContainer{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.logo {
+  width: 121px;
+  height: 20.08px;
+}
+
+.home{
+  display: block;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.bisnesMenu{
+  display: block;
+  font-size: 16px;
+  line-height: 19.2px;
+  width: 116px;
+}
+
+.serviceMenu{
+  display: block;
+  font-size: 16px;
+  line-height: 19.2px;
+  width: 71px;
+  color: #ffffffcf;
+}
+
+.home img{
+  height: 8px;
+}
+
+.disabled{
+  text-decoration: none;
+  color: #ffffffcf;
+}
+
+/* .catalog{
+  width: 65px;
+  height: 19px;
+  margin-left: 37px;
+  margin-top: 19px;
+} */
+
+.phoneBlock{
+  display: block;
+  margin-top: 25.4px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.phoneBlock img{
+  margin-right: 8px;
+}
+
+.numbNavBlock{
+  display: none;
 }
 
 .avatar{
   width: 40px;
   height: 60px;
   border-radius: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    grid-area: h;
+    width: 90%;
+    height: 82px;
+    margin: 0 auto;
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navContainer{
+    display: none;
+  }
+  
+  .logoContainer{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+  }
+  
+  .logo {
+    width: 121px;
+    height: 20.08px;
+  }
+  
+  .phoneBlock{
+    display: none;
+  }
+  
+  .numbNavBlock{
+    display: block;
+    margin-top: 47px;
+  }
+
+  .numbNavBlock img{
+    margin-bottom: 9.78px;
+  }
 }

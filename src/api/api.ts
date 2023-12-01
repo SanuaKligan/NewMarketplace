@@ -1,101 +1,39 @@
 import axios from "axios";
-import {PostCommentsType, PostType, UserProfileType, UserType} from "../utils/generalTypes";
+import {
+    ProductType
+} from "../utils/generalTypes";
 
 const instance = axios.create({
-    withCredentials: true,
-    baseURL: "https://social-network.samuraijs.com/api/1.0/",
-    headers: {
-        "API-KEY": "60b3e096-3ca2-4790-9c70-dd47fabeecb1"
-    }
+    baseURL: "http://79.174.94.184:8080/",
+    // headers: {
+    //     "Access-Control-Allow-Origin": "*",
+    //     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+    // }
 })
 
-export type GetUsersResponseType = {
-    "items": Array<UserType>
-    "totalCount": string | undefined,
-    "error": string | null
-}
-
-export type DeleteUsersResponseType = {
-    resultCode: number
-    messages: Array<string | void> | null
-    data: {}
-}
-
-export type PostUsersResponseType = {
-    resultCode: number
-    messages: Array<string | void> | null
-    data: {
-        userId: number
-    }
-}
-
-export type LogInResponseType = {
-    resultCode: number
-    messages: Array<string | null>
-    data: {userId: number | null}
-}
-
-
-export type LogOutResponseType = {
-    resultCode: number
-    messages: Array<string | null>
-    data: unknown
-}
-
-export type UpdateStatusResponseType = {
-    resultCode: number
-    messages: Array<string | void> | null
-    data: {}
-}
-
-export const UsersAPI = {
-    async getUsers(currentPage = 1, pageSize = 10){
-        return await instance.get<GetUsersResponseType>(`users?page=${currentPage}&count=${pageSize}`)
-            .then(response => response.data)
-    },
-    async deleteUsers(userId = 1){
-        return await instance.delete<DeleteUsersResponseType>(`follow/${userId}`).then(response => response.data)
-    },
-    async postUsers(userId = 1){
-        return await instance.post<PostUsersResponseType>(`follow/${userId}`).then(response => response.data)
-    }
-}
-
-export const AuthAPI = {
-    async getMyProfile(){
-        return await instance.get(`auth/me`).then(response => response.data)
-    },
-    async logIn(email: string | null, password: string | null, rememberMe: boolean = false){
-        return await instance.post<LogInResponseType>(`auth/login`, {email, password, rememberMe})
-            .then(response => response.data)
-    },
-    async logOut(){
-        return await instance.delete<LogOutResponseType>(`auth/login`).then(response => response.data)
-    }
-}
-
-export const ProfileAPI = {
-    async getUsersProfile(userId: number){
-        return await instance.get<UserProfileType>(`profile/` + userId).then(response => response.data)
-    },
-    async getUsersStatus(userId: number){
-        return await instance.get<string>(`profile/status/${userId}`).then(response => response.data)
-    },
-    async updateMyStatus(status: string){
-        return await instance.put<UpdateStatusResponseType>(`profile/status`, {status: status})
-            .then(response => response.data)
-    },
-    async getMyPosts(currentPage: number, pageSize: number){
-        return await axios.get<Array<PostType>>(
-            `https://jsonplaceholder.typicode.com/posts?_limit=${pageSize}&_page=${currentPage}`
+export const CatalogAPI = {
+    async getAllProducts(counter: string, material: string, type: string, price_range: string, sort: string, search_query: string){
+        // console.log(counter, material, type, price_range, sort, search_query)
+        return await instance.get<Array<ProductType>>(
+            `items_list/`, {params: {counter, material, type, price_range, sort, search_query}}
         ).then(response => response)
     },
-    async getMyPostById(id: string | undefined){
-        return await axios.get<PostType>(`https://jsonplaceholder.typicode.com/posts/` + id)
-            .then(response => response.data)
+}
+
+// export const ItemAPI = {
+//     async getItemById(itemId: string){
+//         // console.log(itemId)
+//         return await instance.get<ProductType>(
+//             `item_self/`, {params: {itemId}}
+//         ).then(response => response)
+//     },
+// }
+
+export const AuditAPI = {
+    async getPostAudit(name: string, number: string, comment: string, items: string){
+        // console.log(name, number, comment, items)
+        return await instance.post(
+            `order_make/`, {params: {name, number, comment, items}}
+        ).then(response => response)
     },
-    async getMyPostComments(id: string | undefined){
-        return await axios.get<Array<PostCommentsType>>(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
-            .then(response => response.data)
-    }
 }

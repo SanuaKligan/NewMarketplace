@@ -1,33 +1,73 @@
 import React from "react";
 import classes from "./Header.module.css";
 import {NavLink} from "react-router-dom";
+import logo from "../../assets/images/Group 4606.png"
+import phoneImg from "../../assets/images/Vector.svg"
+import BisnesMenu from "../BisnesMenu/BisnesMenu"
+import ServiceMenu from "../ServiceMenu/ServiceMenu"
+import numbNavImg from "../../assets/images/NumbNavImg.svg"
 // const {classes} = require("./Header.module.css");
 
 type HeaderProps = {
-    isAuth: boolean
-    login: string | null
-    logOut: () => void
+    // isAuth: boolean
+    // login: string | null
+    // logOut: () => void
 }
 
-const Header: React.FC<HeaderProps> = (props) => {
+const Header = (props) => {
     return (
         <header
             className={
             classes.header
         }>
-            <div>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/ru/c/cf/%D0%9B%D0%BE%D0%B1%D0%BE%D1%81_%D0%A3%D0%9F%D0%9D%D0%A4%D0%9C_%28%D0%BB%D0%BE%D0%B3%D0%BE%29.png"
-                />
-                Социальная паутина
-                <div className={classes.authBlock}>
-                    {
-                        props.isAuth
-                        ? <div>{props.login} <div><button onClick={props.logOut}>Log out</button></div></div>
-                        : <NavLink to = {"/login"}>
-                            Login
+            <div className={classes.container}>
+                <div className={classes.logoContainer}>
+                    <NavLink to={"/home"}>
+                        <img className={classes.logo} src={logo}/>
+                    </NavLink>
+                </div>
+                <div className={classes.navContainer}>
+                    <div className={classes.home}>
+                        <NavLink to={"/home"} className={navData => navData.isActive ? classes.active : classes.disabled}>
+                            Главная
                         </NavLink>
-                    }
+                    </div>
+                    <div className={classes.home}>
+                        <NavLink to={"/catalog"} className={navData => navData.isActive ? classes.active : classes.disabled}>
+                            Каталог
+                        </NavLink>
+                    </div>
+                    <div className={classes.bisnesMenu}>
+                        <BisnesMenu />
+                    </div>
+                    <div className={classes.serviceMenu}>
+                        <ServiceMenu />
+                    </div>
+                    <div className={classes.home}>
+                        <NavLink to="/for_home" className={navData => navData.isActive ? classes.active : classes.disabled}>
+                            Для дома
+                        </NavLink>
+                    </div>
+                    <div className={classes.home}>
+                        <NavLink to="/about_us" className={navData => navData.isActive ? classes.active : classes.disabled}>
+                                О нас
+                        </NavLink>
+                    </div>
+                    <div className={classes.home}>
+                        <NavLink to="/how_it_will_be"
+                            className={navData => navData.isActive ? classes.active : classes.disabled}>
+                                Как всё будет
+                        </NavLink>
+                    </div>
+                </div>
+                <div className={classes.phoneBlock}>
+                    <img src={phoneImg}/>
+                    +7 (777) 777 77 77
+                </div>
+                <div className={classes.numbNavBlock}>
+                    <NavLink to="/navigate">
+                        <img src={numbNavImg} />
+                    </NavLink>
                 </div>
             </div>
         </header>

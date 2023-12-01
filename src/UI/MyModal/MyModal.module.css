@@ -1,22 +1,45 @@
-.myModal{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.background{
     display: none;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.myModalContent{
-    padding: 25px;
-    background: white;
-    border-radius: 16px;
-    min-width: 250px;
-}
-
-.myModal.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    padding-top: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .myModal{
+      z-index: 11;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background: rgba(0, 0, 0, 0.5); */
+      z-index: 11;
+      overflow: none; /* Allow for vertical scrolling */
+      width: 68.54%;
+      /* max-height: 80vh; */
+      padding: 20px; /* Add padding for better appearance */
+      border-radius: 16px; /* Add border radius */
+    }
+    
+    .background.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .myModalContent {
+      background-color: #191919;
+      width: 100%;
+      border-radius: 15px;
+    }
+  
