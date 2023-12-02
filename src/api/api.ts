@@ -4,7 +4,7 @@ import {
 } from "../utils/generalTypes";
 
 const instance = axios.create({
-    baseURL: "http://127.0.0.1:8080/",
+    baseURL: "http://79.174.94.184:8080/",
     // headers: {
     //     "Access-Control-Allow-Origin": "*",
     //     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
