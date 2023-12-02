@@ -231,6 +231,7 @@
     margin-top: 50px;
     background-color: #FFD600;
     color: #000000;
+    text-decoration: none;
 }
 
 .centerTitle{
@@ -315,7 +316,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 97px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     font-family: NAMU-1850;
 }
 
@@ -594,6 +595,7 @@
         margin-top: 50px;
         background-color: #FFD600;
         color: #000000;
+        text-decoration: none;
     }
     
     .centerTitle{
@@ -681,7 +683,7 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 66px;
-        margin-bottom: 74px;
+        /* margin-bottom: 74px; */
         font-family: NAMU-1850;
     }
     

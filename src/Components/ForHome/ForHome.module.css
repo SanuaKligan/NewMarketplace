@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 54px;
-    gap: 0.97%;
+    gap: 14px;
 }
 
 .firstCont .bottomImg{
@@ -128,9 +128,10 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 80px;
+    gap: 14px;
 }
 
-.block2 .firstCentrImg{
+/* .block2 .firstCentrImg{
     margin-left: 16px;
     margin-right: 13px;
 
@@ -138,7 +139,7 @@
 
 .block2 .secondCentrImg{
     margin-right: 16px;
-}
+} */
 
 .alterBottomBlock3{
     display: none
@@ -178,7 +179,8 @@
     margin: 0 auto;
     margin-top: 39px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 14px;
 }
 
 .furnBlock{
@@ -222,6 +224,7 @@
     margin-top: 89px;
     background-color: #FFD600;
     color: #000000;
+    text-decoration: none;
 }
 
 .fonImg{
@@ -438,6 +441,7 @@
         margin-top: 79px;
     }
 
+
     .alterTopBlock3 img {
         width: 100%;
     }
@@ -450,6 +454,7 @@
         width: 100%;
         margin: 0 auto;
         margin-top: 0px;
+        gap: 0
     }
 
     .block2 div{
@@ -492,7 +497,7 @@
         width: 100%;
         margin: 0 auto;
         margin-top: 8px;
-        gap: 14px;
+        gap: 0;
     }
     
     .exampleText{
@@ -514,7 +519,8 @@
         margin: 0 auto;
         margin-top: 17px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
     }
 
     .furnBlock{
@@ -560,6 +566,7 @@
         margin-top: 30px;
         background-color: #FFD600;
         color: #000000;
+        text-decoration: none;
     }
     
     .fonImg{

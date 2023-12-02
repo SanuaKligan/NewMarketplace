@@ -94,11 +94,11 @@ const Shops = () =>{
                         Идеально подходит для современных 
                         интерьеров.
                     </div>
-                    <button className={classes.dopMoreFurnButton}>
-                        <NavLink to={"/catalog"} className={classes.navLink}>
+                    {/* <button className={classes.dopMoreFurnButton}> */}
+                        <NavLink to={"/catalog"} className={classes.dopMoreFurnButton}>
                             Заказать такой же набор
                         </NavLink>
-                    </button>
+                    {/* </button> */}
                 </div>
                 <div className={classes.furnExComtBlock}>
                     <div className={classes.avImg}><img src={furnEx2Img}/></div>
@@ -110,11 +110,11 @@ const Shops = () =>{
                         формой, который идеально подходит для 
                         любого интерьера.
                     </div>
-                    <button className={classes.dopMoreFurnButton}>
-                        <NavLink to={"/catalog"} className={classes.navLink}>
+                    {/* <button className={classes.dopMoreFurnButton}> */}
+                        <NavLink to={"/catalog"} className={classes.dopMoreFurnButton}>
                             Заказать такой же набор
                         </NavLink>
-                    </button>
+                    {/* </button> */}
                 </div>
                 <div className={classes.furnExComtBlock}>
                     <div className={classes.avImg}><img src={furnEx3Img}/></div>
@@ -126,18 +126,18 @@ const Shops = () =>{
                         в интерьере. Идеальным выбор для 
                         любого помещения.
                     </div>
-                    <button className={classes.dopMoreFurnButton}>
-                        <NavLink to={"/catalog"} className={classes.navLink}>
+                    {/* <button className={classes.dopMoreFurnButton}> */}
+                        <NavLink to={"/catalog"} className={classes.dopMoreFurnButton}>
                             Заказать такой же набор
                         </NavLink>
-                    </button>
+                    {/* </button> */}
                 </div>
             </div>
-            <button className={classes.moreFurnButton}>
-                <NavLink to={"/catalog"} className={classes.navLink}>
+            {/* <button className={classes.moreFurnButton}> */}
+                <NavLink to={"/catalog"} className={classes.moreFurnButton}>
                     Перейти в полный каталог
                 </NavLink>
-            </button>
+            {/* </button> */}
             <FormAudit />
         </div>
     );

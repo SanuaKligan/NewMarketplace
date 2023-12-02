@@ -518,7 +518,8 @@
     
     .fonImgTitle {
         top: 26.05px;
-        left: 31.11%;
+        left: 34%;
+        right: 31.11%;
         height: 22.57px;
         position: absolute;
         z-index: 1;

@@ -34,7 +34,7 @@ const LogInForm: React.FC<
     > = (props) => {
     // console.log(props)
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form className = {classes.form} onSubmit={props.handleSubmit}>
             <div className={classes.formTitle}>
                 Проконсультируем бесплатно
             </div>

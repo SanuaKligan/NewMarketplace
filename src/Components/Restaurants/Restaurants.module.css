@@ -148,15 +148,20 @@
     flex-wrap: wrap;
 }
 
+.furnExContText{
+    position: relative;
+    height: 349px;
+}
+
 .furnExMiniCont{
     display: flex;
     width: 100%;
     margin-top: 41px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-family: NAMU-1990;
-    gap: 9.13%;
+    /* gap: 9.13%; */
 }
 
 .furnExMiniCont .tit{
@@ -187,7 +192,7 @@
 
 .furnExMiniCont .avImg{
     display: flex;
-    width: 58.14%;
+    width: 675px;
     height: 100%;
 }
 
@@ -203,9 +208,67 @@
     width: 378px;
     height: 52px;
     border-radius: 15px;
-    margin-top: 109px;
+    bottom: 0;
+    position: absolute;
     background-color: #FFD600;
     color: #000000;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1425px) {
+    .furnExContainer{
+        justify-content: center;
+    }
+
+    .furnExMiniCont{
+        justify-content: center;
+    }
+
+    .furnExContText{
+        width: 675px;
+    }
+
+    .furnExContText div{
+        margin: 0;
+    }
+
+    .furnExMiniCont .tit{
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1);
+        width: 100%;
+        text-align: center
+    }
+    
+    .furnExMiniCont .siz{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 17px;
+        line-height: 23.8px;
+        color: #ffffff66;
+        width: 100%;
+        text-align: center
+    }
+    
+    .furnExMiniCont .tex{
+        width: 373px;
+        font-size: 17px;
+        line-height: 23.8px;
+        color: #ffffff99;
+        width: 100%;
+        text-align: center
+    }
+
+    .avImg{
+        margin-top: 30px;
+    }
+
+    .moreFurnButton{
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -357,6 +420,10 @@
         width: 100%;
         font-family: NAMU-1990;
         gap: 1.21%;
+    }
+
+    .furnExCont{
+        width: 100%;
     }
 
     .furnExMiniCont{

@@ -30,6 +30,7 @@
     font-size: 60px;
     line-height: 66px;
     font-family: NAMU-1960;
+    gap: 10px;
 }
 
 .titleWhite{
@@ -138,7 +139,7 @@
     margin: 0 auto;
     margin-top: 40px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: NAMU-1990;
     gap: 14px;
 }
@@ -147,6 +148,7 @@
     display: block;
     margin-top: 48px;
     width: 378px;
+    height: 549px;
 }
 
 .tit{
@@ -273,6 +275,10 @@
         width: 100%;
         height: 132px;
     }
+
+    .firstContainer img{
+        width: 100%;
+    }
     
     .logoText{
         display: flex;
@@ -306,6 +312,11 @@
 
     .alterFirstImg{
         display: flex;
+        width: 100%;
+    }
+
+    .alterFirstImg img{
+        width: 100%;
     }
     
     .firstImg{

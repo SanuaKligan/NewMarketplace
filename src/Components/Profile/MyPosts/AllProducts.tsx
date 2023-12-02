@@ -132,8 +132,6 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
         return setArticles(updatedArray);
     };
 
-
-
     useEffect(() => {
         props.getProducts(String(counter), material, type, price_range, sort, search_query)
     }, [counter, material, type, price_range, sort, search_query])

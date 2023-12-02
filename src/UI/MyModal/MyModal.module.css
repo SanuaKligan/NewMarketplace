@@ -7,8 +7,8 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 200%;
-    padding-top: 800px;
+    height: 100%;
+    padding-top: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
   }
@@ -42,4 +42,38 @@
       width: 100%;
       border-radius: 15px;
     }
+
+  @media screen and (max-width: 450px) {
+    .background{
+      display: none;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 300%;
+      padding-top: 250%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .background{
+      display: none;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 300%;
+      padding-top: 400%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+  }
   

@@ -138,11 +138,11 @@ const Home: React.FC = (props) => {
                     </div>
                     <div className={classes.fonImgForPhone}><img src={fonImgForPhone} /></div>
                     <div className={classes.ordButtons}>
-                        <div className={classes.firstButton}>
-                            <NavLink to={"/for_home"} className={classes.navLink}>
+                        {/* <div className={classes.firstButton}> */}
+                            <NavLink to={"/for_home"} className={classes.firstButton}>
                                 Заказать домашнюю мебель
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                         <div className={classes.line12}></div>
                         <div className={`${classes.secondButton} ${isActive && classes.activeMenu}`} onClick={handleClick}>
                             <OrdBisnesFurn />
@@ -151,23 +151,23 @@ const Home: React.FC = (props) => {
                 </div>
                 <div className={classes.fonImg}>
                     <div className={classes.homePageKitchenNav}>
-                        <div className={classes.navSegm}>
-                            <NavLink to={"/business/offices"} className={classes.navLink}>
+                        {/* <div className={classes.navSegm}> */}
+                            <NavLink to={"/business/offices"} className={classes.navSegm}>
                                 Для бизнеса
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                         <div  className={classes.vertStick}><img src={vertStick} /></div>
-                        <div className={classes.centNavSegm}>
-                            <NavLink to={"/catalog"} className={classes.navLink}>
+                        {/* <div className={classes.centNavSegm}> */}
+                            <NavLink to={"/catalog"} className={classes.centNavSegm}>
                                 Каталог
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                         <div  className={classes.vertStick}><img src={vertStick} /></div>
-                        <div className={classes.navSegm}>
-                            <NavLink to={"/for_home"} className={classes.navLink}>
+                        {/* <div className={classes.navSegm}> */}
+                            <NavLink to={"/for_home"} className={classes.navSegm}>
                                 Для дома
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
                 <div className={classes.workWithLove}>
@@ -246,11 +246,11 @@ const Home: React.FC = (props) => {
                 <div className={classes.secBigHomeImg}>
                     <img src={whiteLogoImg} className={classes.whiteLogoImg}/>
                 </div>
-                <div className={classes.learnMore}>
-                    <NavLink to={"/about_us"} className={classes.navLink}>
+                {/* <div className={classes.learnMore}> */}
+                    <NavLink to={"/about_us"} className={classes.learnMore}>
                         Узнать больше
                     </NavLink>
-                </div>
+                {/* </div> */}
                 <div className={classes.title1}>
                     <div className={classes.titleWhite}>У вас есть </div>
                     <div className={classes.line15_6}></div>
@@ -272,11 +272,11 @@ const Home: React.FC = (props) => {
                             Независимо от того, какой будет проект, мы готовы принять вызов 
                             и создать идеальный интерьер для вашего ресторана.
                         </div>
-                        <div className={classes.ordButton}>
-                            <NavLink to={"/business/restaurants"} className={classes.navLink}>
+                        {/* <div className={classes.ordButton}> */}
+                            <NavLink to={"/business/restaurants"} className={classes.ordButton}>
                                 Заказать для него мебель
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                     </div>
                     <div className={classes.fifthContImg}>
                         <div><img src={restImg} /></div>
@@ -303,11 +303,11 @@ const Home: React.FC = (props) => {
                             материалы, такие как дерево и кожа. Это делает ее идеальной 
                             для элегантного, стильного и при этом комфортного салона.
                         </div>
-                        <div className={classes.ordButton}>
-                            <NavLink to={"/business/salons"} className={classes.navLink}>
+                        {/* <div className={classes.ordButton}> */}
+                            <NavLink to={"/business/salons"} className={classes.ordButton}>
                                 Заказать для него мебель
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                     </div>
                     <div className={classes.fifthContImg}>
                         <div><img src={salonImg} /></div>
@@ -338,11 +338,11 @@ const Home: React.FC = (props) => {
                             могут быть уверены в том, что они их клиенты будут в восторге 
                             и обязательно вернутся еще не раз.
                         </div>
-                        <div className={classes.ordButton}>
-                            <NavLink to={"/business/bars_cafes"} className={classes.navLink}>
+                        {/* <div className={classes.ordButton}> */}
+                            <NavLink to={"/business/bars_cafes"} className={classes.ordButton}>
                                 Заказать у нас мебель
                             </NavLink>
-                        </div>
+                        {/* </div> */}
                     </div>
                     <div className={classes.fifthContImg}>
                         <div><img src={barImg} /></div>

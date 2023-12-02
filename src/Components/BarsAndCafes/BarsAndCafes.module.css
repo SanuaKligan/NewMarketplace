@@ -209,6 +209,7 @@
     margin-top: 109px;
     background-color: #FFD600;
     color: #000000;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 450px) {
@@ -429,6 +430,7 @@
         margin-top: 24px;
         background-color: #FFD600;
         color: #000000;
+        text-decoration: none;
     }
     
     .moreFurnButton{

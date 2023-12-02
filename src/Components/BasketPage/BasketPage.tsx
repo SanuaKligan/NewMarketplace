@@ -39,7 +39,7 @@ const BasketPageForm: React.FC<
     > = (props) => {
     // console.log(props)
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form className = {classes.form} onSubmit={props.handleSubmit}>
             <div className={classes.formText}>
                 ПРЕДЗАКАЗ – В данной форме вы оформляете предзаказ на мебель Лофт РТ, оплатить товары можно будет после подтверждения заказа (онлайн переводом или по факту получения товара)
             </div>
@@ -157,7 +157,7 @@ const BasketPage: React.FC<AuditType> = (props) => {
                                         return (
                                             <div className={classes.productBlock}>
                                                 <div className={classes.prodImg}><img src={item.photo_links[0]}/></div>
-                                                <div>
+                                                <div className={classes.textBlock}>
                                                     <div className={classes.title}>
                                                         {item.name}
                                                     </div>

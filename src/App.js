@@ -11,7 +11,7 @@ import {Navigate, Route, Routes, useLocation} from "react-router-dom";
 // import LoginContainer from "./Components/Login/LoginContainer";
 // import Preloader from "./assets/Preloader/Preloader";
 import {connect} from "react-redux";
-import {getInitializedApp} from "./redux/app-reducer";
+// import {getInitializedApp} from "./redux/app-reducer";
 import {compose} from "redux";
 import Header from "./Components/Header/Header";
 import Error from "./Components/Error/Error";
@@ -97,5 +97,5 @@ const mapStateToProps = (state) => ({
 
 export default compose(
     // withRouter,
-    connect(mapStateToProps, {getInitializedApp})
+    // connect(mapStateToProps, {getInitializedApp})
 )(App);

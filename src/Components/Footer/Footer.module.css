@@ -29,19 +29,11 @@
   align-items: center;
   justify-content: center;
   font-family: NAMU-1990;
+  padding-bottom: 168px;
   /* 14 пикселей между фотками по вертикали */
 }
 
 .seventhContainer .firstDiv{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.seventhContainer .secondDiv{
-  margin-top: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,17 +60,21 @@
   margin-left: 15px;
 }
 
-.seventhContainer .secondDiv .bottomBlock{
+.seventhContainer .firstDiv .bottomBlock{
   width: 378px;
   height: 98px;
   border-radius: 16px;
   border: 1px;
   background-color: #fff5b81a;
   /* background-color: darkblue; */
-  margin-bottom: 168px;
 }
 
-.seventhContainer .secondDiv .bottomBlock .tx{
+.seventhContainer .firstDiv .topBlock .tx{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.seventhContainer .firstDiv .bottomBlock .tx{
   margin-top: 15px;
   margin-left: 15px;
 }
@@ -135,7 +131,9 @@ margin-left: 17px;
 .container{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
   height: 63px;
 }
   
@@ -144,11 +142,11 @@ margin-left: 17px;
   flex-wrap: wrap;
   /* margin: 0 auto; */
   margin-top: 2px;
-  margin-left: 8.25%;
-  margin-right: 8.96%;
+  /* margin-left: 8.25%;
+  margin-right: 8.96%; */
   align-items: center;
   justify-content: space-between;
-  width: 46.11%;
+  width: 62.8%;
 }
 
 .politicConf{
@@ -182,7 +180,6 @@ margin-left: 17px;
 .logoContainer{
   display: flex;
   margin-top: 19px;
-  margin-left: 10%;
   align-items: center;
   /* position: absolute;  */
 }
@@ -266,6 +263,17 @@ margin-left: 17px;
     border-radius: 40px;
   } */
 
+  
+@media screen and (max-width: 1136px) {
+  .deepFooter{
+    height: 412px;
+  }
+
+  .container{
+    display: block;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .footer {
     grid-area: f;
@@ -305,20 +313,22 @@ margin-left: 17px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    gap: 6px;
   }
   
-  .seventhContainer .secondDiv{
+  /* .seventhContainer .secondDiv{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 12px;
+    padding-bottom: 110px;
     gap: 6px;
-  }
+  } */
   
   .seventhContainer .firstDiv .topBlock{
     width: 100%;
@@ -339,19 +349,13 @@ margin-left: 17px;
     margin-left: 15px;
   }
   
-  .seventhContainer .secondDiv .bottomBlock{
-    width: 30.8%;
+  .seventhContainer .firstDiv .bottomBlock{
+    width: 31.9%;
     height: 82px;
     border-radius: 10px;
     /* border: 1px; */
     background-color: #fff5b81a;
-    margin-bottom: 110px;
     /* background-color: darkblue; */
-  }
-  
-  .seventhContainer .secondDiv .bottomBlock .tx{
-    margin-top: 12px;
-    margin-left: 11px;
   }
   
   .nu{
@@ -422,9 +426,11 @@ margin-left: 17px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0;
     margin-top: 37px;
     width: 60.83%;
     height: 40px;
+    gap: 0;
   }
     
   .navContainer{

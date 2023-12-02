@@ -80,11 +80,11 @@ const AboutUs = () =>{
                 <img src={whiteLogoImg} className={classes.whiteLogoImg}/>
             </div>
 
-            <button className={classes.learnMoreButton}>
-                <NavLink to={"/how_it_will_be"} className={classes.navLink}>
+            {/* <button className={classes.learnMoreButton}> */}
+                <NavLink to={"/how_it_will_be"} className={classes.learnMoreButton}>
                     Узнать больше
                 </NavLink>
-            </button>
+            {/* </button> */}
 
             <div className={classes.fonImg}>
                 <img src={logo} className={classes.fonImgTitle}/>

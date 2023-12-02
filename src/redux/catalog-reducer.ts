@@ -44,6 +44,7 @@ let initialState: InitialStateType = {
         //         prodImg,
         //         prodImg
         //     ],
+        //     "article": "text",
         //     "price": 1999,
         //     "unit": "шт",
         //     "added_at": "2023-10-08 19:04:52"
@@ -62,6 +63,7 @@ let initialState: InitialStateType = {
         //         prodImg,
         //         prodImg
         //     ],
+        //     "article": "text1",
         //     "price": 1999,
         //     "unit": "шт",
         //     "added_at": "2023-10-08 19:04:52"
@@ -176,7 +178,7 @@ export const getProducts = (
         // console.log(counter, material, type, price_range, sort, search_query)
         CatalogAPI.getAllProducts(counter, material, type, price_range, sort, search_query)
             .then((response: AxiosResponse<Array<ProductType>>) => {
-                // console.log(response.data)
+                console.log(response.data)
                 dispatch(catalogActions.onSetProducts(response.data));
             }
         )

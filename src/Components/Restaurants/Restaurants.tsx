@@ -98,11 +98,11 @@ const Restaurants = () =>{
                             элегантность в интерьере. Идеальным выбор 
                             для любого помещения.
                         </div>
-                        <button className={classes.moreFurnButton}>
-                            <NavLink to={"/catalog"} className={classes.navLink}>
+                        {/* <button className={classes.moreFurnButton}> */}
+                            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
                                 Заказать такой же столик
                             </NavLink>
-                        </button>
+                        {/* </button> */}
                     </div>
                     <div className={classes.avImg}><img src={furnEx1Img}/></div>
                 </div>
@@ -117,11 +117,11 @@ const Restaurants = () =>{
                             пространство для общения и наслаждения 
                             вкусной едой и напитками.
                         </div>
-                        <button className={classes.moreFurnButton}>
-                            <NavLink to={"/catalog"} className={classes.navLink}>
+                        {/* <button className={classes.moreFurnButton}> */}
+                            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
                                 Заказать такой же стол
                             </NavLink>
-                        </button>
+                        {/* </button> */}
                     </div>
                     <div className={classes.avImg}><img src={furnEx2Img}/></div>
                 </div>
@@ -136,11 +136,11 @@ const Restaurants = () =>{
                             пространство, где комфорт сочитается с 
                             современным дизайном.
                         </div>
-                        <button className={classes.moreFurnButton}>
-                            <NavLink to={"/catalog"} className={classes.navLink}>
+                        {/* <button className={classes.moreFurnButton}> */}
+                            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
                                 Заказать такой же набор
                             </NavLink>
-                        </button>
+                        {/* </button> */}
                     </div>
                     <div className={classes.avImg}><img src={furnEx3Img}/></div>
                 </div>

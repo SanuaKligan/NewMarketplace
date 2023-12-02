@@ -67,8 +67,6 @@ const Footer: React.FC<FooterProps> = (props) => {
                             <div className={classes.ad1}>Россия, г. Казань,</div>
                             <div className={classes.ad2}>ул. Центральная 91</div>
                         </div>
-                    </div>
-                    <div className={classes.secondDiv}>
                         <div className={classes.bottomBlock}>
                             <div className={classes.tx}><img src={whatsApp}/></div>
                              <div className={classes.wA}><img src={whatsAppImg}/></div>

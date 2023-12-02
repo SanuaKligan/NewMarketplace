@@ -132,9 +132,9 @@
     margin: 0 auto;
     margin-top: 40px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: NAMU-1990;
-    gap: 14px;
+    gap: 21px;
 }
 
 .furnExComt .furnBlock{
@@ -212,15 +212,15 @@
 
 .fonImgText{
     top: 37.94%;
-    left: 27.82%;
-    right: 27.82%;
-    height: 15.96%;
-    /* width: 300%; */
+    /* left: 27.82%; */
+    /* right: 27.82%; */
+    /* height: 15.96%; */
+    width: 100%;
     position: absolute;
     z-index: 1;
     text-align: center;
-    font-size: 171.11%;
-    line-height: 199.55%;
+    font-size: 32px;
+    line-height: 44.8px;
     /* font-size: 200%;
     line-height: 250%; */
     color: white;
@@ -230,18 +230,27 @@
     top: 51.42%;
     left: 27.82%;
     right: 27.82%;
-    /* width: 9.3%; */
+    width: 44.36%;
     /* height: 22.5%; */
     position: absolute;
     z-index: 1;
 }
 
 .learnDetailed{
-    top: 73.4%;
     left: 33.68%;
     right: 33.68%;
+    bottom: 23px;
+    width: 32.56%;
     position: absolute;
     z-index: 1;
+}
+
+.learnDetailed a {
+    width: 100%;
+} 
+
+.learnDetailed img {
+    width: 100%;
 }
 
 @media screen and (max-width: 450px) {
@@ -498,8 +507,8 @@
     
     .fonImgTitle {
         top: 19.93px;
-        left: 41.39%;
-        width: 61px;
+        left: 32%;
+        width: 136px;
         height: 35.82px;
         position: absolute;
         z-index: 1;
@@ -509,7 +518,7 @@
         top: 66px;
         left: 16.94%;
         height: 46px;
-        width: 65.83%;
+        width: 66%;
         position: absolute;
         z-index: 1;
         text-align: center;
@@ -527,13 +536,14 @@
     .learnDetailed{
         width: 92.22%;
         height: 44px;
-        top: 135px;
         left: 3.89%;
+        bottom: 17px;
         position: absolute;
         z-index: 1;
     }
     
     .learnDetailedNav{
+        width: 100%;
         border-color: #FFD600;
         border: 1px;
         border-radius: 10px;
@@ -544,7 +554,7 @@
         font-family: NAMU-1990;
     }
 
-    .learnDetailedNav img {
+    .learnDetailed img {
         width: 100%;
     }
 }

@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.form{
+    width: 100%;
+}
+
 .titleAudit{
     display: flex;
     align-items: center;
@@ -16,16 +20,20 @@
 .sixthContainer{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     margin-top: 39px;
     /* margin-left: 10%; */
-    height: 411px;
+    /* height: 411px; */
     position: relative;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .fonImg{
     width: 52.37%;
     height: 411px;
+    min-width: 503px;
     position: relative;
 }
 
@@ -69,13 +77,14 @@
 }
 
 .sixthContImg img{
-    height: 411px;
+    height: 100%;
 }
 
 .sixthContText{
     display: flex;
     flex-wrap: wrap;
     width: 45.78%;
+    min-width: 503px;
     font-size: 14px;
     line-height: 21px;
     font-family: NAMU-1990;
@@ -155,12 +164,13 @@
 .bottomBlock{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
     /* margin-top: 53px; */
 }
 
 .bottomBlockText{
     margin-top: 53px;
-    margin-left: 21px;
     color: #ffffff70;
     font-family: NAMU-1990;
 }
@@ -168,6 +178,17 @@
 .bottomBlockText .text2 {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1360px) {
+    .fonImg{
+        width: 100%;
+    }
+    .sixthContText{
+        width: 100%;
+        justify-content: center
+    }
+}
+
 
 @media screen and (max-width: 450px) {
     .formAudit{
@@ -188,16 +209,19 @@
     .sixthContainer{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         margin-top: 39px;
         /* margin-left: 10%; */
-        height: 630px;
+        /* height: 630px; */
         position: relative;
-        justify-content: space-between;
+        gap: 0;
     }
     
     .fonImg{
         width: 100%;
         height: 188px;
+        min-width: 0;
         position: relative;
     }
     
@@ -241,14 +265,15 @@
     } */
     
     .sixthContImg img{
-        height: 411px;
+        height: 100%;
     }
     
     .sixthContText{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        /* margin-top: 21.35px; */
+        min-width: 0;
+        margin-top: 21.35px;
         font-size: 13px;
         line-height: 19.5px;
         font-family: NAMU-1850;

@@ -101,6 +101,13 @@
     margin-bottom: 31px;
     width: 100%;
   }
+
+  .alterFirstImg img{
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 13.5px;
+    width: 100%;
+  }
   
   .titleBlock{
     display: flex;

@@ -299,72 +299,243 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1200px) {
+    .totalPrice{
+        display: none;
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .formAudit{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 100%;
+        font-family: NAMU-1850;
+        border-radius: 15px;
+        gap: 15px;
     }
     
     .titleAudit{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        text-align: center;
         color: #FFFFFF;
-        margin-top: 56px;
+        margin-top: 15px;
         font-size: 24px;
         line-height: 33.6px;
         font-family: NAMU-1850;
     }
+    
+    .allProducts{
+        width: 100%;
+    }
+    
+    .productBlock{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 91.39%;
+        min-height: 169px;
+        /* margin: 0 auto; */
+        border: none;
+        /* border-radius: 15px; */
+        padding: 2%;
+    }
+    
+    .prodImg{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .prodImg img{
+        width: 100%;
+        border-radius: 10px;
+    }
 
+    .textBlock{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .title{
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .charact{
+        margin-top: 15px;
+        color: #ffffff70;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .price{
+        margin-top: 16px;
+        color: #ffffff70;
+        font-size: 20.09px;
+        line-height: 24.1px;
+    }
+    
+    .countRange{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #FFFFFF 1px solid;
+        border-radius: 15px;
+        width: 90px;
+        height: 40px;
+        gap: 3px;
+    }
+    
+    .rangeButtonM{
+        border: 0;
+        background: transparent;
+        color: #FFFFFF;
+        font-size: 25px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+    
+    .rangeButtonP{
+        border: 0;
+        background: transparent;
+        color: #FFFFFF;
+        font-size: 25px;
+        line-height: 30px;
+    }
+      
+    .rangeInput{
+        width: 16px;
+        height: 19px;
+        font-size: 12.39px;
+        line-height: 14.87px;
+        color: #FFFFFF;
+        padding-left: 4px;
+        background: none;
+        border: none;
+        outline:none
+    }
+    
+    .totalPrice{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 150px;
+    }
+    
+    .totalPriceCount{
+        color: #FFD600;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    
+    .totalPriceText{
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-right: 9px;
+    }
+    
+    .divDeleteButton{
+        padding-right: 21px;
+    }
+    
+    .deleteButton{
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border: #FFFFFF 1px solid; 
+        background: none; 
+        outline: none;
+        border-radius: 50%;
+    }
+    
+    .deleteButton img{
+        margin-top: 3px;
+        width: 100%;
+    }
+    
     .sixthContainer{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 39px;
-        /* margin-left: 10%; */
-        height: 630px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+        font-family: NAMU-1990;
         position: relative;
-        justify-content: space-between;
     }
     
-    .whiteLogoImg {
-        top: 148.57px;
-        right: 5.29%;
-        width: 11.21%;
-        position: absolute;
-        z-index: 1;
+    .sixthContainer form {
+        width: 100%;
+        padding: 0 2%;
     }
     
-    /* .learnDetailed{
+    .learnDetailed{
         top: 73.4%;
         left: 33.68%;
         right: 33.68%;
         position: absolute;
         z-index: 1;
-    } */
-    
-    .sixthContImg img{
-        height: 411px;
     }
     
     .sixthContText{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        /* margin-top: 21.35px; */
-        font-size: 13px;
-        line-height: 19.5px;
-        font-family: NAMU-1850;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: NAMU-1990;
         /* margin-right: 10%; */
         /* position: absolute; */
     }
     
+    .formText{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 15px;
+        color: #FFFFFF;
+        opacity: 60%;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: NAMU-1990;
+    }
+    
     .formTitle{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: NAMU-1990;
     }
     
     .divField{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        font-size: 20px;
+        line-height: 30px;
     }
     
     .firstField{
@@ -372,18 +543,23 @@
         flex-wrap: wrap;
         background-color: #fff5b81a;
         border-radius: 10px;
+        border: none;
         width: 100%;
-        height: 35.14px;
-        margin-bottom: 13px;
-        padding-top: 6.65px;
-        padding-left: 10.27px;
+        height: 40px;
+        margin-bottom: 5px;
+        /* padding: 12px; */
+        padding-left: 10px;
+        padding-right: 10px;
         color: #ffffff;
+        /* border-color: #FFFFFF; */
+        font-size: 14px;
+        line-height: 18px;
     }
     
     .firstField::placeholder {
-        height: 21px;
+        height: 61.51px;
         opacity: 40%;
-        color: #ffffff;
+        /* color: #ffffff; */
     }
     
     .secondField{
@@ -391,58 +567,51 @@
         flex-wrap: wrap;
         background-color: #fff5b81a;
         border-radius: 10px;
-        border: 0.91px;
+        border: none;
         width: 100%;
-        height: 85.81px;
+        height: 80px;
         resize: none;
-        padding: 15px;
+        padding-top: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
         color: #ffffff;
+        /* border-color: #FFFFFF; */
+        font-size: 14px;
+        line-height: 18px;
     }
     
     .secondField::placeholder {
-        height: 21px;
+        height: 138.23px;
         opacity: 40%;
-        color: #ffffff;
-        margin-left: 15.66px;
-        margin-top: 15.61px;
-    }
-
-    .bottomBlock{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .bottomBlockButton{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        /* color: #ffffff; */
     }
     
     .sendFormBut{
         background-color: #FFD600;
         width: 100%;
         /* fixed */
-        height: 48px;
+        height: 44px;
         /* fixed */
-        border-radius: 10px;
-        font-size: 13px;
-        line-height: 15.6px;
-        margin-top: 18px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 22px;
+    }
+    
+    .bottomBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        /* margin-top: 53px; */
     }
     
     .bottomBlockText{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        left: 0;
-        width: 100%;
-        margin-top: 8.57px;
-        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 33px;
         color: #ffffff70;
-        font-size: 13px;
-        line-height: 16.9px;
+        text-align: center;
+        font-family: NAMU-1990;
     }
     
     .bottomBlockText .text2 {

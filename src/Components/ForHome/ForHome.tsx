@@ -81,7 +81,7 @@ const ForHome = () =>{
             <div className={classes.checkBelowImg}><img src={arrowDown} /></div>
 
             <div className={classes.alterTopBlock3}>
-                <div><img src={block3img1} /></div>
+                <img src={block3img1} />
             </div>
 
             <div className={classes.block2}>
@@ -92,7 +92,7 @@ const ForHome = () =>{
             </div>
 
             <div className={classes.alterBottomBlock3}>
-                <div><img src={alterBlock3img2} /></div>
+                <img src={alterBlock3img2} />
             </div>
 
             <div className={classes.block3}>
@@ -176,11 +176,11 @@ const ForHome = () =>{
                 </div>
             </div>
             
-            <button className={classes.moreFurnButton}>
-                <NavLink to={"/business/bars_cafes"} className={classes.navLink}>
+            {/* <button className={classes.moreFurnButton}> */}
+                <NavLink to={"/business/bars_cafes"} className={classes.moreFurnButton}>
                     Больше мебели в нашем каталоге
                 </NavLink>
-            </button>
+            {/* </button> */}
             <div className={classes.fonImg}>
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересует, как проходит заказ?</div>

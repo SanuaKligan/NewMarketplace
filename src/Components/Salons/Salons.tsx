@@ -34,8 +34,8 @@ const Salons = () => {
         <div className={classes.salons}>
             <div className={classes.firstContainer}>
                 <div className={classes.logoText}>
-                    <div className={classes.titleWhite}>МЕБЕЛЬ ДЛЯ </div>
-                    <div className={classes.line15_6}></div>
+                    <div className={classes.titleWhite}>МЕБЕЛЬ </div>
+                    <div className={classes.titleWhite}>ДЛЯ </div>
                     <div className={classes.titleYellow}>САЛОНОВ</div>
                 </div>
             </div>
