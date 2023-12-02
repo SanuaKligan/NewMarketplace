@@ -188,19 +188,6 @@
     background-position: right 11px center;
     /* background-size: .65em auto, 100%;  */
     } 
-     /* .sortfield::-ms-expand { display: none; }  */
-     /* .sortfield:hover { border-color: #888; } 
-     .sortfield:focus { border-color: #aaa; 
-     box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-     box-shadow: 0 0 0 3px -moz-mac-focusring; 
-    color: #ffffff99;
-     outline: none; 
-    } 
-     .sortfield option { font-weight:normal; } 
-     *[dir="rtl"] .sortfield, :root:lang(ar) .sortfield, :root:lang(iw) .sortfield { 
-    background-position: left .7em top 50%, 0 0; 
-    padding: .6em .8em .5em 1.4em; 
-    } */
 
     
 .searchAndSort .field::placeholder {
