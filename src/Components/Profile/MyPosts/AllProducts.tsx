@@ -7,17 +7,11 @@ import {
 } from "../../../utils/generalTypes";
 import classes from "./AllProducts.module.css"
 import Product from "./Product/Product"
-import PostsFilter from "./PostsFilter"
-import {required, maxLengthCreator} from "../../../utils/validators/validators"
-import {Element} from "../../../common/FormsControls/FormsControls"
-import {useSortAndSearch} from "../../../hooks/useSortAndSearch"
-import MySlicedPages from "../../../UI/MySlicedPages/MySlicedPages"
-import Preloader from "../../../assets/Preloader/Preloader"
-import {useObserver} from"../../../hooks/useObserver"
 import RangeSlider from "../../../UI/RangeSlider/RangeSlider";
 import { useTypedDispatch, useTypedSelector } from "../../../redux/redux-store";
 import MyModal from "../../../UI/MyModal/MyModal";
 import BasketPage from "../../BasketPage/BasketPage";
+import filtImg from "../../../assets/images/catalogs/filtImg.svg"
 // import MySelect from "../../../UI/MySelect";
 // import {CSSTransition, TransitionGroup} from "react-transition-group";
 
@@ -325,6 +319,10 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
             </div>
             <div className={classes.rightProductsBlock}>
                 <div className={classes.searchAndSort}>
+                    <div className={classes.filtAlt}>
+                        <div><img src={filtImg} /></div>
+                        <div>Фильтры</div>
+                    </div>
                     <div className={classes.divSearchfield}>
                         <input 
                             placeholder={"Поиск"} 

@@ -156,6 +156,10 @@
     font-family: NAMU-1990;
 }  */
 
+.filtAlt{
+    display: none;
+}
+
 .sortfield { 
     display: block;
     font-size: 13.34px;
@@ -338,6 +342,7 @@
         display: flex;
         right: 0;
         position: absolute;
+        justify-content: space-between;
         margin-right: 10%;
         gap: 20px;
     }
@@ -373,6 +378,15 @@
         display: none;
         width: 176px;
         height: 27px;
+    }
+
+    .filtAlt{
+        display: flex;
+        color: #FFFFFF;
+        font-size: 10.4px;
+        line-height: 12.48px;
+        padding: 6px;
+        gap: 8px;
     }
     
     .sortfield { 
