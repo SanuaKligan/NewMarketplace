@@ -315,19 +315,19 @@
         width: 100%;
         font-family: NAMU-1850;
         border-radius: 15px;
-        gap: 15px;
+        gap: 10px;
     }
     
     .titleAudit{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 80%;
         text-align: center;
         color: #FFFFFF;
-        margin-top: 15px;
-        font-size: 24px;
-        line-height: 33.6px;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 30px;
         font-family: NAMU-1850;
     }
     
@@ -340,49 +340,45 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        width: 91.39%;
-        min-height: 169px;
-        /* margin: 0 auto; */
-        border: none;
-        /* border-radius: 15px; */
-        padding: 2%;
+        width: 80%;
+        min-height: 0;
+        margin: 0 auto;
+        margin-top: 5px;
+        border: #3D3A2E 1px solid;
+        border-radius: 10px;
+        padding: 10px;
     }
     
     .prodImg{
         display: flex;
-        width: 100%;
-        height: auto;
+        align-items: center;
+        width: 30%;
+        height: 90%;
     }
     
     .prodImg img{
         width: 100%;
         border-radius: 10px;
     }
-
-    .textBlock{
-        width: 100%;
-        margin-bottom: 10px;
-    }
     
     .title{
-        margin-top: 10px;
         color: #FFFFFF;
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 18px;
     }
     
     .charact{
-        margin-top: 15px;
-        color: #ffffff70;
-        font-size: 12px;
-        line-height: 14px;
+        margin-top: 0;
+        color: #FFFFFF;
+        font-size: 10px;
+        line-height: 12px;
     }
     
     .price{
-        margin-top: 16px;
-        color: #ffffff70;
-        font-size: 20.09px;
-        line-height: 24.1px;
+        margin-top: 0;
+        color: #FFFFFF;
+        font-size: 10px;
+        line-height: 12px;
     }
     
     .countRange{
@@ -390,13 +386,14 @@
         align-items: center;
         justify-content: center;
         border: #FFFFFF 1px solid;
-        border-radius: 15px;
-        width: 90px;
-        height: 40px;
-        gap: 3px;
+        border-radius: 10px;
+        width: 20%;
+        height: auto;
+        gap: 0;
     }
     
     .rangeButtonM{
+        display: none;
         border: 0;
         background: transparent;
         color: #FFFFFF;
@@ -406,6 +403,7 @@
     }
     
     .rangeButtonP{
+        display: none;
         border: 0;
         background: transparent;
         color: #FFFFFF;
@@ -416,41 +414,42 @@
     .rangeInput{
         width: 16px;
         height: 19px;
-        font-size: 12.39px;
-        line-height: 14.87px;
+        font-size: 14px;
+        line-height: 18.4px;
         color: #FFFFFF;
-        padding-left: 4px;
+        padding-left: 8px;
         background: none;
         border: none;
         outline:none
     }
     
     .totalPrice{
-        display: none;
+        display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 150px;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 0;
     }
     
     .totalPriceCount{
         color: #FFD600;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 18.4px;
         margin: 0 auto;
-        margin-top: 45px;
+        margin-top: 0;
     }
     
     .totalPriceText{
         color: #FFFFFF;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 14px;
         margin: 0 auto;
-        margin-top: 20px;
-        padding-right: 9px;
+        margin-top: auto;
+        padding-right: auto;
     }
     
     .divDeleteButton{
-        padding-right: 21px;
+        padding-right: 5%;
     }
     
     .deleteButton{
@@ -474,15 +473,15 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin-top: 0;
-        width: 100%;
+        margin-top: 10px;
+        width: 86%;
         font-family: NAMU-1990;
         position: relative;
     }
     
     .sixthContainer form {
         width: 100%;
-        padding: 0 2%;
+        padding: 0;
     }
     
     .learnDetailed{
@@ -510,23 +509,26 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 33px;
         color: #FFFFFF;
         opacity: 60%;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 18.4px;
         font-family: NAMU-1990;
+        margin: 0 auto;
     }
     
     .formTitle{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 10px;
         color: #FFFFFF;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 20.4px;
+        text-align: center;
         font-family: NAMU-1990;
     }
     
@@ -534,8 +536,8 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 12px;
+        line-height: 14px;
     }
     
     .firstField{
@@ -543,23 +545,22 @@
         flex-wrap: wrap;
         background-color: #fff5b81a;
         border-radius: 10px;
-        border: none;
+        border: 0.91px;
         width: 100%;
         height: 40px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         /* padding: 12px; */
         padding-left: 10px;
         padding-right: 10px;
         color: #ffffff;
-        /* border-color: #FFFFFF; */
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 14px;
     }
     
     .firstField::placeholder {
-        height: 61.51px;
+        height: 40px;
         opacity: 40%;
-        /* color: #ffffff; */
+        color: #ffffff;
     }
     
     .secondField{
@@ -567,51 +568,51 @@
         flex-wrap: wrap;
         background-color: #fff5b81a;
         border-radius: 10px;
-        border: none;
+        border: 0.91px;
         width: 100%;
         height: 80px;
         resize: none;
-        padding-top: 6px;
+        padding-top: 8px;
         padding-left: 10px;
         padding-right: 10px;
         color: #ffffff;
-        /* border-color: #FFFFFF; */
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 14px;
     }
     
     .secondField::placeholder {
-        height: 138.23px;
+        height: 50px;
         opacity: 40%;
-        /* color: #ffffff; */
+        color: #ffffff;
     }
     
     .sendFormBut{
         background-color: #FFD600;
         width: 100%;
         /* fixed */
-        height: 44px;
+        height: 52px;
         /* fixed */
-        border-radius: 15px;
+        border-radius: 10px;
         font-size: 14px;
-        line-height: 18px;
-        margin-top: 22px;
+        line-height: 18.4px;
+        margin-top: 10px;
     }
     
     .bottomBlock{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 8px;
+        margin-bottom: 20px;
         /* margin-top: 53px; */
     }
     
     .bottomBlockText{
-        margin: 0 auto;
-        margin-top: 33px;
+        margin-top: 10px;
+        margin-left: 0;
         color: #ffffff70;
-        text-align: center;
         font-family: NAMU-1990;
+        font-size: 10px;
+        line-height: 12px;
     }
     
     .bottomBlockText .text2 {
