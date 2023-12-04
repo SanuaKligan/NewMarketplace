@@ -5,15 +5,11 @@ import {
 
 const instance = axios.create({
     baseURL: "http://79.174.94.184:8080/",
-    // headers: {
-    //     "Access-Control-Allow-Origin": "*",
-    //     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-    // }
 })
 
 export const CatalogAPI = {
     async getAllProducts(counter: string, material: string, type: string, price_range: string, sort: string, search_query: string){
-        // console.log(counter, material, type, price_range, sort, search_query)
+        console.log(counter, material, type, price_range, sort, search_query)
         return await instance.get<Array<ProductType>>(
             `items_list/`, {params: {counter, material, type, price_range, sort, search_query}}
         ).then(response => response)

@@ -6,15 +6,8 @@ import phoneImg from "../../assets/images/Vector.svg"
 import BisnesMenu from "../BisnesMenu/BisnesMenu"
 import ServiceMenu from "../ServiceMenu/ServiceMenu"
 import numbNavImg from "../../assets/images/NumbNavImg.svg"
-// const {classes} = require("./Header.module.css");
 
-type HeaderProps = {
-    // isAuth: boolean
-    // login: string | null
-    // logOut: () => void
-}
-
-const Header = (props) => {
+const Header = () => {
     return (
         <header
             className={

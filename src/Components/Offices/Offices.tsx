@@ -52,8 +52,8 @@ const Offices = () =>{
                     <div className={classes.titleYellow}>LOFT RT</div>
                 </div>
             </div>
-            <div><img src={alterFirstImg} className={classes.alterFirstImg} /></div>
-            <div><img src={firstImg} className={classes.firstImg} /></div>
+            <div className={classes.alterFirstImg}><img src={alterFirstImg}/></div>
+            <div className={classes.firstImg}><img src={firstImg} /></div>
             <div className={classes.secondContainer}>
                 <div className={classes.vertical49}></div>
                 <div className={classes.text1}>Нужна мебель для офиса?</div>

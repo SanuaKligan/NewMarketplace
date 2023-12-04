@@ -2,7 +2,6 @@ import React from "react";
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import classes from "./FormAudit.module.css";
 import {Element} from "../../common/FormsControls/FormsControls";
-import {maxLengthCreator} from "../../utils/validators/validators";
 import {MessageType} from "../../redux/dialogs-reducer";
 
 import title4 from "../../assets/images/Закажите у нас аудит.svg"
@@ -26,13 +25,11 @@ type AuditFormOwnPropsType = {
 
 }
 
-const maxLength = maxLengthCreator(50)
 const Textarea = Element("textarea");
 
 const LogInForm: React.FC<
     InjectedFormProps<AuditFormDataType, AuditFormOwnPropsType> & AuditFormOwnPropsType
     > = (props) => {
-    // console.log(props)
     return (
         <form className = {classes.form} onSubmit={props.handleSubmit}>
             <div className={classes.formTitle}>

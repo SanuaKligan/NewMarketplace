@@ -2,7 +2,6 @@ import React, {Dispatch, SetStateAction, useEffect, useState} from "react";
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import classes from "./BasketPage.module.css";
 import {Element} from "../../common/FormsControls/FormsControls";
-import {maxLengthCreator} from "../../utils/validators/validators";
 import {MessageType} from "../../redux/dialogs-reducer";
 
 import deleteButton from "../../assets/images/catalogs/deleteButton.svg"
@@ -31,7 +30,6 @@ type AuditFormOwnPropsType = {
 
 }
 
-const maxLength = maxLengthCreator(50)
 const Textarea = Element("textarea");
 
 const BasketPageForm: React.FC<

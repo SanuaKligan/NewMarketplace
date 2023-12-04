@@ -54,6 +54,10 @@
     width: 100%;
 }
 
+.firstImg img{
+    width: 100%;
+}
+
 .secondContainer{
     display: block;
     align-items: center;
@@ -100,6 +104,10 @@
     justify-content: center;    
     font-size: 32px;
     line-height: 44.8px;
+}
+
+.noneSlider{
+    height: ;
 }
 
 .alterSlides{
@@ -314,6 +322,11 @@
 
     .alterFirstImg{
         display: flex;
+        width: 100%;
+    }
+    
+    .alterFirstImg img{
+        width: 100%;
     }
     
     .firstImg{

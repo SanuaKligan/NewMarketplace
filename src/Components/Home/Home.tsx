@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import classes from "./Home.module.css";
-import {MessageType} from "../../redux/dialogs-reducer";
 import Materials from "../Materials/Materials";
 
 import fonImgForPhone from "../../assets/images/fonImgForPhone.png";
@@ -15,102 +13,15 @@ import fofsb from "../../assets/images/1200x1200 1.png"
 import fifsb from "../../assets/images/ot-kati2 1.png"
 import sifsb from "../../assets/images/014 1.png"
 
-// import shicDisImg from "../../assets/images/Vector.png"
-// import shicDis from "../../assets/images/Шикарный дизайн.svg"
-// import shicDisText from "../../assets/images/shicDisText.svg"
-// import woodImg from "../../assets/images/Group.png"
-// import onlyBestMat from "../../assets/images/Только лучшие материалы.svg"
-// import woodText from "../../assets/images/woodText.svg"
-// import smileImg from "../../assets/images/Group 4603.png"
-// import bestPrices from "../../assets/images/Приятные цены.svg"
-// import bestPricesText from "../../assets/images/bestPricesText.svg"
-
-import secBigHomeImg from "../../assets/images/secBigHomeImg.png"
 import whiteLogoImg from "../../assets/images/whiteLogoImg.svg"
 
-import restTitle from "../../assets/images/У вас есть ресторан_.svg"
 import restImg from "../../assets/images/restImg.png"
-import salonTitle from "../../assets/images/У вас есть салон_.svg"
 import salonImg from "../../assets/images/salonImg.png"
-import barTitle from "../../assets/images/У вас есть бар или кафе_.svg"
 import barImg from "../../assets/images/barImg.png"
+
 import FormAudit from "../FormAudit/FormAudit";
 import { NavLink } from "react-router-dom";
 import OrdBisnesFurn from "../OrdBisnesFurn/OrdBisnesFurn";
-
-// import title4 from "../../assets/images/Закажите у нас аудит.svg"
-// import logInFormImg from "../../assets/images/Rectangle 696.png"
-// import logInFormTitle from "../../assets/images/Проконсультируем бесплатно.svg"
-// import title5 from "../../assets/images/А вот наши контакты.svg"
-
-// import phone from "../../assets/images/Телефон_.svg"
-// import email from "../../assets/images/Email_.svg"
-// import adress from "../../assets/images/Адрес_.svg"
-// import whatsApp from "../../assets/images/Whats_App.svg"
-// import telegram from "../../assets/images/Telegram.svg"
-// import instagram from "../../assets/images/Instagram.svg"
-
-// import whatsAppImg from "../../assets/images/WhatsAppSymb.svg"
-// import telegramImg from "../../assets/images/TelegramSymb.svg"
-// import instagramImg from "../../assets/images/InstagramSymb.svg"
-
-// type DialogsFormDataType = {
-//     message: string
-// }
-
-// type DialogsFormOwnPropsType = {
-
-// }
-
-// const maxLength = maxLengthCreator(50)
-// const Textarea = Element("textarea");
-
-// const LogInForm: React.FC<
-//     InjectedFormProps<DialogsFormDataType, DialogsFormOwnPropsType> & DialogsFormOwnPropsType
-//     > = (props) => {
-//     // console.log(props)
-//     return (
-//         <form onSubmit={props.handleSubmit}>
-//             <div>
-//                 <img src={logInFormTitle} className={classes.formTitle}/>
-//             </div>
-//             <div>
-//                 <Field
-//                     placeholder={"Имя"}
-//                     name={"name"}
-//                     component={"input"}
-//                     className={classes.firstField}
-//                 />
-//             </div>
-//             <div>
-//                 <Field
-//                     placeholder={"+7 (999) 999-99-99"}
-//                     name={"number"}
-//                     component={"input"}
-//                     className={classes.firstField}
-//                 />
-//             </div>
-//             <div>
-//                 <Field
-//                     placeholder={"Комментарий"}
-//                     name={"comment"}
-//                     component={"textarea"}
-//                     className={classes.secondField}
-//                 />
-//             </div>
-//             <div>
-//                 <button
-//                     // onClick={props.addMessage}
-//                     className={classes.sendFormBut}
-//                 >
-//                     Отправить
-//                 </button>
-//             </div>
-//         </form>
-//     )
-// }
-
-// const LogInReduxForm = reduxForm<DialogsFormDataType, DialogsFormOwnPropsType>({form: "dialog"})(LogInForm)
 
 const Home: React.FC = (props) => {
         const [isActive, setIsActive] = useState(false);

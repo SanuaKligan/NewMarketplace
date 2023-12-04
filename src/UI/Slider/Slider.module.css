@@ -14,7 +14,7 @@
   
 .slider img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     border-radius: 15px;
 }
@@ -27,7 +27,7 @@
 
 .sliderSalon img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     border-radius: 15px;
 }
@@ -73,7 +73,7 @@
   
 .thumbnailForSalons{
     width: 32.14%;
-    height: 228px;
+    /* height: 228px; */
     object-fit: cover;
     border-radius: 15px;
 }

@@ -1,21 +1,14 @@
 import React, {useEffect} from "react";
 import "./App.css";
-import CatalogContainer, {withRouter} from "./Components/Profile/CatalogContainer";
-import HomeContainer from "./Components/Home/HomeContainer";
 import OrderProcess from "./Components/OrderProcess/OrderProcess";
 import ForHome from "./Components/ForHome/ForHome";
 import AboutUs from "./Components/AboutUs/AboutUs"
-// import UsersContainer from "./Components/Users/UsersContainer";
-// import Settings from "./Components/Settings/Settings";
 import {Navigate, Route, Routes, useLocation} from "react-router-dom";
-// import LoginContainer from "./Components/Login/LoginContainer";
-// import Preloader from "./assets/Preloader/Preloader";
-import {connect} from "react-redux";
-// import {getInitializedApp} from "./redux/app-reducer";
 import {compose} from "redux";
 import Header from "./Components/Header/Header";
 import Error from "./Components/Error/Error";
 import Home from "./Components/Home/Home";
+import Catalog from "./Components/Profile/Catalog";
 import Offices from "./Components/Offices/Offices";
 import Salons from "./Components/Salons/Salons";
 import Shops from "./Components/Shops/Shops";
@@ -59,7 +52,7 @@ const App = (props) => {
 
                     <Route path="/home" element={<Home/>}/>
 
-                    <Route path="/catalog" element={<CatalogContainer/>}/>
+                    <Route path="/catalog" element={<Catalog/>}/>
 
                     <Route path="/business/offices" element={<Offices/>}/>
 
@@ -91,11 +84,4 @@ const App = (props) => {
     );
 }
 
-const mapStateToProps = (state) => ({
-    // isInitialized: state.app.isInitialized,
-})
-
-export default compose(
-    // withRouter,
-    // connect(mapStateToProps, {getInitializedApp})
-)(App);
+export default App;
