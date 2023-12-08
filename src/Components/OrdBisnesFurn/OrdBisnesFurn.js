@@ -18,6 +18,7 @@ const OrdBisnesFurn = () => {
             };
         });
     };
+
     const [isOpen, setOpen] = useState(false);
     const menuRef = useRef(null);
     useClickOutside(menuRef, () => {
@@ -25,11 +26,22 @@ const OrdBisnesFurn = () => {
     });
     return(
         <div className={classes.ordBisnesFurn}>
-            <button className={`${classes.menuButton} ${isOpen ? classes.menuButtonActive : ""}`} onClick={() => setOpen(!isOpen)}>
-                Заказать бизнес мебель 
-                <img src={dropdownImg}/>
+            <button
+                className={classes.menuButton}
+                onMouseEnter={() => setOpen(true)}
+            >
+            Заказать бизнес мебель
+            <img src={dropdownImg} />
             </button>
-            <nav className={`${classes.menu} ${isOpen ? classes.active : ""}`} ref={menuRef}>
+            <nav 
+                className={`${classes.menu} ${isOpen ? classes.active : ""}`} 
+                ref={menuRef}
+                onMouseLeave={(e) => {
+                    if (!menuRef.current.contains(e.relatedTarget)) {
+                        setOpen(false);
+                    }
+                }}
+            >
                 <ul className={classes.menuList}>
                     <li className={classes.menuTitle}>
                         Заказать бизнес мебель

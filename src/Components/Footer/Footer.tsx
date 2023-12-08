@@ -129,7 +129,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                     </div>
                 </div>
                 <div className={classes.politicConf}>
-                    <div>(с) ЛОФТ И ЛЮКС / Все права защищены</div>
+                    <div>(с) ЛОФТ РТ / Все права защищены</div>
                     <div className={classes.obrPers}>Политика обработки персональных данных</div>
                     <div><img src={deloLogo} /></div>
                     <div>“ДЕЛО ДИДЖИТАЛ АЙДЖЕНСИ”</div>

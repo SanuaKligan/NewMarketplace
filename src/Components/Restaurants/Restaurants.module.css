@@ -205,14 +205,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 378px;
-    height: 52px;
+    width: 376px;
+    height: 50px;
     border-radius: 15px;
-    bottom: 0;
-    position: absolute;
+    margin: 0 auto;
+    margin-top: 89px;
     background-color: #FFD600;
+    font-family: NAMU-1990;
     color: #000000;
+    border: #FFD600 1px solid;
     text-decoration: none;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.moreFurnButton:hover{
+    background-color: #000000;
+    color: #FFD600;
 }
 
 @media screen and (max-width: 1425px) {

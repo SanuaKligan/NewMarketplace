@@ -147,6 +147,10 @@ margin-top: 8px;
   color: #FFFFFF;
 }
 
+.navDisabled:hover{
+  color: #FFD600;
+}
+
 @media screen and (max-width: 450px) {
   .ordBisnesFurn {
     /* position: fixed; */

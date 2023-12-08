@@ -233,40 +233,68 @@
 
 .fonImgText{
     top: 37.94%;
-    left: 19.81%;
-    right: 19.81%;
-    height: 15.96%;
-    /* width: 300%; */
+    /* left: 27.82%; */
+    /* right: 27.82%; */
+    /* height: 15.96%; */
+    width: 100%;
     position: absolute;
     z-index: 1;
     text-align: center;
-    font-size: 32px;
-    line-height: 44.8px;
+    font-size: 171.11%;
+    line-height: 199.55%;
     /* font-size: 200%;
     line-height: 250%; */
     color: white;
 }
 
-.crookedLineImg {
+.curvedLineImg {
     display: flex;
     top: 51.42%;
-    left: 19.04%;
-    right: 19.04%;
-    width: 61.73%;
+    left: 27.82%;
+    /* right: 27.82%; */
+    width: 44.36%;
+    height: 22.5%;
     position: absolute;
     z-index: 1;
 }
 
-.seeGuar{
+.learnDetailed{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 73.4%;
+    border-color: #FFD600;
+    border: 2px;
+    border-radius: 15px;
     left: 33.68%;
-    width: 378px;
-    height: 52px;
+    bottom: 23px;
+    width: 32.56%;
+    height: 18.44%;
     position: absolute;
     z-index: 1;
+}
+
+.learnDetailedNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: #FFD600 2px solid;
+    border-radius: 15px;
+    color: #FFD600;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: NAMU-1990;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.learnDetailedNav:hover{
+    background-color: #FFD600;
+    color: #000000;
 }
 
 @media screen and (max-width: 450px) {
@@ -541,7 +569,7 @@
         color: white;
     }
     
-    .crookedLineImg {
+    .curvedLineImg {
         display: none;
         top: 51.42%;
         left: 19.04%;
@@ -551,23 +579,27 @@
         z-index: 1;
     }
     
-    .seeGuar{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 135px;
-        left: 3.89%;
+    .learnDetailed{
         width: 92.22%;
-        height: 44px;
+        height: 22.44%;
+        left: 3.89%;
+        bottom: 17px;
         position: absolute;
         z-index: 1;
     }
-
-    .thirdConteiner img{
+    
+    .learnDetailedNav{
         width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        color: #FFD600;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 15.6px;
+        font-family: NAMU-1990;
     }
 
-    .seeGuar img{
+    .thirdConteiner img{
         width: 100%;
     }
 }

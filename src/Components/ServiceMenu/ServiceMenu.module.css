@@ -41,6 +41,10 @@
   margin-left: 7px;
 }
 
+.menuTitle:hover{
+  color: #FFD600;
+}
+
 .menuTitle img {
   display: block;
   width: 13px;
@@ -134,4 +138,7 @@
   text-decoration: none;
   color: #FFFFFF;
 }
-  
+
+.navDisabled:hover{
+  color: #FFD600;
+}

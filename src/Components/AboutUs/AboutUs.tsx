@@ -90,9 +90,11 @@ const AboutUs = () =>{
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересует, как проходит заказ?</div>
                 <div className={classes.curvedLineImg}><img src={curvedLine}/></div>
-                <NavLink to={"/how_it_will_be"} className={classes.navLink}>
-                    <img src={learnDetailed} className={classes.learnDetailed}/>
-                </NavLink>
+                <div className={classes.learnDetailed}>
+                    <NavLink to={"/how_it_will_be"} className={classes.learnDetailedNav}>
+                        Узнать подробнее
+                    </NavLink>
+                </div>
             </div>
 
             <div className={classes.warehouses}>

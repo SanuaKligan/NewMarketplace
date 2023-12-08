@@ -1,4 +1,4 @@
-.Materials {
+.Materials{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -15,6 +15,11 @@
   width: 378px;
   height: 229px;
   border-radius: 15px;
+  border: #000000 1px solid;
+}
+
+.infoBlock:hover{
+  border: #FFD600 1px solid;
 }
 
 /* .infoBlockMarg img{

@@ -27,6 +27,18 @@ type AuditFormOwnPropsType = {
 
 const Textarea = Element("textarea");
 
+const normalizePhoneNumber = (value) => {
+    if (!value) return value;
+    
+    const onlyNums = value.replace(/[^\d]/g, "");
+    
+    if (onlyNums.startsWith("7")) {
+      return "+7" + onlyNums.slice(1);
+    }
+  
+    return "+7" + onlyNums;
+}
+
 const LogInForm: React.FC<
     InjectedFormProps<AuditFormDataType, AuditFormOwnPropsType> & AuditFormOwnPropsType
     > = (props) => {
@@ -49,6 +61,8 @@ const LogInForm: React.FC<
                     name={"number"}
                     component={"input"}
                     className={classes.firstField}
+                    maxLength={12}
+                    normalize={normalizePhoneNumber}
                 />
             </div>
             <div className={classes.divField}>
@@ -77,7 +91,9 @@ const LogInForm: React.FC<
     )
 }
 
-const LogInReduxForm = reduxForm<AuditFormDataType, AuditFormOwnPropsType>({form: "audit"})(LogInForm)
+const LogInReduxForm = reduxForm<AuditFormDataType, AuditFormOwnPropsType>({form: "audit", initialValues: {
+    number: "+7"
+  }})(LogInForm)
 
 const FormAudit: React.FC<AuditType> = (props) => {
     const onSubmit = (values: AuditFormDataType) => {

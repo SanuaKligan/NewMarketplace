@@ -187,7 +187,7 @@ const ForHome = () =>{
                 <img src={curvedLine} className={classes.curvedLineImg}/>
                 <div className={classes.learnDetailed}>
                     <NavLink to={"/how_it_will_be"} className={classes.learnDetailedNav}>
-                        <img src={learnDetailed} />
+                        Узнать подробнее
                     </NavLink>
                 </div>
             </div>

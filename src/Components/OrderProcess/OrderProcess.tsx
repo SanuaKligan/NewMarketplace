@@ -14,6 +14,7 @@ import logo from "../../assets/images/order_process/Group 4697.svg"
 import seeGuar from "../../assets/images/order_process/seeGuar.svg"
 import crookedLine2 from "../../assets/images/order_process/crookedLine2.svg"
 import FormAudit from "../FormAudit/FormAudit"
+import { NavLink } from "react-router-dom"
 
 
 const OrderProcess = () =>{
@@ -158,9 +159,11 @@ const OrderProcess = () =>{
             <div className={classes.fonImg}>
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересуют гарантии на нашу продукцию?</div>
-                <img src={crookedLine2} className={classes.crookedLineImg}/>
-                <div className={classes.seeGuar}>
-                    <img src={seeGuar} />
+                <img src={crookedLine2} className={classes.curvedLineImg}/>
+                <div className={classes.learnDetailed}>
+                    <NavLink to={""} className={classes.learnDetailedNav}>
+                        Посмотреть наши гарании
+                    </NavLink>
                 </div>
             </div>
             <FormAudit />

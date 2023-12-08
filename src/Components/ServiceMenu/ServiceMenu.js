@@ -19,35 +19,48 @@ const ServiceMenu = () => {
             };
         });
     };
+
     const [isOpen, setOpen] = useState(false);
     const menuRef = useRef(null);
     useClickOutside(menuRef, () => {
         if (isOpen) setTimeout(() => setOpen(false), 50);
     });
+
     return(
         <div className={classes.header}>
-            <button className={classes.menuButton} onClick={() => setOpen(!isOpen)}>
-                Услуги
-                <img src={dropdownImg}/>
+            <button
+                className={classes.menuButton}
+                onMouseEnter={() => setOpen(true)}
+            >
+            Услуги
+            <img src={dropdownImg} />
             </button>
-            <nav className={`${classes.menu} ${isOpen ? classes.active : ""}`} ref={menuRef}>
+            <nav 
+                className={`${classes.menu} ${isOpen ? classes.active : ""}`} 
+                ref={menuRef}
+                onMouseLeave={(e) => {
+                    if (!menuRef.current.contains(e.relatedTarget)) {
+                        setOpen(false);
+                    }
+                }}
+            >
                 <ul className={classes.menuList}>
                     <li className={classes.menuTitle}>
                         Услуги
                         <img src={dropdownImg2}/>
                     </li>
                     <li className={classes.menuItem}>
-                        <NavLink to="/service/sawing" className={navData => navData.isActive ? classes.navActive : classes.navDisabled}>
+                        <NavLink to="/service/sawing" className={(navData) => (navData.isActive ? classes.navActive : classes.navDisabled)}>
                             Распил ЛДСП, МДФ, ДСП
                         </NavLink>
                     </li>
                     <li className={classes.menuItem}>
-                        <NavLink to="/service/welding" className={navData => navData.isActive ? classes.navActive : classes.navDisabled}>
+                        <NavLink to="/service/welding" className={(navData) => (navData.isActive ? classes.navActive : classes.navDisabled)}>
                             Сварка металлических изделий
                         </NavLink>
                     </li>
                     <li className={classes.menuItem}>
-                        <NavLink to="/service/painting" className={navData => navData.isActive ? classes.navActive : classes.navDisabled}>
+                        <NavLink to="/service/painting" className={(navData) => (navData.isActive ? classes.navActive : classes.navDisabled)}>
                             Порошковая покраска
                         </NavLink>
                     </li>

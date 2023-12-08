@@ -67,6 +67,15 @@
     border-radius: 15px;
     background-color: #FFD600;
     text-decoration: none;
+    border: #FFD600 1px solid;
+    transition: all .3s linear;
+    	-webkit-transition: all .3s linear;
+    	-moz-transition: all .3s linear; 	
+}
+
+.ordButtons .firstButton:hover{
+    color: #FFD600;
+    background-color: #000000;
 }
 
 .ordButtons .secondButton{
@@ -131,6 +140,23 @@
 .homePageKitchenNav .navSegm{
     display: flex;
     width: 37.45%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 38px;
+}
+
+.homePageKitchenNav .navSegm:hover{
+    font-weight: bold;
+}
+
+.homePageKitchenNav .centNavSegm{
+    display: flex;
+    width: 24.91%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     opacity: 80%;
@@ -138,14 +164,8 @@
     text-decoration: none;
 }
 
-.homePageKitchenNav .centNavSegm{
-    display: flex;
-    width: 24.91%;
-    align-items: center;
-    justify-content: center;
-    opacity: 80%;
-    color: #000000;
-    text-decoration: none;
+.homePageKitchenNav .centNavSegm:hover{
+    font-weight: bold;
 }
 
 .workWithLove{
@@ -237,7 +257,18 @@
     width: 279px;
     color: #000000;
     border-radius: 15px;
+    border: #FFF0B9 1px solid;
     background-color: #FFF0B9;
+    text-decoration: none;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.catOrdButtons .firstButton:hover{
+    color: #FFF0B9;
+    border-radius: 15px;
+    background-color: #000000;
     text-decoration: none;
 }
 
@@ -250,6 +281,16 @@
     color: #000000;
     border-radius: 15px;
     background-color: #FFD600;
+    border: #FFD600 1px solid;
+    text-decoration: none;
+    transition: all .3s linear;
+    	-webkit-transition: all .3s linear;
+    	-moz-transition: all .3s linear;
+}
+
+.catOrdButtons .secondButton:hover{
+    color: #FFD600;
+    background-color: #000000;
     text-decoration: none;
 }
 
@@ -362,6 +403,15 @@
     background-color: #FFD600;
     color: #000000;
     text-decoration: none;
+    border: #FFD600 1px solid;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 	
+}
+
+.learnMore:hover{
+    color: #FFD600;
+    background-color: #000000;
 }
 
 .title1{
@@ -449,6 +499,15 @@
     font-size: 16px;
     line-height: 19.2px;
     text-decoration: none;
+    border: #FFD600 1px solid;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 	
+}
+
+.ordButton:hover{
+    color: #FFD600;
+    background-color: #000000;
 }
 
 @media screen and (max-width: 450px) {

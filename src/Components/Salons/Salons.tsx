@@ -154,11 +154,9 @@ const Salons = () => {
                     </div>
                 </div>
             </div>
-            <div className={classes.moreFurnButton}>
-                <NavLink to={"/catalog"} className={classes.navLink}>
-                    Перейти в полный каталог
-                </NavLink>
-            </div>
+            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
+                Перейти в полный каталог
+            </NavLink>
             <FormAudit />
         </div>
     );

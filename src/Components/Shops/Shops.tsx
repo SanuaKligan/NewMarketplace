@@ -80,7 +80,6 @@ const Shops = () =>{
             </div>
             <div className={classes.exampleText}>
                 <div className={classes.titleWhite}>Пример нашей</div>
-                <div className={classes.line15_6}></div>
                 <div className={classes.titleYellow}>мебели для магазинов</div>
             </div>
             <div className={classes.furnExComt}>

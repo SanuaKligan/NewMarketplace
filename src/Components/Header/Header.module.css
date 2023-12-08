@@ -24,6 +24,13 @@
   /* gap: 5.57%; */
 }
 
+.disabled{
+  color: #FFFFFF;
+}
+
+.disabled:hover{
+  color: #FFD600;
+}
 
 .active{
   text-decoration: none;

@@ -96,26 +96,6 @@ const Offices = () =>{
                 <div className={classes.alterSlideMini}><img src={slide3Mini} /></div>
                 <div className={classes.alterSlideMini}><img src={slide4Mini} /></div>
             </div>
-            {/* <div className="slider-container">
-                <div className="slider">
-                    {slides.map((slide, index: number) => (
-                        <div key={index} className={`slide ${index === currentIndex ? 'active' : ''}`}>
-                            <img src={slide} alt={`Slide ${index + 1}`} />
-                        </div>
-                    ))}
-                </div>
-                <div className="slider-thumbnails">
-                    {slides.map((slide, index) => (
-                        <div
-                            key={index}
-                            className={`thumbnail ${index === currentIndex ? 'active' : ''}`}
-                            onClick={() => goToSlide(index)}
-                        >
-                            {slide}
-                        </div>
-                    ))}
-                </div>
-            </div> */}
             <div className={classes.exampleText}>
                 <div className={classes.titleWhite}>Пример </div>
                 <div className={classes.titleWhite}>нашей </div>
@@ -190,18 +170,18 @@ const Offices = () =>{
                     </div>
                 </div>
             </div>
-            <button className={classes.moreFurnButton}>
-                <NavLink to={"/catalog"} className={classes.navLink}>
-                    Заказать для него мебель
-                </NavLink>
-            </button>
+            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
+                Заказать для него мебель
+            </NavLink>
             <div className={classes.fonImg}>
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересует, как проходит заказ?</div>
                 <img src={curvedLine} className={classes.curvedLineImg}/>
-                <NavLink to={"/how_it_will_be"} className={classes.learnDetailed}>
-                    <img src={learnDetailed} />
-                </NavLink>
+                <div className={classes.learnDetailed}>
+                    <NavLink to={"/how_it_will_be"} className={classes.learnDetailedNav}>
+                        Узнать подробнее
+                    </NavLink>
+                </div>
             </div>
             <FormAudit />
         </div>
