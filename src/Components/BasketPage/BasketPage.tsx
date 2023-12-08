@@ -2,15 +2,10 @@ import React, {Dispatch, SetStateAction, useEffect, useState} from "react";
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import classes from "./BasketPage.module.css";
 import {Element} from "../../common/FormsControls/FormsControls";
-import {MessageType} from "../../redux/dialogs-reducer";
 
 import deleteButton from "../../assets/images/catalogs/deleteButton.svg"
-import logInFormMinText from "../../assets/images/Беремся за заказы любой сложности.svg"
-import logInFormTitle from "../../assets/images/Проконсультируем бесплатно.svg"
 
-import whiteLogo from "../../assets/images/whiteLogo.svg"
 import { postAudit } from "../../redux/catalog-reducer";
-import { useTypedSelector } from "../../redux/redux-store";
 import { ProductType } from "../../utils/generalTypes";
 
 type AuditType = {
@@ -31,6 +26,18 @@ type AuditFormOwnPropsType = {
 }
 
 const Textarea = Element("textarea");
+
+const normalizePhoneNumber = (value) => {
+    if (!value) return value;
+    
+    const onlyNums = value.replace(/[^\d]/g, "");
+    
+    if (onlyNums.startsWith("7")) {
+      return "+7" + onlyNums.slice(1);
+    }
+  
+    return "+7" + onlyNums;
+}
 
 const BasketPageForm: React.FC<
         InjectedFormProps<AuditFormDataType, AuditFormOwnPropsType> & AuditFormOwnPropsType
@@ -58,6 +65,8 @@ const BasketPageForm: React.FC<
                     name={"number"}
                     component={"input"}
                     className={classes.firstField}
+                    maxLength={12}
+                    normalize={normalizePhoneNumber}
                 />
             </div>
             <div className={classes.divField}>
@@ -83,7 +92,9 @@ const BasketPageForm: React.FC<
     )
 }
 
-const BasketPageReduxForm = reduxForm<AuditFormDataType, AuditFormOwnPropsType>({form: "audit"})(BasketPageForm)
+const BasketPageReduxForm = reduxForm<AuditFormDataType, AuditFormOwnPropsType>({form: "audit", initialValues: {
+    number: "+7"
+}})(BasketPageForm)
 
 const BasketPage: React.FC<AuditType> = (props) => {
 
