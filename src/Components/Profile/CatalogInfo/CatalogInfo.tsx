@@ -3,9 +3,7 @@ import {UserType, UserProfileType} from "../../../utils/generalTypes"
 import classes from "./CatalogInfo.module.css"
 import firstImg from "../../../assets/images/catalogs/firstImg.png"
 import alterFirstImg from "../../../assets/images/catalogs/alterFirstImg.png"
-import ProfileStatusWithHooks from "./ProfileStatusWIthHooks"
 import SeeBelow from "../../SeeBelow/SeeBelow"
-import RangeSlider from "../../../UI/RangeSlider/RangeSlider"
 
 type CatalogInfoPropsType = {
     profile: UserType | UserProfileType | null

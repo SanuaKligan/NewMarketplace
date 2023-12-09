@@ -16,7 +16,6 @@ type MapStateToPropsType = {
 
 type MapDispatchToPropsType = {
     getProducts: (page: string, material: string, type: string, price_range: string, sort: string, search_query: string) => void
-    // getItem: (itemId: string) => void
     postAudit: (name: string, number: string, comment: string, items: string) => void
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Catalog.module.css";
-import {UserType, UserProfileType} from "../../utils/generalTypes";
 import AllProductsContainer from "./MyPosts/AllProductsContainer";
 import CatalogInfo from "./CatalogInfo/CatalogInfo";
 import FormAudit from "../FormAudit/FormAudit";
@@ -21,13 +20,9 @@ const Catalog: React.FC<CatalogPropsType> = (props) => {
     return (
         <div className={classes.catalog}>
             <CatalogInfo
-                // profile = {props.profile}
-                // status = {props.status}
-                // updateStatus = {props.updateStatus}
-                // authorizedUserId = {props.authorizedUserId}
             />
             <AllProductsContainer />
-            {/* <FormAudit /> */}
+            <FormAudit />
         </div>
     )
 }

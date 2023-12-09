@@ -501,8 +501,6 @@
         font-size: 14px;
         line-height: 21px;
         font-family: NAMU-1990;
-        /* margin-right: 10%; */
-        /* position: absolute; */
     }
     
     .formText{
@@ -589,9 +587,7 @@
     .sendFormBut{
         background-color: #FFD600;
         width: 100%;
-        /* fixed */
         height: 52px;
-        /* fixed */
         border-radius: 10px;
         font-size: 14px;
         line-height: 18.4px;
@@ -603,7 +599,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 20px;
-        /* margin-top: 53px; */
     }
     
     .bottomBlockText{
