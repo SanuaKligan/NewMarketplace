@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import classes from "./FormAudit.module.css";
 import {Element} from "../../common/FormsControls/FormsControls";
@@ -10,6 +10,8 @@ import logInFormTitle from "../../assets/images/Проконсультируем
 
 import whiteLogo from "../../assets/images/whiteLogo.svg"
 import { postAudit } from "../../redux/catalog-reducer";
+import { NavLink } from "react-router-dom";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 type AuditType = {
     addMessage: (name: string, number: string, comment: string) => void
@@ -84,7 +86,8 @@ const LogInForm: React.FC<
                 </div>
                 <div className={classes.bottomBlockText}>
                     <div>Нажимая на кнопку, я соглашаюсь,</div>
-                    <div className={classes.text2}>на обработку своих персональных данных</div>
+                    <NavLink to="*" className={classes.text2}>на обработку своих персональных данных</NavLink>
+                    {/* ссылка на обработку своих персональных данных*/}
                 </div>
             </div>
         </form>
@@ -96,21 +99,34 @@ const LogInReduxForm = reduxForm<AuditFormDataType, AuditFormOwnPropsType>({form
   }})(LogInForm)
 
 const FormAudit: React.FC<AuditType> = (props) => {
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    const observedElements = [
+            block1,
+            block2,
+            block3
+        ];
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
     const onSubmit = (values: AuditFormDataType) => {
         // console.log(values.name, values.number, values.comment)
         postAudit(values.name, values.number, values.comment, "audit");
     }
     return (
         <div className={classes.formAudit}>
-            <div className={classes.titleAudit}>
+            <div className={classes.titleAudit} ref={block1}>
                 Закажите у нас аудит
             </div>
             <div className={classes.sixthContainer}>
-                <div className={classes.fonImg}>
+                <div className={classes.fonImg} ref={block2}>
                     <img src={logInFormMinText} className={classes.fonImgText}/>
                     <img src={whiteLogo} className={classes.whiteLogoImg}/>
                 </div>
-                <div className={classes.sixthContText}>
+                <div className={classes.sixthContText} ref={block3}>
                     <LogInReduxForm onSubmit={onSubmit}/>
                 </div>
             </div>

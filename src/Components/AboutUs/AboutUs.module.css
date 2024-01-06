@@ -19,7 +19,8 @@
     font-size: 60px;
     line-height: 66px;
     font-family: NAMU-1960;
-    gap: 10px
+    gap: 10px;
+    opacity: 0;
 }
 
 .spanWhite{
@@ -35,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 
 .firstImg .firstImg1{
@@ -54,6 +56,7 @@
     width: 64.05%;
     margin: 0 auto;
     margin-top: 22px;
+    opacity: 0;
 }
 
 .firstContainer{
@@ -62,6 +65,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 9px;
+    opacity: 0;
 }
 
 .firstContText{
@@ -116,6 +120,7 @@
 
 .alterFirstContImg{
     display: none;
+    opacity: 0;
 }
 
 .alterFirstContImg::after {
@@ -158,10 +163,12 @@
     line-height: 30.34px;
     font-family: NAMU-1990;
     color: #FFFFFF;
+    opacity: 0;
 }
 
 .alterBigImg{
     display: none;
+    opacity: 0;
 }
 
 .alterBigImg::after {
@@ -191,6 +198,7 @@
     width: 100%;
     height: 274px;
     position: relative;
+    opacity: 0;
 }
 
 .bigImg::after {
@@ -235,7 +243,8 @@
     text-decoration: none;
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear; 
+    -moz-transition: all .3s linear;
+    opacity: 0;
 }
 
 .learnMoreButton:hover{
@@ -255,16 +264,15 @@
     margin-top: 153px;
     margin-bottom: 50px;
     font-family: NAMU-1850;
-}
-
-.centerTitle .line15_6{
-    width: 15.6px;
+    gap: 15.6px;
+    opacity: 0;
 }
 
 .fonImg{
     height: 282px;
     margin-top: 108px;
     position: relative;
+    opacity: 0;
 }
 
 .fonImg::after {
@@ -362,6 +370,7 @@
     margin-top: 97px;
     /* margin-bottom: 100px; */
     font-family: NAMU-1850;
+    opacity: 0;
 }
 
 .warehousesTitle{
@@ -653,6 +662,7 @@
         line-height: 33.6px;
         margin-top: 58px;
         margin-bottom: 31px;
+        gap: 8px;
     }
 
     .centerTitle .line15_6{

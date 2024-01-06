@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import classes from "./Offices.module.css"
 import {useState} from "react"
 import alterFirstImg from "../../assets/images/offices/alterFirstImg.png"
@@ -28,6 +28,7 @@ import learnDetailed from "../../assets/images/about_us/learnMoreButton.svg"
 import FormAudit from "../FormAudit/FormAudit"
 import Slider from "../../UI/Slider/Slider"
 import { NavLink } from "react-router-dom"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 
 
 const Offices = () =>{
@@ -42,19 +43,44 @@ const Offices = () =>{
     //     slide4,
     //     slide5
     // ];
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    const block4 = useRef(null)
+    const block5 = useRef(null)
+    const block6 = useRef(null)
+    const block7 = useRef(null)
+    const block8 = useRef(null)
+    const block9 = useRef(null)
+    const block10 = useRef(null)
+    const block11 = useRef(null)
+    const block12 = useRef(null)
+    const block13 = useRef(null)
+    const observedElements = [
+        block1, block2, block3, block4, block5, block6, 
+        block7, block8, block9, block10, block11, block12, block13
+    ];
+
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
     const slides = [slide1, slide2, slide3, slide4, slide5]
     return(
         <div className={classes.offices}>
-            <div className={classes.firstContainer}>
-                <div className={classes.logoText}>
-                    <div className={classes.titleWhite}>ОФИСНАЯ</div>
-                    <div className={classes.titleWhite}>МЕБЕЛЬ</div>
-                    <div className={classes.titleYellow}>LOFT RT</div>
+            <div className={classes.firstContainerBig} ref={block1}>
+                <div className={classes.firstContainer}>
+                    <div className={classes.logoText}>
+                        <div className={classes.titleWhite}>ОФИСНАЯ</div>
+                        <div className={classes.titleWhite}>МЕБЕЛЬ</div>
+                        <div className={classes.titleYellow}>LOFT RT</div>
+                    </div>
                 </div>
+                <div className={classes.alterFirstImg}><img src={alterFirstImg}/></div>
+                <div className={classes.firstImg}><img src={firstImg} /></div>
             </div>
-            <div className={classes.alterFirstImg}><img src={alterFirstImg}/></div>
-            <div className={classes.firstImg}><img src={firstImg} /></div>
-            <div className={classes.secondContainer}>
+            <div className={classes.secondContainer} ref={block2}>
                 <div className={classes.vertical49}></div>
                 <div className={classes.text1}>Нужна мебель для офиса?</div>
                 <div className={classes.crookedLine}><img src={crookedLine} /></div>
@@ -86,17 +112,17 @@ const Offices = () =>{
                 </div>
             </div>
             <SeeBelow />
-            <div className={classes.noneSlider}>
+            <div className={classes.noneSlider} ref={block3}>
                 <Slider slides={slides} />
             </div>
-            <div className={classes.alterSlides}>
+            <div className={classes.alterSlides} ref={block4}>
                 <div className={classes.alterSlide}><img src={slide1Big} /></div>
                 <div className={classes.alterSlide}><img src={slide5} /></div>
                 <div className={classes.alterSlide}><img src={slide2} /></div>
                 <div className={classes.alterSlideMini}><img src={slide3Mini} /></div>
                 <div className={classes.alterSlideMini}><img src={slide4Mini} /></div>
             </div>
-            <div className={classes.exampleText}>
+            <div className={classes.exampleText} ref={block5}>
                 <div className={classes.titleWhite}>Пример </div>
                 <div className={classes.titleWhite}>нашей </div>
                 <div className={classes.titleWhite}>мебели </div>
@@ -104,18 +130,18 @@ const Offices = () =>{
                 <div className={classes.titleYellow}>офиса</div>
             </div>
             <div className={classes.furnExComt}>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block6}>
                     <div className={classes.avImg}><img src={furnExImg1}/></div>
                     <div className={classes.tit}>Прекрасный камод</div>
                     <div className={classes.siz}>130см на 240см</div>
                     <div className={classes.tex}>
-                        Элегантный камод с геометрическими
+                        Элегантный комод с геометрическими
                         формами и минималистическим дизайном.
                         Идеально подходит для современных
                         интерьеров.
                     </div>
                 </div>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block7}>
                     <div className={classes.avImg}><img src={furnExImg2}/></div>
                     <div className={classes.tit}>Стильный стеллаж</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -126,7 +152,7 @@ const Offices = () =>{
                         любого интерьера.
                     </div>
                 </div>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block8}>
                     <div className={classes.avImg}><img src={furnExImg3}/></div>
                     <div className={classes.tit}>Стол с ящиками и тумба</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -136,7 +162,7 @@ const Offices = () =>{
                         Идеальным выбор для офисного помещения.
                     </div>
                 </div>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block9}>
                     <div className={classes.avImg}><img src={furnExImg4}/></div>
                     <div className={classes.tit}>Прямоугольный стол для офиса</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -147,7 +173,7 @@ const Offices = () =>{
                         создают атмосферу уюта и комфорта.
                     </div>
                 </div>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block10}>
                     <div className={classes.avImg}><img src={furnExImg5}/></div>
                     <div className={classes.tit}>Офисный стол</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -158,7 +184,7 @@ const Offices = () =>{
                         любого интерьера.
                     </div>
                 </div>
-                <div className={classes.furnBlock}>
+                <div className={classes.furnBlock} ref={block11}>
                     <div className={classes.avImg}><img src={furnExImg6}/></div>
                     <div className={classes.tit}>Большой стол для собраний</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -170,10 +196,10 @@ const Offices = () =>{
                     </div>
                 </div>
             </div>
-            <NavLink to={"/catalog"} className={classes.moreFurnButton}>
+            <NavLink to={"/catalog"} className={classes.moreFurnButton} ref={block12}>
                 Заказать для него мебель
             </NavLink>
-            <div className={classes.fonImg}>
+            <div className={classes.fonImg} ref={block13}>
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересует, как проходит заказ?</div>
                 <img src={curvedLine} className={classes.curvedLineImg}/>

@@ -103,6 +103,15 @@
   color: #FFFFFF;
 }
 
+.phoneBlock a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.phoneBlock a:hover {
+  text-decoration: underline;
+}
+
 .phoneBlock img{
   margin-right: 8px;
 }

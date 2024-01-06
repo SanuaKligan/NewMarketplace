@@ -83,7 +83,7 @@
   
 .active {
   transform: translateY(0);
-  opacity: 1;
+  opacity: 2;
   visibility: visible;
 }
   
@@ -233,12 +233,12 @@ margin-top: 8px;
     margin-top: -54px;
     margin-left: -3px;
     font-family: NAMU-1990;
-    z-index: 5;
+    z-index: 999;
   }
     
   .active {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 2;
     visibility: visible;
   }
     

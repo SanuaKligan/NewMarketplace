@@ -122,6 +122,8 @@
     line-height: 30px;
     margin: 0 auto;
     margin-top: 45px;
+    width: 100%;
+    text-align: center;
 }
 
 .totalPriceText{
@@ -295,8 +297,8 @@
     font-family: NAMU-1990;
 }
 
-.bottomBlockText .text2 {
-    text-decoration: underline;
+.bottomBlockText .text2 a{
+    color: #ffffff70;
 }
 
 @media screen and (max-width: 1200px) {
@@ -437,6 +439,8 @@
         line-height: 18.4px;
         margin: 0 auto;
         margin-top: 0;
+        width: auto;
+        text-align: left;
     }
     
     .totalPriceText{
@@ -610,7 +614,7 @@
         line-height: 12px;
     }
     
-    .bottomBlockText .text2 {
-        text-decoration: underline;
+    .bottomBlockText .text2 a{
+        color: #ffffff70;
     }
 }

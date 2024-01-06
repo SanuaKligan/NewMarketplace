@@ -7,6 +7,15 @@
   margin: 0 auto;
 }
 
+.catalogInfoCont{
+  width: 100%;
+  opacity: 0;
+}
+
+.catalogInfoCont2{
+  width: 100%;
+}
+
 @media screen and (max-width: 450px) {
   .catalog{
     display: flex;

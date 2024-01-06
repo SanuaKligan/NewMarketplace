@@ -27,7 +27,7 @@ export const CatalogAPI = {
 
 export const AuditAPI = {
     async getPostAudit(name: string, number: string, comment: string, items: string){
-        // console.log(name, number, comment, items)
+        console.log(name, number, comment, items, "api")
         return await instance.post(
             `order_make/`, {params: {name, number, comment, items}}
         ).then(response => response)

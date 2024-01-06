@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 133.97px;
+    opacity: 0;
 }
 
 .logoText{
@@ -76,6 +77,7 @@
     height: 38.66px;
     margin: 0 auto;
     margin-top: 74px;
+    opacity: 0;
 }
 
 .loftLogo img{
@@ -97,6 +99,7 @@
     margin: 0 auto;
     margin-top: 28.34px;
     gap: 10px;
+    opacity: 0;
 }
 
 .partnersLogo{
@@ -107,23 +110,7 @@
     width: 86.3%;
     margin: 0 auto;
     margin-top: 83px;
-}
-
-.homePageKitchenNav{
-    display: flex;
-    flex-wrap: wrap;
-    width: 405px;
-    height: 67.21px;
-    position: absolute;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    top: 140px;
-    left: 5.94%;
-}
-
-.homePageKitchenNav img {
-    width: 100%;
+    opacity: 0;
 }
 
 .firstTitle{
@@ -133,6 +120,7 @@
     line-height: 44.8px;
     margin-top: 115px;
     gap: 10px;
+    opacity: 0;
 }
 
 .paragsCont{
@@ -142,6 +130,7 @@
     line-height: 28px;
     font-family: NAMU-1990;
     color: #ffffff99;
+    opacity: 0;
 }
 
 .secondContainer{
@@ -152,6 +141,7 @@
     justify-content: center;
     margin-top: 65px;
     gap: 0.97%;
+    opacity: 0;
 }
 
 .secondContainer img {
@@ -173,6 +163,7 @@
     line-height: 40px;
     margin-top: 171.88px;
     gap: 10px;
+    opacity: 0;
 }
 
 .fifthContainer{
@@ -194,6 +185,7 @@
     width: 100%;
     border-radius: 15px;
     margin-top: 61px;
+    opacity: 0;
     /* height: 221px; */
 }
 

@@ -4,6 +4,10 @@
     width: 80%;
 }
 
+.firstContainerBig{
+    opacity: 0;
+}
+
 .line14{
     height: 14px;
 }
@@ -80,7 +84,10 @@
     flex-wrap: wrap;
     align-items: center; 
     justify-content: center;
+    width: 100%;
+    text-align: center;
     margin-top: 116px;
+    margin-bottom: 49px;
     font-size: 32px;
     line-height: 44.8px;
     font-family: NAMU-1850;
@@ -90,10 +97,10 @@
 .thirdContainer{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 49px;
     align-items: center;
     justify-content: center;
     margin-bottom: 34px;
+    opacity: 0;
 }
 
 .thirdContText{
@@ -120,6 +127,7 @@
     height: 704px;
     justify-content: flex-start;
     columns: auto;
+    opacity: 0;
     /* 14 пикселей между фотками по вертикали */
 }
 
@@ -154,6 +162,11 @@
 
 .alterFourthContainer{
     display: none;
+    opacity: 0;
+}
+
+.furnExComtBlock{
+    opacity: 0;
 }
 
 .furnExComt{
@@ -190,6 +203,7 @@
 
 .dopMoreFurnButton{
     display: none;
+    opacity: 0;
 }
 
 .moreFurnButton{
@@ -209,6 +223,7 @@
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear; 
+    opacity: 0;
 }
 
 .moreFurnButton:hover{
@@ -303,6 +318,7 @@
         align-items: center; 
         justify-content: center;
         margin-top: 72px;
+        margin-bottom: 32px;
         font-size: 24px;
         line-height: 33.6px;
         font-family: NAMU-1850;
@@ -312,7 +328,6 @@
     .thirdContainer{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 32px;
         align-items: center;
         justify-content: center;
         margin-bottom: 34px;

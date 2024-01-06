@@ -23,6 +23,7 @@
     font-size: 60px;
     line-height: 66px;
     font-family: NAMU-1960;
+    opacity: 0;
 }
 
 .titleWhite{
@@ -53,6 +54,7 @@
     justify-content: center;
     margin-top: 54px;
     gap: 14px;
+    opacity: 0;
 }
 
 .firstCont .bottomImg{
@@ -68,6 +70,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 153.43px;
+    margin-bottom: 37.39px;
+    width: 100%;
 }
 
 .miniTextTop{
@@ -77,17 +81,26 @@
     justify-content: center;
     width: 74.33%;
     margin: 0 auto;
-    margin-top: 37.39px;
     font-size: 32px;
     line-height: 44.8px;
-    gap: 15.6px;   
+    gap: 15.6px;
+    opacity: 0;
 }
 
 .checkBelow{
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     justify-content: center;
     margin-top: 73px;
+}
+
+.checkBelowText{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    align-self: center;
+    width: 100%;
     color: gray;
     font-size: 20px;
     line-height: 28px;
@@ -107,7 +120,6 @@
     justify-content: center; */
     width: 18px;
     height: 9px;
-    margin: 0 auto;
     margin-top: 5px;
 }
 
@@ -117,7 +129,8 @@
 }
 
 .alterTopBlock3{
-    display: none
+    display: none;
+    opacity: 0;
 }
 
 .block2{
@@ -129,6 +142,7 @@
     margin: 0 auto;
     margin-top: 80px;
     gap: 14px;
+    opacity: 0;
 }
 
 /* .block2 .firstCentrImg{
@@ -142,7 +156,8 @@
 } */
 
 .alterBottomBlock3{
-    display: none
+    display: none;
+    opacity: 0;
 }
 
 .block3{
@@ -154,6 +169,7 @@
     margin: 0 auto;
     margin-top: 15px;
     gap: 14px;
+    opacity: 0;
 }
 
 .block3 .leftCentrImg{
@@ -166,10 +182,12 @@
     align-items: center; 
     justify-content: center;
     margin-top: 91px;
+    margin-bottom: 39px;
     font-size: 40px;
     line-height: 56px;
     width: 100%;
-    gap: 12px
+    gap: 12px;
+    opacity: 0;
 }
 
 .furnExComt{
@@ -177,7 +195,6 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-    margin-top: 39px;
     align-items: center;
     justify-content: center;
     gap: 14px;
@@ -185,6 +202,7 @@
 
 .furnBlock{
     width: 373px;
+    opacity: 0;
 }
 
 .furnBlock img{
@@ -228,7 +246,8 @@
     text-decoration: none;
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear; 
+    -moz-transition: all .3s linear;
+    opacity: 0;
 }
 
 .moreFurnButton:hover{
@@ -242,6 +261,7 @@
     margin: 0 auto;
     margin-top: 108px;
     position: relative;
+    opacity: 0;
 }
 
 .fonImg::after {
@@ -405,6 +425,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 87px;
+        margin-bottom: 37.39px;
     }
     
     .miniTextTop{
@@ -414,17 +435,27 @@
         justify-content: center;
         width: 100%;
         margin: 0;
-        margin-top: 37.39px;
         font-size: 24px;
         line-height: 33.6px;
         gap: 7px;
     }
-    
+
     .checkBelow{
         display: flex;
+        flex-wrap: wrap;
         align-items: center; 
         justify-content: center;
         margin-top: 28px;
+        opacity: 0;
+    }
+    
+    .checkBelowText{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content: center;
+        align-self: center;
+        width: 100%;
         color: gray;
         font-size: 20px;
         line-height: 28px;
@@ -528,10 +559,11 @@
         align-items: center; 
         justify-content: center;
         margin-top: 39px;
+        margin-bottom: 17px;
         font-size: 24px;
         line-height: 33.6px;
         width: 100%;
-        gap: 7px
+        gap: 7px;
     }
     
     .furnExComt{
@@ -539,7 +571,6 @@
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
-        margin-top: 17px;
         align-items: center;
         justify-content: center;
         gap: 10px;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import classes from "./Home.module.css";
 import Materials from "../Materials/Materials";
 
@@ -22,16 +22,46 @@ import barImg from "../../assets/images/barImg.png"
 import FormAudit from "../FormAudit/FormAudit";
 import { NavLink } from "react-router-dom";
 import OrdBisnesFurn from "../OrdBisnesFurn/OrdBisnesFurn";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const Home: React.FC = (props) => {
         const [isActive, setIsActive] = useState(false);
         const handleClick = () => {
             setIsActive(!isActive);
         }
+
+        const block1 = useRef(null)
+        const block2_1 = useRef(null)
+        const block2_2 = useRef(null)
+        const block3 = useRef(null)
+        const block4_1 = useRef(null)
+        const block4_2 = useRef(null)
+        const block4_3 = useRef(null)
+        const block5 = useRef(null)
+        const block6_1 = useRef(null)
+        const block6_2 = useRef(null)
+        const block7 = useRef(null)
+        const block8 = useRef(null)
+        const block9 = useRef(null)
+        const block10 = useRef(null)
+        const block11 = useRef(null)
+        const block12 = useRef(null)
+        const observedElements = [
+            block1, block2_1, block2_2, block3, block4_1, block4_2, 
+            block4_3, block5, block6_1, block6_2, block7, block8, 
+            block9, block10, block11, block12
+        ];
+    
+        useIntersectionObserver(observedElements, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        });
+
         return (
             <div className={classes.home}>
                 <div className={classes.firstContainer}>
-                    <div className={classes.logoText}>
+                    <div className={classes.logoText} ref={block1}>
                         <div className={classes.titleYellow}>
                             LOFT RT
                         </div>
@@ -47,7 +77,7 @@ const Home: React.FC = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className={classes.fonImgForPhone}><img src={fonImgForPhone} /></div>
+                    <div className={classes.fonImgForPhone} ref={block2_1}><img src={fonImgForPhone} /></div>
                     <div className={classes.ordButtons}>
                         {/* <div className={classes.firstButton}> */}
                             <NavLink to={"/for_home"} className={classes.firstButton}>
@@ -60,7 +90,7 @@ const Home: React.FC = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.fonImg}>
+                <div className={classes.fonImg} ref={block2_2}>
                     <div className={classes.homePageKitchenNav}>
                         {/* <div className={classes.navSegm}> */}
                             <NavLink to={"/business/offices"} className={classes.navSegm}>
@@ -81,33 +111,33 @@ const Home: React.FC = (props) => {
                         {/* </div> */}
                     </div>
                 </div>
-                <div className={classes.workWithLove}>
+                <div className={classes.workWithLove} ref={block3}>
                     <div className={classes.titleWhite}>Работаем исключительно </div>
                     <div className={classes.workWithLove15_6}></div>
                     <div className={classes.titleYellow}>с любовью</div>
                 </div>
                 <div className={classes.secondContainer}>
-                    <div className={classes.firstDiv}>
+                    <div className={classes.firstDiv} ref={block4_1}>
                         <div className={classes.bigImg}><img src={ffsb} /></div>
                         <div className={classes.smallImg}><img src={sefsb} /></div>
                         <div className={classes.smallImg}><img src={tfsb} /></div>
                     </div>
-                    <div className={classes.secondDiv}>
+                    <div className={classes.secondDiv} ref={block4_2}>
                         <div className={classes.smallImg}><img src={fofsb} /></div>
                         <div className={classes.smallImg}><img src={fifsb} /></div>
                         <div className={classes.bigImg}><img src={sifsb} /></div>
                     </div>
                 </div>
-                <div className={classes.alterSecondContainer}>
+                <div className={classes.alterSecondContainer} ref={block4_3}>
                     <div className={classes.bigImg}><img src={sifsb} /></div>
                     <div className={classes.smallImg}><img src={sefsb} /></div>
                     <div className={classes.smallImg}><img src={tfsb} /></div>
                     <div className={classes.bigImg}><img src={fifsb} /></div>
                 </div>
-                <div className={classes.thirdContainer}>
+                <div className={classes.thirdContainer} ref={block5}>
                     <div className={classes.miniText}>
                         <div>
-                            Понравилось то-что вы увидели? Хотите себе такую мебель? 
+                            Понравилось то, что вы увидели? Хотите себе такую мебель? 
                             Так чего же вы ждёте? Вы уже знаете, к кому обратиться.
                             Будем ждать вашей заявки. 
                         </div>
@@ -126,15 +156,15 @@ const Home: React.FC = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={classes.aboutFurn}>
+                <div className={classes.aboutFurn} ref={block6_1}>
                     <div className={classes.titleWhite}>Немного о </div>
                     <div className={classes.line15_6}></div>
                     <div className={classes.titleYellow}>нашей мебели</div>
                 </div>
-                <div className={classes.alterSecBigHomeImg}>
+                <div className={classes.alterSecBigHomeImg} ref={block6_2}>
                     <img src={whiteLogoImg} className={classes.alterWhiteLogoImg}/>
                 </div>
-                <div className={classes.fourthContainer}>
+                <div className={classes.fourthContainer} ref={block7}>
                     <Materials />
                     {/* <div className={classes.infoBlock}>
                         <div className={classes.infBlImg}><img src={shicDisImg} /></div>
@@ -154,20 +184,20 @@ const Home: React.FC = (props) => {
                         <div className={classes.infBlText}><img src={bestPricesText} /></div>
                     </div> */}
                 </div>
-                <div className={classes.secBigHomeImg}>
+                <div className={classes.secBigHomeImg} ref={block8}>
                     <img src={whiteLogoImg} className={classes.whiteLogoImg}/>
                 </div>
                 {/* <div className={classes.learnMore}> */}
-                    <NavLink to={"/about_us"} className={classes.learnMore}>
+                    <NavLink to={"/about_us"} className={classes.learnMore} ref={block9}>
                         Узнать больше
                     </NavLink>
                 {/* </div> */}
-                <div className={classes.title1}>
-                    <div className={classes.titleWhite}>У вас есть </div>
-                    <div className={classes.line15_6}></div>
-                    <div className={classes.titleYellow}>ресторан?</div>
-                </div>
-                <div className={classes.fifthContainer}>
+                <div className={classes.fifthContainer} ref={block10}>
+                    <div className={classes.title1}>
+                        <div className={classes.titleWhite}>У вас есть </div>
+                        <div className={classes.line15_6}></div>
+                        <div className={classes.titleYellow}>ресторан?</div>
+                    </div>
                     <div className={classes.alterFifthContImg}>
                         <div><img src={restImg} /></div>
                     </div>
@@ -193,12 +223,12 @@ const Home: React.FC = (props) => {
                         <div><img src={restImg} /></div>
                     </div>
                 </div>
-                <div className={classes.title1}>
-                    <div className={classes.titleWhite}>У вас есть </div>
-                    <div className={classes.line15_6}></div>
-                    <div className={classes.titleYellow}>салон?</div>
-                </div>
-                <div className={classes.fifthContainer}>
+                <div className={classes.fifthContainer} ref={block11}>
+                    <div className={classes.title1}>
+                        <div className={classes.titleWhite}>У вас есть </div>
+                        <div className={classes.line15_6}></div>
+                        <div className={classes.titleYellow}>салон?</div>
+                    </div>
                     <div className={classes.alterFifthContImg}>
                         <div><img src={salonImg} /></div>
                     </div>
@@ -224,16 +254,16 @@ const Home: React.FC = (props) => {
                         <div><img src={salonImg} /></div>
                     </div>
                 </div>
-                <div className={classes.title1}>
-                    <div className={classes.titleWhite}>У вас есть </div>
-                    <div className={classes.line15_6}></div>
-                    <div className={classes.titleYellow}>бар </div>
-                    <div className={classes.line15_6}></div>
-                    <div className={classes.titleWhite}>или </div>
-                    <div className={classes.line15_6}></div>
-                    <div className={classes.titleYellow}>кафе?</div>
-                </div>
-                <div className={classes.fifthContainer}>
+                <div className={classes.fifthContainer} ref={block12}>
+                    <div className={classes.title1}>
+                        <div className={classes.titleWhite}>У вас есть </div>
+                        <div className={classes.line15_6}></div>
+                        <div className={classes.titleYellow}>бар </div>
+                        <div className={classes.line15_6}></div>
+                        <div className={classes.titleWhite}>или </div>
+                        <div className={classes.line15_6}></div>
+                        <div className={classes.titleYellow}>кафе?</div>
+                    </div>
                     <div className={classes.alterFifthContImg}>
                         <div><img src={barImg} /></div>
                     </div>

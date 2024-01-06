@@ -55,7 +55,7 @@ const Header = () => {
                 </div>
                 <div className={classes.phoneBlock}>
                     <img src={phoneImg}/>
-                    +7 (777) 777 77 77
+                    <a href="tel:+79600535559">+7 (960) 053 55 59</a>
                 </div>
                 <div className={classes.numbNavBlock}>
                     <NavLink to="/navigate">

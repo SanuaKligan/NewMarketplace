@@ -23,6 +23,7 @@
     justify-content: center;
     margin-top: 65px;
     font-family: NAMU-1960;
+    opacity: 0;
 }
 
 .logoText{
@@ -43,12 +44,14 @@
 
 .alterFirstImg{
     display: none;
+    opacity: 0;
 }
 
 .firstImg{
     display: flex;
     width: 100%;
     margin-top: 39px;
+    opacity: 0;
 }
 
 .firstImg img{
@@ -62,6 +65,7 @@
     margin-top: 116px;
     height: 306px;
     background-color: #191812;
+    opacity: 0;
 }
 
 .secondContainer .text1{
@@ -101,8 +105,13 @@
     line-height: 44.8px;
 }
 
+.noneSlider{
+    opacity: 0;
+}
+
 .alterSlides{
     display: none;
+    opacity: 0;
 }
 
 .exampleText{
@@ -115,6 +124,7 @@
     line-height: 56px;
     font-family: NAMU-1850;
     gap: 10px;
+    opacity: 0;
 }
 
 .exampleText .titleWhite{
@@ -149,6 +159,7 @@
     margin-top: 48px;
     width: 378px;
     height: 549px;
+    opacity: 0;
 }
 
 .tit{
@@ -189,7 +200,8 @@
     text-decoration: none;
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear; 
+    -moz-transition: all .3s linear;
+    opacity: 0;
 }
 
 .moreFurnButton:hover{

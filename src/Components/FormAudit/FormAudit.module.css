@@ -15,6 +15,7 @@
     font-size: 24px;
     line-height: 33.6px;
     font-family: NAMU-1850;
+    opacity: 0;
 }
 
 .sixthContainer{
@@ -35,6 +36,7 @@
     height: 411px;
     min-width: 503px;
     position: relative;
+    opacity: 0;
 }
 
 .fonImg::after {
@@ -88,6 +90,7 @@
     font-size: 14px;
     line-height: 21px;
     font-family: NAMU-1990;
+    opacity: 0;
     /* margin-right: 10%; */
     /* position: absolute; */
 }
@@ -185,7 +188,7 @@
 }
 
 .bottomBlockText .text2 {
-    text-decoration: underline;
+    color: #ffffff70;
 }
 
 @media screen and (max-width: 1360px) {
@@ -379,6 +382,6 @@
     }
     
     .bottomBlockText .text2 {
-        text-decoration: underline;
+        color: #FFFFFF;
     }
 }

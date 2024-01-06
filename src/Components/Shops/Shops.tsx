@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import classes from "./Shops.module.css"
 import secBlock1Img from "../../assets/images/shops/secBlock1Img.png"
 import secBlock2Img from "../../assets/images/shops/secBlock2Img.png"
@@ -20,30 +20,53 @@ import furnEx1Img from "../../assets/images/shops/furnEx1Img.png"
 import furnEx2Img from "../../assets/images/shops/furnEx2Img.png"
 import furnEx3Img from "../../assets/images/shops/furnEx3Img.png"
 import { NavLink } from "react-router-dom";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 
 const Shops = () =>{
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    const block4 = useRef(null)
+    const block5 = useRef(null)
+    const block6 = useRef(null)
+    const block7 = useRef(null)
+    const block8 = useRef(null)
+    const block9 = useRef(null)
+
+    const observedElements = [
+        block1, block2, block3, 
+        block4, block5, block6, 
+        block7, block8, block9
+    ];
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
     return(
         <div className={classes.shops}>
-            <div className={classes.firstContainer}>
-                <div className={classes.logoText}>
-                    <div className={classes.titleWhite}>МЕБЕЛЬ ДЛЯ</div>
-                    <div className={classes.titleYellow}>МАГАЗИНОВ</div>
+            <div className={classes.firstContainerBig} ref={block1}>
+                <div className={classes.firstContainer}>
+                    <div className={classes.logoText}>
+                        <div className={classes.titleWhite}>МЕБЕЛЬ ДЛЯ</div>
+                        <div className={classes.titleYellow}>МАГАЗИНОВ</div>
+                    </div>
+                </div>
+                <div className={classes.secondContainer}>
+                    <div className={classes.leftImg}><img src={secBlock1Img}/></div>
+                    <div className={classes.rigthImg}><img src={secBlock2Img}/></div>
+                </div>
+                <div className={classes.alterSecondContainer}>
+                    <div className={classes.leftImg}><img src={alterSecBlock1Img}/></div>
+                    <div className={classes.rigthImg}><img src={alterSecBlock2Img} /></div>
                 </div>
             </div>
-            <div className={classes.secondContainer}>
-                <div className={classes.leftImg}><img src={secBlock1Img}/></div>
-                <div className={classes.rigthImg}><img src={secBlock2Img}/></div>
-            </div>
-            <div className={classes.alterSecondContainer}>
-                <div className={classes.leftImg}><img src={alterSecBlock1Img}/></div>
-                <div className={classes.rigthImg}><img src={alterSecBlock2Img} /></div>
-            </div>
-            <div className={classes.exampleText}>
-                <div className={classes.titleWhite}>У вас есть</div>
-                <div className={classes.titleYellow}>магазин?</div>
-            </div>
-            <div className={classes.thirdContainer}>
+            <div className={classes.thirdContainer} ref={block2}>
+                <div className={classes.exampleText}>
+                    <div className={classes.titleWhite}>У вас есть</div>
+                    <div className={classes.titleYellow}>магазин?</div>
+                </div>
                 <div className={classes.thirdContText}>
                     <div className={classes.titleYellow}>Прекрасно!</div>
                     <div className={classes.paragText}>
@@ -58,7 +81,7 @@ const Shops = () =>{
                 <img src={thirdContImg} className={classes.thirdContImg}/>
             </div>
             <SeeBelow />
-            <div className={classes.fourthContainer}>
+            <div className={classes.fourthContainer} ref={block3}>
                 <div className={classes.firstDiv}>
                     <div className={classes.smallImg}><img src={fftb} /></div>
                     <div className={classes.smallImg}><img src={seftb} /></div>
@@ -70,7 +93,7 @@ const Shops = () =>{
                     <div className={classes.smallImg}><img src={siftb} /></div>
                 </div>
             </div>
-            <div className={classes.alterFourthContainer}>
+            <div className={classes.alterFourthContainer} ref={block4}>
                 <div className={classes.bigImg}><img src={tftb} /></div>
                 <div className={classes.smallImg}><img src={fftb} /></div>
                 <div className={classes.smallImg}><img src={seftb} /></div>
@@ -78,12 +101,12 @@ const Shops = () =>{
                 <div className={classes.smallImg}><img src={fiftb} /></div>
                 <div className={classes.smallImg}><img src={siftb} /></div>
             </div>
-            <div className={classes.exampleText}>
+            <div className={classes.exampleText} ref={block5}>
                 <div className={classes.titleWhite}>Пример нашей</div>
                 <div className={classes.titleYellow}>мебели для магазинов</div>
             </div>
             <div className={classes.furnExComt}>
-                <div className={classes.furnExComtBlock}>
+                <div className={classes.furnExComtBlock} ref={block6}>
                     <div className={classes.avImg}><img src={furnEx1Img}/></div>
                     <div className={classes.tit}>Интересный стеллаж</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -99,7 +122,7 @@ const Shops = () =>{
                         </NavLink>
                     {/* </button> */}
                 </div>
-                <div className={classes.furnExComtBlock}>
+                <div className={classes.furnExComtBlock} ref={block7}>
                     <div className={classes.avImg}><img src={furnEx2Img}/></div>
                     <div className={classes.tit}>Стильный стеллаж</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -115,7 +138,7 @@ const Shops = () =>{
                         </NavLink>
                     {/* </button> */}
                 </div>
-                <div className={classes.furnExComtBlock}>
+                <div className={classes.furnExComtBlock} ref={block8}>
                     <div className={classes.avImg}><img src={furnEx3Img}/></div>
                     <div className={classes.tit}>Большой стеллаж</div>
                     <div className={classes.siz}>130см на 240см</div>
@@ -133,7 +156,7 @@ const Shops = () =>{
                 </div>
             </div>
             {/* <button className={classes.moreFurnButton}> */}
-                <NavLink to={"/catalog"} className={classes.moreFurnButton}>
+                <NavLink to={"/catalog"} className={classes.moreFurnButton} ref={block9}>
                     Перейти в полный каталог
                 </NavLink>
             {/* </button> */}

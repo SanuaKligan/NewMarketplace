@@ -7,6 +7,7 @@ import deleteButton from "../../assets/images/catalogs/deleteButton.svg"
 
 import { postAudit } from "../../redux/catalog-reducer";
 import { ProductType } from "../../utils/generalTypes";
+import { NavLink } from "react-router-dom";
 
 type AuditType = {
     basketItems: Array<ProductType>
@@ -80,7 +81,7 @@ const BasketPageForm: React.FC<
             <div className={classes.bottomBlock}>
                 <div className={classes.bottomBlockText}>
                     <div>Нажимая на кнопку, я соглашаюсь,</div>
-                    <div className={classes.text2}>на обработку своих персональных данных</div>
+                    <div className={classes.text2}><NavLink to="*">на обработку своих персональных данных</NavLink></div>
                 </div>
                 <button
                     className={classes.sendFormBut}

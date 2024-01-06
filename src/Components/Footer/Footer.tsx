@@ -1,14 +1,8 @@
-import React from "react"
+import React, { useRef } from "react"
 import classes from "./Footer.module.css"
 import {NavLink} from "react-router-dom"
 import {UserType} from "../../utils/generalTypes"
 import logo from "../../assets/images/Group 4606.png"
-import footerBlock from "../../assets/images/FooterBlock.png"
-import upButton from "../../assets/images/UpButton.svg"
-import politicConf from "../../assets/images/Политика обработки персональных данных.svg"
-import dropdownImg from "../../assets/images/DropdownImg.png"
-
-import title5 from "../../assets/images/А вот наши контакты.svg"
 
 import phone from "../../assets/images/Телефон_.svg"
 import email from "../../assets/images/Email_.svg"
@@ -20,12 +14,10 @@ import instagram from "../../assets/images/Instagram.svg"
 import whatsAppImg from "../../assets/images/WhatsAppSymb.svg"
 import telegramImg from "../../assets/images/TelegramSymb.svg"
 import instagramImg from "../../assets/images/InstagramSymb.svg"
-import footerImg from "../../assets/images/footerImg.png"
 import BisnesMenu from "../BisnesMenu/BisnesMenu"
 import ServiceMenu from "../ServiceMenu/ServiceMenu"
 import deloLogo from "../../assets/images/deloLogo.svg"
-// const {classes} = require("./Nav.module.css");
-// const {Preloader} = require("../../assets/Preloader/Preloader");
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 
 type FooterProps = {
     isAuth: boolean
@@ -45,39 +37,69 @@ const Footer: React.FC<FooterProps> = (props) => {
                 behavior: 'smooth',
             });
         }
-      }
+    }
+
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    const block4 = useRef(null)
+    const block5 = useRef(null)
+    const block6 = useRef(null)
+    const block7 = useRef(null)
+    const observedElements = [
+        block1, block2, block3, block4, block5, block6, block7
+    ];
+
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
+
     return (            
         <footer className={classes.footer}>
             <div className={classes.topFooter}>
-                <div className={classes.title1}>
+                <div className={classes.title1} ref={block1}>
                     А вот наши контакты
                 </div>
                 <div className={classes.seventhContainer}>
                     <div className={classes.firstDiv}>
-                        <div className={classes.topBlock}>
+                        <div className={classes.topBlock} ref={block1}>
                             <div className={classes.ph}><img src={phone}/></div>
-                            <div className={classes.nu}>+7 (777) 777 77 77</div>
+                            <div className={classes.nu}><a href="tel:+79600535559">+7 (960) 053 55 59</a></div>
                         </div>
-                        <div className={classes.topBlock}>
+                        <div className={classes.topBlock} ref={block2}>
                             <div className={classes.tx}><img src={email}/></div>
-                            <div className={classes.lg}>loftluxe@gmail.com</div>
+                            <div className={classes.lg}><a href="mailto:zakaz@loftrt.ru">zakaz@loftrt.ru</a></div>
                         </div>
-                        <div className={classes.topBlock}>
+                        <div className={classes.topBlock} ref={block3}>
                             <div className={classes.tx}><img src={adress}/></div>
                             <div className={classes.ad1}>Россия, г. Казань,</div>
                             <div className={classes.ad2}>ул. Центральная 91</div>
                         </div>
-                        <div className={classes.bottomBlock}>
+                        <div className={classes.bottomBlock} ref={block4}>
                             <div className={classes.tx}><img src={whatsApp}/></div>
-                             <div className={classes.wA}><img src={whatsAppImg}/></div>
+                            <div className={classes.wA}>
+                                <a href="https://wa.me/79600535559">
+                                    <img src={whatsAppImg} />
+                                </a>
+                            </div>
                         </div>
-                        <div className={classes.bottomBlock}>
+                        <div className={classes.bottomBlock} ref={block5}>
                             <div className={classes.tx}><img src={telegram}/></div>
-                            <div className={classes.te}><img src={telegramImg}/></div>
+                            <div className={classes.te}>
+                                <a href="https://t.me/loftrtru">
+                                    <img src={telegramImg} />
+                                </a>
+                            </div>
                         </div>
-                        <div className={classes.bottomBlock}>
+                        <div className={classes.bottomBlock} ref={block6}>
                             <div className={classes.tx}><img src={instagram}/></div>
-                            <div className={classes.in}><img src={instagramImg}/></div>
+                            <div className={classes.in}>
+                                <a href="https://www.instagram.com/loftrt.ru?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">
+                                    <img src={instagramImg} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,15 +147,15 @@ const Footer: React.FC<FooterProps> = (props) => {
                         </div>
                     </div>
                     <div className={classes.upButton}>
-                        <button onClick={handlerScrollUp}>Навех</button>
+                        <button onClick={handlerScrollUp}>Наверх</button>
                     </div>
                 </div>
                 <div className={classes.politicConf}>
                     <div>(с) ЛОФТ РТ / Все права защищены</div>
-                    <div className={classes.obrPers}>Политика обработки персональных данных</div>
+                    <NavLink to="*" className={classes.obrPers}>Политика обработки персональных данных</NavLink>
                     <div><img src={deloLogo} /></div>
                     <div>“ДЕЛО ДИДЖИТАЛ АЙДЖЕНСИ”</div>
-                    <div className={classes.obrPers}>Разработка и продвижение сайта deloagency.com</div>
+                    <a href="https://deloagency.com/" className={classes.obrPers}>Разработка и продвижение сайта deloagency.com</a>
                 </div>
             </div>
         </footer>

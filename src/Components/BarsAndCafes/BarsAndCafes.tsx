@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import classes from "./BarsAndCafes.module.css"
 import secondContImg from "../../assets/images/for_bars_&_cafes/secondContImg.png"
 import alterSecBlockImg from "../../assets/images/for_bars_&_cafes/alterSecBlockImg.png"
@@ -25,31 +25,53 @@ import furnEx1Img from "../../assets/images/for_bars_&_cafes/furnEx1Img.png"
 import furnEx2Img from "../../assets/images/for_bars_&_cafes/furnEx2Img.png"
 import furnEx3Img from "../../assets/images/for_bars_&_cafes/furnEx3Img.png"
 import { NavLink } from "react-router-dom";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 
 const BarsAndCafes = () =>{
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    const block4 = useRef(null)
+    const block5 = useRef(null)
+    const block6 = useRef(null)
+    const block7 = useRef(null)
+    const block8 = useRef(null)
+    const block9 = useRef(null)
+    const observedElements = [
+        block1, block2, block3, 
+        block4, block5, block6, 
+        block7, block8, block9
+    ];
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
     return(
         <div className={classes.barsAndCafes}>
-            <div className={classes.firstContainer}>
-                <div className={classes.logoText}>
-                    <div className={classes.titleWhite}>МЕБЕЛЬ</div>
-                    <div className={classes.titleWhite}>ДЛЯ</div>
-                    <div className={classes.titleYellow}>БАРОВ</div>
-                    <div className={classes.titleYellow}>И</div>
-                    <div className={classes.titleYellow}>КАФЕ</div>
+            <div className={classes.firstContainerBig} ref={block1}>
+                <div className={classes.firstContainer}>
+                    <div className={classes.logoText}>
+                        <div className={classes.titleWhite}>МЕБЕЛЬ</div>
+                        <div className={classes.titleWhite}>ДЛЯ</div>
+                        <div className={classes.titleYellow}>БАРОВ</div>
+                        <div className={classes.titleYellow}>И</div>
+                        <div className={classes.titleYellow}>КАФЕ</div>
+                    </div>
+                </div>
+                <div className={classes.secondContainer}>
+                    <img src={secondContImg} className={classes.secondContImg}/>
+                </div>
+                <div className={classes.alterSecondContainer}>
+                    <img src={alterSecBlockImg} className={classes.alterSecondContImg}/>
                 </div>
             </div>
-            <div className={classes.secondContainer}>
-                <img src={secondContImg} className={classes.secondContImg}/>
-            </div>
-            <div className={classes.alterSecondContainer}>
-                <img src={alterSecBlockImg} className={classes.alterSecondContImg}/>
-            </div>
-            <div className={classes.exampleText}>
-                <div className={classes.titleWhite}>У вас есть</div>
-                <div className={classes.titleYellow}>бар или кафе?</div>
-            </div>
-            <div className={classes.thirdContainer}>
+            <div className={classes.thirdContainer} ref={block2}>
+                <div className={classes.exampleText}>
+                    <div className={classes.titleWhite}>У вас есть</div>
+                    <div className={classes.titleYellow}>бар или кафе?</div>
+                </div>
                 <div className={classes.thirdContText}>
                     <div className={classes.titleYellow}>Замечательно!</div>
                     <div className={classes.paragText}>
@@ -65,18 +87,18 @@ const BarsAndCafes = () =>{
             </div>
             <SeeBelow />
             <div className={classes.fourthContainer}>
-                <div className={classes.firstDiv}>
+                <div className={classes.firstDiv} ref={block3}>
                     <div className={classes.bigImg}><img src={fftb} /></div>
                     <div className={classes.smallImg}><img src={seftb} /></div>
                     <div className={classes.smallImg}><img src={tftb} /></div>
                 </div>
-                <div className={classes.secondDiv}>
+                <div className={classes.secondDiv} ref={block4}>
                     <div className={classes.smallImg}><img src={foftb} /></div>
                     <div className={classes.smallImg}><img src={fiftb} /></div>
                     <div className={classes.bigImg}><img src={siftb} /></div>
                 </div>
             </div>
-            <div className={classes.alterFourthContainer}> 
+            <div className={classes.alterFourthContainer} ref={block5}> 
                 <div className={classes.smallImg}><img src={seftb2} /></div>
                 <div className={classes.smallImg}><img src={tftb2} /></div>
                 <div className={classes.bigImg}><img src={fftb2} /></div>
@@ -84,12 +106,12 @@ const BarsAndCafes = () =>{
                 <div className={classes.smallImg}><img src={foftb2} /></div>
                 <div className={classes.bigImg}><img src={siftb2} /></div>
             </div>
-            <div className={classes.exampleText}>
+            <div className={classes.exampleText2} ref={block6}>
                 <div className={classes.titleWhite}>Пример нашей мебели </div>
                 <div className={classes.titleYellow}>для баров и кафе</div>
             </div>
             <div className={classes.furnExContainer}>
-                <div className={classes.furnExMiniCont}>
+                <div className={classes.furnExMiniCont} ref={block7}>
                     <div className={classes.alterAvImg}><img src={furnEx1Img}/></div>
                     <div className={classes.furnExContText}>
                         <div className={classes.tit}>Высокий стол и 3 стула</div>
@@ -108,7 +130,7 @@ const BarsAndCafes = () =>{
                     </div>
                     <div className={classes.avImg}><img src={furnEx1Img}/></div>
                 </div>
-                <div className={classes.furnExMiniCont}>
+                <div className={classes.furnExMiniCont} ref={block8}>
                     <div className={classes.alterAvImg}><img src={furnEx2Img}/></div>
                     <div className={classes.furnExContText}>
                         <div className={classes.tit}>Раскошный круглый стол</div>
@@ -127,7 +149,7 @@ const BarsAndCafes = () =>{
                     </div>
                     <div className={classes.avImg}><img src={furnEx2Img}/></div>
                 </div>
-                <div className={classes.furnExMiniCont}>
+                <div className={classes.furnExMiniCont} ref={block9}>
                     <div className={classes.alterAvImg}><img src={furnEx3Img}/></div>
                     <div className={classes.furnExContText}>
                         <div className={classes.tit}>Прямоугольный стол для кафе</div>

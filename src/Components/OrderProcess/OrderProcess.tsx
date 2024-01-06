@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import classes from "./OrderProcess.module.css"
 import orderProcessTitlImg from "../../assets/images/order_process/orderProcessTitlImg.png"
 import crookedLine from "../../assets/images/order_process/crookedLine.svg"
@@ -15,12 +15,36 @@ import seeGuar from "../../assets/images/order_process/seeGuar.svg"
 import crookedLine2 from "../../assets/images/order_process/crookedLine2.svg"
 import FormAudit from "../FormAudit/FormAudit"
 import { NavLink } from "react-router-dom"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 
 
 const OrderProcess = () =>{
+    const block1 = useRef(null)
+    const block2 = useRef(null)
+    const block3 = useRef(null)
+    // const block4 = useRef(null)
+    const block5 = useRef(null)
+    const block6 = useRef(null)
+    const block7 = useRef(null)
+    const block8 = useRef(null)
+    const block9 = useRef(null)
+    const block10 = useRef(null)
+    const block11 = useRef(null)
+    const observedElements = [
+        block1, block2, block3, 
+        // block4, 
+        block5, block6, block7, block8, block9, block10, block11
+    ];
+
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
+    
     return(
         <div className={classes.orderProcess}>
-            <div className={classes.firstBlock}>
+            <div className={classes.firstBlock} ref={block1}>
                 <div className={classes.vertical30}></div>
                 <div className={classes.text}>
                     <div className={classes.titleWhite}>ПРОЦЕСС ЗАКАЗА</div>
@@ -31,7 +55,7 @@ const OrderProcess = () =>{
                     <div className={classes.firstBlockImg}><img src={orderProcessTitlImg} /></div>
                 </div>
             </div>
-            <div className={classes.secondContainer}>
+            <div className={classes.secondContainer} ref={block2}>
                 <div className={classes.vertical28}></div>
                 <div className={classes.text1}>Не уверены, как будет проходить заказ?</div>
                 <div className={classes.text1_1}>Не уверены, как будет</div>
@@ -53,15 +77,15 @@ const OrderProcess = () =>{
                 </div>
                 <div className={classes.vertical38}></div>
             </div>
-            <div className={classes.seeBelow}><img src={seeBelow} /></div>
+            <div className={classes.seeBelow} ref={block3}><img src={seeBelow} /></div>
             <div className={classes.thirdConteiner}>
-                <div className={classes.title}>
+                <div className={classes.title} ref={block5}>
                     <div className={classes.titleWhite}>Заказ делится</div>
                     <div className={classes.titleWhite}>всего</div>
                     <div className={classes.titleWhite}>на</div>
                     <div className={classes.titleYellow}>5 этапов</div>
                 </div>
-                <div className={classes.ordBlock}>
+                <div className={classes.ordBlock} ref={block6}>
                     <div className={classes.text}>
                         <div className={classes.numbAndTitl}>
                             <div className={classes.number}>1</div>
@@ -79,7 +103,7 @@ const OrderProcess = () =>{
                     </div>
                     <div><img src={thirdCont1Img} /></div>
                 </div>
-                <div className={classes.ordBlock}>
+                <div className={classes.ordBlock} ref={block7}>
                     <div className={classes.thirdContImg}><img src={thirdCont2Img} /></div>
                     <div className={classes.text}>
                         <div className={classes.numbAndTitl}>
@@ -98,7 +122,7 @@ const OrderProcess = () =>{
                     </div>
                     <div className={classes.alterThirdContImg}><img src={thirdCont2Img} /></div>
                 </div>
-                <div className={classes.ordBlock}>
+                <div className={classes.ordBlock} ref={block8}>
                     <div className={classes.text}>
                         <div className={classes.numbAndTitl}>
                             <div className={classes.number}>3</div>
@@ -116,7 +140,7 @@ const OrderProcess = () =>{
                     </div>
                     <div><img src={thirdCont3Img} /></div>
                 </div>
-                <div className={classes.ordBlock}>
+                <div className={classes.ordBlock} ref={block9}>
                     <div className={classes.thirdContImg}><img src={thirdCont4Img} /></div>
                     <div className={classes.text}>
                         <div className={classes.numbAndTitl}>
@@ -136,7 +160,7 @@ const OrderProcess = () =>{
                     </div>
                     <div className={classes.alterThirdContImg}><img src={thirdCont4Img} /></div>
                 </div>
-                <div className={classes.ordBlock}>
+                <div className={classes.ordBlock} ref={block10}>
                     <div className={classes.text}>
                         <div className={classes.numbAndTitl}>
                             <div className={classes.number}>5</div>
@@ -156,7 +180,7 @@ const OrderProcess = () =>{
                     <div><img src={thirdCont5Img} /></div>
                 </div>
             </div>
-            <div className={classes.fonImg}>
+            <div className={classes.fonImg} ref={block11}>
                 <img src={logo} className={classes.fonImgTitle}/>
                 <div className={classes.fonImgText}>Интересуют гарантии на нашу продукцию?</div>
                 <img src={crookedLine2} className={classes.curvedLineImg}/>

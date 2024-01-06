@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 133.97px;
+    opacity: 0;
 }
 
 .logoText{
@@ -37,7 +38,7 @@
     font-size: 60px;
     line-height: 66px;
     font-family: NAMU-1960;
-    gap: 15.6px;
+    gap: 10px;
 }
 
 .fonImg{
@@ -59,21 +60,8 @@
     background-size: 100% 100%;
 }
 
-.homePageKitchenNav{
-    display: flex;
-    flex-wrap: wrap;
-    width: 405px;
-    height: 67.21px;
-    position: absolute;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    top: 140px;
-    left: 5.94%;
-}
-
-.homePageKitchenNav img {
-    width: 100%;
+.whatIsWeld{
+    opacity: 0;
 }
 
 .firstTitle{
@@ -155,6 +143,7 @@
     justify-content: center;
     font-family: NAMU-1850;
     gap: 10px;
+    opacity: 0;
 }
 
 .thirdContainer{
@@ -176,6 +165,7 @@
     width: 378px;
     height: 221px;
     border-radius: 15px;
+    opacity: 0;
 }
 
 .thirdBlock .numbAndTitl{
@@ -214,13 +204,20 @@
     margin-bottom: 21px;
 }
 
+.thirdBlockImg{
+    opacity: 0;
+}
+
 .title1{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
     font-size: 32px;
     line-height: 44.8px;
     margin-top: 153px;
+    margin-bottom: 69.12px;
 }
 
 .migWelding{
@@ -228,8 +225,8 @@
     flex-wrap: wrap;
     font-size: 25px;
     line-height: 35px;
-    margin-top: 69.12px;
     gap: 10px;
+    opacity: 0;
 }
 
 .fourthContainer{
@@ -249,6 +246,7 @@
     justify-content: space-between;
     width: 548px;
     margin-right: 46.43%;
+    opacity: 0;
     /* height: 221px; */
 }
 
@@ -259,6 +257,7 @@
     justify-content: space-between;
     width: 548px;
     margin-left: 50.65%;
+    opacity: 0;
     /* height: 221px; */
 }
 
@@ -300,6 +299,7 @@
     line-height: 35px;
     margin-top: 154px;
     gap: 10px;
+    opacity: 0;
 }
 
 .argWelding{
@@ -310,6 +310,7 @@
     width: 88.63%;
     margin-top: 154px;
     gap: 10px;
+    opacity: 0;
 }
 
 .sevenStages{
@@ -319,6 +320,7 @@
     line-height: 40px;
     margin-top: 171.88px;
     gap: 10px;
+    opacity: 0;
 }
 
 .fifthContainer{
@@ -340,6 +342,7 @@
     width: 100%;
     border-radius: 15px;
     margin-top: 61px;
+    opacity: 0;
     /* height: 221px; */
 }
 
@@ -426,6 +429,7 @@
     width: 88.63%;
     margin-top: 117px;
     gap: 10px;
+    opacity: 0;
 }
 
 @media screen and (max-width: 450px) {
@@ -464,10 +468,12 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        text-align: center;
         width: 100%;
         font-size: 32.35px;
         line-height: 35.59px;
         font-family: NAMU-1960;
+        gap: 7px;
     }
     
     .fonImg{
@@ -715,10 +721,21 @@
         margin-bottom: 27px;
     }
 
+    .title1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        line-height: 33.6px;
+        margin-top: 95px;
+        margin-bottom: 41px;
+    }
+
     .migWelding{
         font-size: 20px;
         line-height: 28.4px;
-        margin-top: 41px;
         gap: 7px;
     }
 

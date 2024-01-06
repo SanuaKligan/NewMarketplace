@@ -4,6 +4,10 @@
     width: 80%;
 }
 
+.firstContainerBig{
+    opacity: 0;
+}
+
 .vertical49{
     height: 49px;
 }
@@ -66,6 +70,7 @@
     height: 306px;
     width: 125%;
     background-color: #191812;
+    opacity: 0;
 }
 
 .secondContainer .text1{
@@ -106,11 +111,12 @@
 }
 
 .noneSlider{
-    height: ;
+    opacity: 0;
 }
 
 .alterSlides{
     display: none;
+    opacity: 0;
 }
 
 .exampleText{
@@ -123,6 +129,7 @@
     line-height: 56px;
     font-family: NAMU-1850;
     gap: 10px;
+    opacity: 0;
 }
 
 .exampleText .titleWhite{
@@ -148,6 +155,7 @@
     display: block;
     margin-top: 48px;
     width: 378px;
+    opacity: 0;
 }
 
 .tit{
@@ -194,6 +202,7 @@
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear; 
+    opacity: 0;
 }
 
 .moreFurnButton:hover{
@@ -205,6 +214,7 @@
     height: 282px;
     margin-top: 108px;
     position: relative;
+    opacity: 0;
 }
 
 .fonImg::after {

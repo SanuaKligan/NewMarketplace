@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import classes from "./Materials.module.css";
 import shicDisImg from "../../assets/images/Vector.png"
 import shicDis from "../../assets/images/Шикарный дизайн.svg"
@@ -9,14 +9,28 @@ import woodText from "../../assets/images/woodText.svg"
 import smileImg from "../../assets/images/Group 4603.png"
 import bestPrices from "../../assets/images/Приятные цены.svg"
 import bestPricesText from "../../assets/images/bestPricesText.svg"
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 // const {classes} = require("./Header.module.css");
 
 const Materials = () => {
+    const block1 = useRef(null)
+
+    const observedElements = [
+        block1
+    ];
+    
+    useIntersectionObserver(observedElements, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
     return (
         <div
             className={
-            classes.Materials
-        }>
+                classes.Materials
+            }
+            ref={block1}
+        >
             <div className={classes.infoBlock}>
                 <div className={classes.infBlImg}><img src={shicDisImg} /></div>
                 <div className={classes.infBlTitle}>Шикарный дизайн</div>

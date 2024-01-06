@@ -1,31 +1,17 @@
 import React, {useEffect, useMemo, useRef, useState} from "react"
 import {Field, InjectedFormProps, reduxForm} from "redux-form"
-import {
-    // PostType,
-    // UserType 
-    ProductType
-} from "../../../utils/generalTypes";
+import {ProductType} from "../../../utils/generalTypes";
 import classes from "./AllProducts.module.css"
 import Product from "./Product/Product"
 import RangeSlider from "../../../UI/RangeSlider/RangeSlider";
-import { useTypedDispatch, useTypedSelector } from "../../../redux/redux-store";
+import {useTypedDispatch, useTypedSelector} from "../../../redux/redux-store";
 import MyModal from "../../../UI/MyModal/MyModal";
 import BasketPage from "../../BasketPage/BasketPage";
 import filtImg from "../../../assets/images/catalogs/filtImg.svg"
-// import MySelect from "../../../UI/MySelect";
-// import {CSSTransition, TransitionGroup} from "react-transition-group";
-
-// const maxLength = maxLengthCreator(5000)
-// const Textarea = Element("textarea");
 
 type AllProductsFormPropsType = {
     products: Array<ProductType>
-    // selectedSort: string
-    // searchQuery: string
     isShowPreloader: boolean
-    // onSetSelectedSort: (sort: string) => void
-    // onSetSortPosts: (newPosts: Array<PostType>) => void
-    // onSetSearchQuery: (searchQuery: string) => void
     getProducts: (counter: string, material: string, type: string, price_range: string, sort: string, search_query: string) => void
     getItem: (itemId: string) => void
     postAudit: (name: string, number: string, comment: string, items: string) => void
@@ -92,7 +78,10 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
         
         if (label === "все") {
           if (event.target.checked) {
-            const allLabels = ["стол", "стул", "стеллаж", "диван", "кресло", "прочее"];
+            const allLabels = [
+              "вешало", "журнальные столики", "консоли", "кухня", "рейлы", "ресепшн", "стелажи", "стол переговорный", 
+              "стол руководителя", "столы", "стулья", "торговый островок", "тумбы", "шкафы", "прочее"
+            ];
             setType(allLabels);
           } else {
             setType([]);
@@ -110,16 +99,20 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
 
     const handlePrice_range = (range0: number, range1: number) => {
         setPrice_range(String(range0)+"-"+String(range1))
-        // console.log(String(range0)+"-"+String(range1))
     }
-
-
 
     const [basketItems, setBasketItems] = useState<Array<ProductType>>([])
 
     const addProduct = (product: ProductType, counter: number) => {
+      const existingProduct = basketItems.find(item => item.id === product.id);
+      
+      if (existingProduct) {
+        existingProduct.added_at = String(Number(existingProduct.added_at) + 1);
+        setBasketItems([...basketItems]);
+      } else {
         product.added_at = String(counter);
         setBasketItems([...basketItems, product]);
+      }
     };
 
     const removeItemById = (idToRemove: number): Array<ProductType> => {
@@ -271,56 +264,144 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="стол" 
-                        name="стол" 
+                        id="вешало" 
+                        name="вешало"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('стол')}
+                        checked={type.includes('вешало')}
                       />
-                      <label htmlFor="стол">Стол</label>
+                      <label htmlFor="вешало">Вешало</label>
                     </div>
                     <div>
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="стул" 
-                        name="стул"          
+                        id="журнальные столики" 
+                        name="журнальные столики"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('стул')}
+                        checked={type.includes('журнальные столики')}
                       />
-                      <label htmlFor="стул">Стул</label>
+                      <label htmlFor="журнальные столики">Журнальные столики</label>
                     </div>
                     <div>
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="стеллаж" 
-                        name="стеллаж"          
+                        id="консоли" 
+                        name="консоли"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('стеллаж')}
+                        checked={type.includes('консоли')}
                       />
-                      <label htmlFor="стеллаж">Стеллаж</label>
+                      <label htmlFor="консоли">Консоли</label>
                     </div>
                     <div>
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="диван" 
-                        name="диван"          
+                        id="кухня" 
+                        name="кухня"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('диван')}
+                        checked={type.includes('кухня')}
                       />
-                      <label htmlFor="диван">Диван</label>
+                      <label htmlFor="кухня">Кухня</label>
                     </div>
                     <div>
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="кресло" 
-                        name="кресло"          
+                        id="рейлы" 
+                        name="рейлы"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('кресло')}
+                        checked={type.includes('рейлы')}
                       />
-                      <label htmlFor="кресло">Кресло</label>
+                      <label htmlFor="рейлы">Рейлы</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="ресепшн" 
+                        name="ресепшн"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('ресепшн')}
+                      />
+                      <label htmlFor="ресепшн">Ресепшн</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="стол переговорный" 
+                        name="стол переговорный"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('стол переговорный')}
+                      />
+                      <label htmlFor="стол переговорный">Стол переговорный</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="стол руководителя" 
+                        name="стол руководителя"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('стол руководителя')}
+                      />
+                      <label htmlFor="стол руководителя">Стол руководителя</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="столы" 
+                        name="столы" 
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('столы')}
+                      />
+                      <label htmlFor="столы">Столы</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="стулья" 
+                        name="стулья"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('стулья')}
+                      />
+                      <label htmlFor="стулья">Стулья</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="торговый островок" 
+                        name="торговый островок"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('торговый островок')}
+                      />
+                      <label htmlFor="торговый островок">Торговый островок</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="тумбы" 
+                        name="тумбы"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('тумбы')}
+                      />
+                      <label htmlFor="тумбы">Тумбы</label>
+                    </div>
+                    <div>
+                      <input 
+                        type="checkbox" 
+                        className={classes.customCheckbox} 
+                        id="шкафы" 
+                        name="шкафы"          
+                        onChange={handleCheckboxChange}
+                        checked={type.includes('шкафы')}
+                      />
+                      <label htmlFor="шкафы">Шкафы</label>
                     </div>
                     <div>
                       <input 

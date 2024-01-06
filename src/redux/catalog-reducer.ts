@@ -102,6 +102,7 @@ export const getProducts = (
 }
 
 export const postAudit = (name: string, number: string, comment: string, items: string): any => {
+    console.log(name, number, comment, items, "red")
     return ( 
         AuditAPI.getPostAudit(name, number, comment, items).then((response: any) => {
         }))

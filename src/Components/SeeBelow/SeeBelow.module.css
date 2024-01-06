@@ -1,7 +1,17 @@
+.seeBelow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    opacity: 0;
+}
+
 .checkBelow{
     display: flex;
     align-items: center; 
     justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-top: 25px;
     color: gray;
     font-size: 20px;

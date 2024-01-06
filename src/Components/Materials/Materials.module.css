@@ -5,6 +5,7 @@
   justify-content: center;
   font-family: NAMU-1850;
   gap: 14px;
+  opacity: 0;
 }
 
 .infoBlock{
