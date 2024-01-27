@@ -16,6 +16,7 @@
   color: #FFFFFF;
 }
 
+
 .topFooter{
   background-color: black;
   margin-top: 100px;
@@ -132,8 +133,13 @@ margin-left: 19px;
 }
 
 .te{
-margin-top: 20px;
+margin-top: 17px;
 margin-left: 22px;
+}
+
+.te img{
+width: 32px;
+height: 28px;
 }
 
 .in{
@@ -161,12 +167,12 @@ margin-left: 17px;
   display: flex;
   flex-wrap: wrap;
   /* margin: 0 auto; */
-  margin-top: 2px;
+  margin-top: 4px;
   /* margin-left: 8.25%;
   margin-right: 8.96%; */
   align-items: center;
   justify-content: space-between;
-  width: 62.8%;
+  width: 68%;
 }
 
 .navContainer .home a{
@@ -208,18 +214,19 @@ margin-left: 17px;
   display: flex;
   margin-top: 19px;
   align-items: center;
+  width: 10.42%;
   /* position: absolute;  */
 }
  
 .logo {
-  width: 121px;
-  height: 20.08px;
+  width: 100%;
 }
   
 .home{
   display: block;
   font-size: 16px;
   line-height: 19.2px;
+  z-index: 6;
 }
 
 .bisnesMenu{

@@ -63,7 +63,39 @@ input[type=number] {
 }
 
 .priceslider {
-	width: 219.5px;
+	width: 100%;
 	margin-bottom: 20px;
 }
 
+@media screen and (max-width: 450px) {
+	.priceinputs {
+		margin-top: 7px;
+		display: flex;
+		justify-content: space-between;
+		gap: 21px;
+		z-index: 6;
+	}
+
+	.priceinput {
+		border: none;
+		color: #C9C9C9;
+		font-size: 14px;
+		align-items: center;
+		width: 45%;
+		height: 35px;
+		border-radius: 7px;
+		padding: 0 10px;
+		background-color: #ffffff1a;
+	}
+
+	.pricetitle {
+		color: #C9C9C9;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.priceslider {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

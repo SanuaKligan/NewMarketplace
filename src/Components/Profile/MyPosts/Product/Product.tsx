@@ -15,6 +15,7 @@ type ProductElementType = {
     for_what: string
     description: string
     photo_links: Array<string>
+    preview: string
     price: number
     unit: string
     added_at: string
@@ -48,7 +49,7 @@ const Product: React.FC<ProductElementType> = (props) => {
                     addProduct = {props.addProduct}
                 />
             </MyModal>
-            <div className={classes.prodImg}><img src={props.photo_links[0]} /></div>
+            <div className={classes.prodImg}><img src={props.preview} /></div>
             <div className={classes.title}>
                 {props.name}
             </div>

@@ -19,6 +19,7 @@ import Footer from "./Components/Footer/Footer";
 import Sawing from "./Components/Sawing/Sawing";
 import Welding from "./Components/Welding/Welding";
 import Painting from "./Components/Painting/Painting";
+import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
 
 
 
@@ -77,6 +78,8 @@ const App = (props) => {
                     <Route path="/how_it_will_be" element={<OrderProcess/>}/>
 
                     <Route path="/navigate" element={<Navigation/>}/>
+
+                    <Route path="/privacy" element={<PrivacyPolicy/>}/>
                 </Routes>
             </body>
             {!shouldHideElement && <Footer/>}

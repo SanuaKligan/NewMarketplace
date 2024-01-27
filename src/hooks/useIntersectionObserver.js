@@ -6,7 +6,7 @@ const useIntersectionObserver = (observedElements, options) => {
     const observer = new IntersectionObserver(handleIntersection, options);
 
     observedElements.forEach((element) => {
-        console.log(element)
+        // console.log(element)
       if (element.current) {
         observer.observe(element.current);
       }

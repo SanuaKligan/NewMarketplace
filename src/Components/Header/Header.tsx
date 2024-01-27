@@ -5,7 +5,7 @@ import logo from "../../assets/images/Group 4606.png"
 import phoneImg from "../../assets/images/Vector.svg"
 import BisnesMenu from "../BisnesMenu/BisnesMenu"
 import ServiceMenu from "../ServiceMenu/ServiceMenu"
-import numbNavImg from "../../assets/images/NumbNavImg.svg"
+import NavImg from "../../assets/images/NavImg.png"
 
 const Header = () => {
     return (
@@ -58,8 +58,9 @@ const Header = () => {
                     <a href="tel:+79600535559">+7 (960) 053 55 59</a>
                 </div>
                 <div className={classes.numbNavBlock}>
+                    <a href="tel:+79600535559"><img className={classes.numbImg} src={phoneImg}/></a>
                     <NavLink to="/navigate">
-                        <img src={numbNavImg} />
+                        <img className={classes.navImg} src={NavImg} />
                     </NavLink>
                 </div>
             </div>

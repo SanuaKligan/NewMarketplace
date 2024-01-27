@@ -38,5 +38,13 @@
 .noUi-horizontal .noUi-handle-upper {
 	position: relative;
 	top: -11px;
-	right: -100%;
+	right: -92%;
+}
+
+@media screen and (max-width: 450px) {
+	.noUi-horizontal .noUi-handle-upper {
+		position: relative;
+		top: -11px;
+		right: -94.44%;
+	}
 }

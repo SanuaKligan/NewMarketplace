@@ -12,12 +12,14 @@ import {AxiosResponse} from 'axios';
 import prodImg from "../assets/images/catalogs/Frame 1.png"
 
 type InitialStateType = {
+    maxPrice: number
     products: Array<ProductType>
     isShowPreloader: boolean
 }
 
 type ThunkType = ThunkAction<Promise<void>, AppStateType, unknown, ActionsType>
 let initialState: InitialStateType = {
+    maxPrice: 0,
     products: [
         // {
         //     "id": 1,
@@ -66,6 +68,11 @@ const catalogReducer = (
     action: ActionsType
 ): InitialStateType => {
     switch (action.type) {
+        case "SET-MAX-PRICE":
+            return {
+                ...state,
+                maxPrice: action.maxPrice,
+            }
         case "SET-PRODUCTS":
             return {
                 ...state,
@@ -84,8 +91,20 @@ const catalogReducer = (
 type ActionsType = InferActionsTypes<typeof catalogActions>
 
 export const catalogActions = {
+    onSetMaxPrice: (maxPrice: number) => ({type: "SET-MAX-PRICE", maxPrice} as const),
     onSetProducts: (products: Array<ProductType>) => ({type: "SET-PRODUCTS", products} as const),
     onSetItem: (item: ProductType) => ({type: "SET-ITEM", item} as const)
+}
+
+export const getMaxPrice = (): ThunkType => {
+    return async (dispatch) => {
+        CatalogAPI.getMaxPriceForProducts()
+            .then((response: AxiosResponse<any>) => {
+                // console.log(response.data)
+                dispatch(catalogActions.onSetMaxPrice(response.data.max_price));
+            }
+        )
+    }
 }
 
 export const getProducts = (

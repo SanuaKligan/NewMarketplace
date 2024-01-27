@@ -7,17 +7,22 @@ import RangeSlider from "../../../UI/RangeSlider/RangeSlider";
 import {useTypedDispatch, useTypedSelector} from "../../../redux/redux-store";
 import MyModal from "../../../UI/MyModal/MyModal";
 import BasketPage from "../../BasketPage/BasketPage";
-import filtImg from "../../../assets/images/catalogs/filtImg.svg"
+import filtImgWhite from "../../../assets/images/catalogs/filterWhite.png"
+import filtImgYellow from "../../../assets/images/catalogs/filterYellow.png"
 
 type AllProductsFormPropsType = {
+    maxPrice: number
     products: Array<ProductType>
     isShowPreloader: boolean
+    getMaxPrice: () => void
     getProducts: (counter: string, material: string, type: string, price_range: string, sort: string, search_query: string) => void
     getItem: (itemId: string) => void
     postAudit: (name: string, number: string, comment: string, items: string) => void
 }
 
 const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
+
+    const maxPrice = useTypedSelector((state) => state.catalogPage.maxPrice)
 
     const products = useTypedSelector((state) => state.catalogPage.products)
 
@@ -56,16 +61,26 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
         }
     }
 
+    const [filterImg, setFilterImg] = useState(filtImgWhite);
+    const [filterText, setFilterText] = useState("Фильтры");
+    const [menuVisible, setMenuVisible] = useState(false);
+  
+    const handleFilterClick = () => {
+      setFilterImg(filterImg === filtImgWhite ? filtImgYellow : filtImgWhite);
+      setFilterText(filterText === "Фильтры" ? "Фильтры" : "Фильтры");
+      setMenuVisible(!menuVisible);
+    };
+
     const handleSort = (event: React.ChangeEvent<HTMLSelectElement>) => {
         switch (event.target.value) {
             case "Порядок: по умолча":
                 setSort("default");
                 break;
             case "Порядок: цена вверх":
-                setSort("priceup");
+                setSort("price_up");
                 break;
             case "Порядок: цена вниз":
-                setSort("pricedown");
+                setSort("price_down");
                 break;
             default:
                 setSort("default");
@@ -79,8 +94,8 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
         if (label === "все") {
           if (event.target.checked) {
             const allLabels = [
-              "вешало", "журнальные столики", "консоли", "кухня", "рейлы", "ресепшн", "стелажи", "стол переговорный", 
-              "стол руководителя", "столы", "стулья", "торговый островок", "тумбы", "шкафы", "прочее"
+              "вешало", "журнальныестолики", "консоли", "кухня", "рейлы", "ресепшн", "стелажи", "столпереговорный", 
+              "столруководителя", "столы", "стулья", "торговыйостровок", "тумбы", "шкафы", "прочее"
             ];
             setType(allLabels);
           } else {
@@ -132,6 +147,7 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
     };
 
     useEffect(() => {
+        props.getMaxPrice()
         props.getProducts(String(counter), material, type.join('_'), price_range, sort, search_query)
     }, [counter, material, type, price_range, sort, search_query])
     
@@ -245,11 +261,46 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                         </label>
                     </div>
                 </div>
-                <div className={classes.rangeSlider}>
-                    <RangeSlider handlePrice_range = {handlePrice_range} />
+                <div className={classes.alterSearchAndSort}>
+                    <div className={classes.filtAlt} onClick={handleFilterClick}>
+                        <div>
+                            <img src={filterImg} />
+                        </div>
+                        <div style={{ color: filterImg === filtImgYellow ? "yellow" : "white" }}>
+                            {filterText}
+                        </div>
+                        {/* {menuVisible && <div className={classes.menu}></div>} */}
+                    </div>
+                    {/* <div className={classes.filtAlt}>
+                        <div><img src={filtImg} /></div>
+                        <div>Фильтры</div>
+                    </div> */}
+                    <div className={classes.divSearchfield}>
+                        <input 
+                            placeholder={"Поиск"} 
+                            className={classes.searchfield} 
+                            onChange={(event) => setSearch_query(event.target.value)}
+                        />
+                    </div>
                 </div>
-                <div className={classes.checkTitle}>Тип товара:</div>
-                <div className={classes.productsType}>
+                <div className={maxPrice > 0 ? classes.alterSortfieldActive : classes.alterSortfield}>
+                  <div className={classes.alterDivSortfield}>
+                      <select 
+                          className={classes.sortfield}
+                          onChange={handleSort}
+                      > 
+                          <option>Порядок: по умолчанию</option> 
+                          <option>Порядок: цена вверх</option> 
+                          <option>Порядок: цена вниз</option> 
+                      </select>
+                    </div>
+                </div>
+                {maxPrice > 0 
+                  && <div className={classes.rangeSlider} style={{ display: menuVisible ? "flex" : "" }}>
+                    <RangeSlider handlePrice_range = {handlePrice_range} maxRange = {maxPrice}/>
+                </div>}
+                <div className={classes.checkTitle} style={{ display: menuVisible ? "flex" : "" }}>Тип товара:</div>
+                <div className={classes.productsType} style={{ display: menuVisible ? "block" : "" }}>
                     <div>
                       <input 
                         type="checkbox" 
@@ -275,12 +326,12 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="журнальные столики" 
-                        name="журнальные столики"          
+                        id="журнальныестолики" 
+                        name="журнальныестолики"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('журнальные столики')}
+                        checked={type.includes('журнальныестолики')}
                       />
-                      <label htmlFor="журнальные столики">Журнальные столики</label>
+                      <label htmlFor="журнальныестолики">Журнальные столики</label>
                     </div>
                     <div>
                       <input 
@@ -330,23 +381,23 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="стол переговорный" 
-                        name="стол переговорный"          
+                        id="столпереговорный" 
+                        name="столпереговорный"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('стол переговорный')}
+                        checked={type.includes('столпереговорный')}
                       />
-                      <label htmlFor="стол переговорный">Стол переговорный</label>
+                      <label htmlFor="столпереговорный">Стол переговорный</label>
                     </div>
                     <div>
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="стол руководителя" 
-                        name="стол руководителя"          
+                        id="столруководителя" 
+                        name="столруководителя"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('стол руководителя')}
+                        checked={type.includes('столруководителя')}
                       />
-                      <label htmlFor="стол руководителя">Стол руководителя</label>
+                      <label htmlFor="столруководителя">Стол руководителя</label>
                     </div>
                     <div>
                       <input 
@@ -374,12 +425,12 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                       <input 
                         type="checkbox" 
                         className={classes.customCheckbox} 
-                        id="торговый островок" 
-                        name="торговый островок"          
+                        id="торговыйостровок" 
+                        name="торговыйостровок"          
                         onChange={handleCheckboxChange}
-                        checked={type.includes('торговый островок')}
+                        checked={type.includes('торговыйостровок')}
                       />
-                      <label htmlFor="торговый островок">Торговый островок</label>
+                      <label htmlFor="торговыйостровок">Торговый островок</label>
                     </div>
                     <div>
                       <input 
@@ -418,10 +469,6 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
             </div>
             <div className={classes.rightProductsBlock}>
                 <div className={classes.searchAndSort}>
-                    <div className={classes.filtAlt}>
-                        <div><img src={filtImg} /></div>
-                        <div>Фильтры</div>
-                    </div>
                     <div className={classes.divSearchfield}>
                         <input 
                             placeholder={"Поиск"} 
@@ -453,6 +500,7 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
                                     for_what={product.for_what}
                                     description={product.description}
                                     photo_links={product.photo_links}
+                                    preview={product.preview}
                                     price={product.price}
                                     unit={product.unit}
                                     added_at={product.added_at}

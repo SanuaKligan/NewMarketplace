@@ -4,10 +4,17 @@ import {
 } from "../utils/generalTypes";
 
 const instance = axios.create({
-    baseURL: "http://79.174.94.184:8080/",
+    baseURL: "http://79.174.94.184:8000/",
 })
 
 export const CatalogAPI = {
+
+    async getMaxPriceForProducts(){
+        return await instance.get<number>(
+            `items_max_price/`, {params: {}}
+        ).then(response => response)
+    },
+
     async getAllProducts(counter: string, material: string, type: string, price_range: string, sort: string, search_query: string){
         console.log(counter, material, type, price_range, sort, search_query)
         return await instance.get<Array<ProductType>>(
@@ -27,7 +34,7 @@ export const CatalogAPI = {
 
 export const AuditAPI = {
     async getPostAudit(name: string, number: string, comment: string, items: string){
-        console.log(name, number, comment, items, "api")
+        // console.log(name, number, comment, items, "api")
         return await instance.post(
             `order_make/`, {params: {name, number, comment, items}}
         ).then(response => response)

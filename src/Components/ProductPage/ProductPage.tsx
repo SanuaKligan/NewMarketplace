@@ -24,24 +24,25 @@ type ProductPageType = {
 
 const ProductPage: React.FC<ProductPageType> = (props) => {
 
-    const [counter, setCounter] = useState(1)
+    const [counter, setCounter] = useState("1");
 
     const handleMinusClick = () => {
-            if (counter > 1) {
-                setCounter(counter - 1);
-            }
-        };
-    
-    const handlePlusClick = () => {
-        setCounter(counter + 1);
-    };
-    
-    const handleInputChange = (e) => {
-        const value = parseInt(e.target.value);
-        Number(value)
+        const value = parseInt(counter) - 1;
         if (!isNaN(value) && value >= 1) {
-            setCounter(value);
+            setCounter(value.toString());
         }
+      };  
+      
+    const handlePlusClick = () => {
+        const value = parseInt(counter) + 1;
+        if (!isNaN(value)) {
+            setCounter(value.toString());
+        }
+    };
+
+    const handleInputChange = (e) => {
+        const value = e.target.value.replace(/\D/g, ""); // Удаление всех нецифровых символов
+        setCounter(value);
     };
 
     return (

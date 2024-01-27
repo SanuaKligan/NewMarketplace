@@ -5,23 +5,31 @@ import sliderObject from "nouislider";
 import "./RangNouislider.css";
 
 const RangeSlider = (props) => {
-  const [range0, setRange0] = useState(1499)
-  const [range1, setRange1] = useState(45999)
+  
+  const [maxRange, setMaxRange] = useState(props.maxRange)
+
+  useEffect(() => {
+    setMaxRange(props.maxRange)
+  }, [props.maxRange])
+
+  const [range0, setRange0] = useState(0)
+  const [range1, setRange1] = useState(maxRange)
   useEffect(() => {
     // console.log(range0, range1)
     props.handlePrice_range(range0, range1)
   }, [range0, range1])
+  
   useEffect(() => {
     const rangeSlider = document.getElementById("range-slider");
 
     if (rangeSlider) {
       noUiSlider.create(rangeSlider, {
-        start: [1499, 45999],
+        start: [0, maxRange],
         connect: true,
         step: 1,
         range: {
-          min: [1499],
-          max: [45999]
+          min: [0],
+          max: [maxRange]
         }
       });
 
@@ -59,7 +67,6 @@ const RangeSlider = (props) => {
       });
     }
   }, []);
-
   return (
     <div className={classes.filters}>
       <div className={classes.filtersitem && classes.price}>
@@ -68,17 +75,17 @@ const RangeSlider = (props) => {
         <div className={classes.priceinputs}>
           <input
             type="number"
-            min="1499"
-            max="45999"
-            placeholder="1499"
+            min="0"
+            max={maxRange}
+            placeholder="0"
             className={classes.priceinput}
             id="input-0"
           />
           <input
             type="number"
-            min="1499"
-            max="45999"
-            placeholder="45999"
+            min="0"
+            max={maxRange}
+            placeholder={maxRange}
             className={classes.priceinput}
             id="input-1"
           />

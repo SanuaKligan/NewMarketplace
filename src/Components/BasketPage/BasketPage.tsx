@@ -81,7 +81,7 @@ const BasketPageForm: React.FC<
             <div className={classes.bottomBlock}>
                 <div className={classes.bottomBlockText}>
                     <div>Нажимая на кнопку, я соглашаюсь,</div>
-                    <div className={classes.text2}><NavLink to="*">на обработку своих персональных данных</NavLink></div>
+                    <div className={classes.text2}><NavLink to="/privacy">на обработку своих персональных данных</NavLink></div>
                 </div>
                 <button
                     className={classes.sendFormBut}
@@ -125,35 +125,41 @@ const BasketPage: React.FC<AuditType> = (props) => {
     }
 
     const handleMinusClick = (item) => {
-        if (Number(item.added_at) > 1) {
-            const updatedItem = {...item, added_at: Number(item.added_at) - 1};
-            handleItemChange(updatedItem);
-        }
-    };
-    
-    const handlePlusClick = (item) => {
-        const updatedItem = {...item, added_at: Number(item.added_at) + 1};
-        handleItemChange(updatedItem);
-    };
-    
-    const handleInputChange = (e, item) => {
-        const value = parseInt(e.target.value);
+        const value = parseInt(item.added_at) - 1;
         if (!isNaN(value) && value >= 1) {
-            const updatedItem = {...item, added_at: value};
+            const updatedItem = { ...item, added_at: String(Number(item.added_at) - 1) };
             handleItemChange(updatedItem);
         }
-    };
+      };
     
-    const handleItemChange = (updatedItem) => {
+      const handlePlusClick = (item) => {
+        // const value = item.added_at.replace(/\D/g, ""); // Удаление всех нецифровых символов
+        const updatedItem = { ...item, added_at: String(Number(item.added_at) + 1) };
+        handleItemChange(updatedItem);
+      };
+    
+      const handleInputChange = (e, item) => {
+        const value = e.target.value.replace(/\D/g, ""); // Удаление всех нецифровых символов
+        const updatedItem = { ...item, added_at: value };
+        handleItemChange(updatedItem)
+        // const value = parseInt(e.target.value);
+        // if (!isNaN(value) && value >= 1) {
+        //   const updatedItem = { ...item, added_at: value };
+        //   handleItemChange(updatedItem);
+        // }
+      };
+    
+      const handleItemChange = (updatedItem) => {
         const updatedBasketItems = props.basketItems.map((basketItem) => {
-            if (basketItem.id === updatedItem.id) {
-                return updatedItem;
-            } else {
-                return basketItem;
-            }
+          if (basketItem.id === updatedItem.id) {
+            return updatedItem;
+          } else {
+            return basketItem;
+          }
         });
         props.setBasketItems(updatedBasketItems);
-    };
+      };
+        
     
     return (
         <div className={classes.formAudit}>
@@ -166,7 +172,7 @@ const BasketPage: React.FC<AuditType> = (props) => {
                                     props.basketItems.map((item: ProductType) => {
                                         return (
                                             <div className={classes.productBlock}>
-                                                <div className={classes.prodImg}><img src={item.photo_links[0]}/></div>
+                                                <div className={classes.prodImg}><img src={item.preview}/></div>
                                                 <div className={classes.textBlock}>
                                                     <div className={classes.title}>
                                                         {item.name}
@@ -180,21 +186,15 @@ const BasketPage: React.FC<AuditType> = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className={classes.countRange}>
-                                                    <button 
-                                                        className={classes.rangeButtonM} 
-                                                        onClick={() => handleMinusClick(item)}
-                                                    >
+                                                    <button className={classes.rangeButtonM} onClick={() => handleMinusClick(item)}>
                                                         -
                                                     </button>
-                                                    <input 
-                                                        className={classes.rangeInput} 
-                                                        value={Number(item.added_at)} 
-                                                        onChange={(e) => handleInputChange(e, item)} 
+                                                    <input
+                                                        className={classes.rangeInput}
+                                                        value={String(item.added_at)}
+                                                        onChange={(e) => handleInputChange(e, item)}
                                                     />
-                                                    <button 
-                                                        className={classes.rangeButtonP} 
-                                                        onClick={() => handlePlusClick(item)}
-                                                    >
+                                                    <button className={classes.rangeButtonP} onClick={() => handlePlusClick(item)}>
                                                         +
                                                     </button>
                                                 </div>

@@ -86,7 +86,7 @@ const LogInForm: React.FC<
                 </div>
                 <div className={classes.bottomBlockText}>
                     <div>Нажимая на кнопку, я соглашаюсь,</div>
-                    <NavLink to="*" className={classes.text2}>на обработку своих персональных данных</NavLink>
+                    <NavLink to="/privacy" className={classes.text2}>на обработку своих персональных данных</NavLink>
                     {/* ссылка на обработку своих персональных данных*/}
                 </div>
             </div>

@@ -1,0 +1,151 @@
+.privacy_policy{
+    height: 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #000000;
+}
+
+.line15_6{
+    width: 15.6px;
+}
+
+.firstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 62px;
+    width: 100%;
+}
+  
+.logoText{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 49.48px;
+    line-height: 54.43px;
+    font-family: NAMU-1960;
+    gap: 15.6px;
+}
+
+.titleWhite{
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleYellow{
+    color: rgba(255, 214, 0, 1);
+}
+
+.paragsCont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.paragsCont1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    opacity: 0;
+}
+
+.paragsCont2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.parags{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: NAMU-1850;
+    color: #FFFFFF;
+    text-align: left;
+    width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    .privacy_policy{
+        height: 1fr;
+        width: 92.22%;
+        margin: 0 auto;
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .line15_6{
+        width: 15.6px;
+    }
+
+    .firstContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 43px;
+        width: 100%;
+    }
+      
+    .logoText{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        line-height: 30px;
+        font-family: NAMU-1960;
+        gap: 10px;
+    }
+
+    .titleWhite{
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .titleYellow{
+        color: rgba(255, 214, 0, 1);
+    }
+
+    .paragsCont{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+    }
+
+    .paragsCont1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+        opacity: 0;
+    }
+
+    .paragsCont2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+    .parags{
+        font-size: 20px;
+        line-height: 28px;
+        font-family: NAMU-1850;
+        color: #FFFFFF;
+        text-align: left;
+        width: 100%;
+    }
+}
