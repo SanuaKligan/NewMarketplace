@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import classes from "./Product.module.css";
 import {useNavigate} from "react-router-dom";
 import basket from "../../../../assets/images/catalogs/basket.svg"
-import MyModal from "../../../../UI/MyModal/MyModal";
+import ModalProduct from "../../../../UI/ModalProduct/ModalProduct";
 import ProductPage from "../../../ProductPage/ProductPage"
 import { ProductType } from "../../../../utils/generalTypes";
 
@@ -30,7 +30,7 @@ const Product: React.FC<ProductElementType> = (props) => {
     const [itemModal, setItemModal] = useState(false)
     return (
         <div className={classes.product}>
-            <MyModal visible={itemModal} setVisible={setItemModal}>
+            <ModalProduct visible={itemModal} setVisible={setItemModal}>
                 <ProductPage
                     id={props.id}
                     name={props.name}
@@ -48,7 +48,7 @@ const Product: React.FC<ProductElementType> = (props) => {
                     product = {props.product}
                     addProduct = {props.addProduct}
                 />
-            </MyModal>
+            </ModalProduct>
             <div className={classes.prodImg}><img src={props.preview} /></div>
             <div className={classes.title}>
                 {props.name}

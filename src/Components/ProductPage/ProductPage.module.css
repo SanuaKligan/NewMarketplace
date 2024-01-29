@@ -13,11 +13,40 @@
   width: 45.82%;
   min-width: 360px;
   border-radius: 15px;
+  position: relative;
 }
 
 .productImg img{
   width: 100%;
   border-radius: 15px;
+}
+
+.prevButton,
+.nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.prevButton img{
+  width: 40px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.nextButton img {
+  width: 40px;
 }
 
 .productText{
@@ -192,6 +221,35 @@
     width: 100%;
     border-radius: 15px;
   }
+
+  .prevButton,
+  .nextButton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .prevButton {
+    left: 1px;
+  }
+
+  .prevButton img{
+    width: 20px;
+  }
+
+  .nextButton {
+    right: 1px;
+  }
+  
+  .nextButton img {
+    width: 20px;
+  }
+  
   
   .productText{
     display: flex;

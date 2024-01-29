@@ -20,6 +20,7 @@ import Sawing from "./Components/Sawing/Sawing";
 import Welding from "./Components/Welding/Welding";
 import Painting from "./Components/Painting/Painting";
 import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
+import ModalProduct from "./UI/ModalProduct/ModalProduct";
 
 
 

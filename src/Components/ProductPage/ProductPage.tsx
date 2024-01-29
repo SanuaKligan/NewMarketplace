@@ -3,6 +3,8 @@ import classes from "./ProductPage.module.css";
 import userPhoto from "../../../../assets/images/user.png";
 import {useNavigate} from "react-router-dom";
 import { ProductType } from "../../utils/generalTypes";
+import leftBlackArrow from "../../assets/images/catalogs/leftBlackArrow.png"
+import rightBlackArrow from "../../assets/images/catalogs/rightBlackArrow.png"
 
 type ProductPageType = {
     id: number
@@ -45,10 +47,31 @@ const ProductPage: React.FC<ProductPageType> = (props) => {
         setCounter(value);
     };
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const imagesCount = props.photo_links.length;
+
+    const showNextImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === imagesCount - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const showPreviousImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? imagesCount - 1 : prevIndex - 1
+        );
+    };
+
     return (
         <div className={classes.productPage}>
             <div className={classes.productImg}>
-                <img src={props.photo_links[0]} />
+                <img src={props.photo_links[currentImageIndex]} />
+            <button className={classes.prevButton} onClick={showPreviousImage}>
+                <img src={leftBlackArrow} />
+            </button>
+            <button className={classes.nextButton} onClick={showNextImage}>
+                <img src={rightBlackArrow} />
+            </button>
             </div>
             <div className={classes.productText}>
                 <div className={classes.descript}>

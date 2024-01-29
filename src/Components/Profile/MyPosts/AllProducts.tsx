@@ -9,6 +9,7 @@ import MyModal from "../../../UI/MyModal/MyModal";
 import BasketPage from "../../BasketPage/BasketPage";
 import filtImgWhite from "../../../assets/images/catalogs/filterWhite.png"
 import filtImgYellow from "../../../assets/images/catalogs/filterYellow.png"
+import ModalProduct from "../../../UI/ModalProduct/ModalProduct";
 
 type AllProductsFormPropsType = {
     maxPrice: number
@@ -153,13 +154,13 @@ const AllProducts: React.FC<AllProductsFormPropsType> = (props) => {
     
     return (
         <div className={classes.products}>
-            <MyModal visible={shopModal} setVisible={setShopModal}>
+            <ModalProduct visible={shopModal} setVisible={setShopModal}>
                 <BasketPage 
                     basketItems = {basketItems} 
                     setBasketItems = {setBasketItems} 
                     addProduct = {addProduct} 
                     removeItemById = {removeItemById}/>
-            </MyModal>
+            </ModalProduct>
             <div className={classes.leftFilterBlock}>
                 <div className={classes.allWoodSpecies}>
                     <div>
